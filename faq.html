@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSQ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="src/LOGO.png" alt="Logo">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="methods.html">Methods</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="https://github.com/DrAnomalocaris/">GitHub</a></li>
+                <li>
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="Search for a gene or transcript...">
+                        <div id="autocomplete-list" class="autocomplete-items"></div>
+                        <button id="search-button">Send</button> 
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content-container">
+
+            <h1>FAQ</h1>
+            <h2>Q: What is Alternative Splice Event Database?</h2>
+            <p>A: A database of alphafold pre folded proteins with their reported splice events. </p>
+
+            <h2>Q: How does it work?</h2>
+            <p> check the <a href="methods.html">methods</a></p>
+
+            <h2>Q: Will there be more proteins?  </h2>
+            <p>Depends, do you have a grant or are willing to donate me a A100 GPU? as I am folding them on my laptop, it is unlikely that I will be able to turn it into a proper database without assistance.</p>
+
+            <h2>Q: What are some improvements you are considering?</h2>
+            <p> I have some things I am considering for an actual database. Such as recording searches for missign proteins and prioritize the most requested ones. Or small optimizations, such as grouping all the splice isoforms that have the same protein sequence to save on processing and storage. </p>
+            <p> Also running prosite scann or other tools to identify functional domains on the isoforms to highlight which domains are lost or gained. </p>
+            <p> Quantifying the intrinsically disordered sections that are gained/lost could also be informative. </p>
+            
+        </div>
+    </main>
+    <script src="autofill.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

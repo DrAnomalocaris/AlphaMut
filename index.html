@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alternative Splice Event Database</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="src/LOGO.png" alt="Logo">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="methods.html">Methods</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="https://github.com/DrAnomalocaris/">Github</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-column">
+            <h1>Alternative Splice Event Database</h1>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+
+                <div class="search-box">
+                    
+                    <input type="text" id="search-input" placeholder="Search for a gene or transcript...">
+                    <div id="autocomplete-list" class="autocomplete-items"></div>
+                    <button id="search-button">Send</button>
+                </div>
+            </div>
+
+            <!-- Folded Proteins Container -->
+            <div id="folded-proteins-container" class="folded-proteins-container">
+                <!-- The list will be dynamically generated here -->
+            </div>
+        </div>
+    </main>
+
+    <script src="autofill.js"></script>
+    <script src="script.js"></script>
+    <script src="latestFoldings.js"></script>
+
+</body>
+</html>

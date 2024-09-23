@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="src/LOGO.png" alt="Logo">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="methods.html">Methods</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="https://github.com/DrAnomalocaris/">Github</a></li>
+                <li>
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="Search for a gene or transcript...">
+                        <div id="autocomplete-list" class="autocomplete-items"></div>
+                        <button id="search-button">Send</button> 
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="content-container">
+
+            <h1>Methods</h1>
+            <p>The protein foldings were run using <a href="https://github.com/YoshitakaMo/localcolabfold">local collabfold.</a> on my laptop (using CPU) with relaxation.</p>
+            <p>The entire analysis is performed using a <a href="Snakefile">Snakefile</a>. </p>
+            <p>The snakefile is designed to arbitrarily work with any gene/transcript by using ENSG codes, although it is designed to work only for humans, adapting it for any organism should not be too complicated.</p>
+            <p>Thank you.</p>
+
+        </div>
+    </main>
+    <script src="autofill.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

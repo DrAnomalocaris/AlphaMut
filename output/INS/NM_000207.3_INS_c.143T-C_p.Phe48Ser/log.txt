@@ -1,0 +1,43 @@
+2024-09-22 13:04:58,063 Running colabfold 1.5.5 (4e198f5cecc6a808daa6baf7441899e5e76f7b9e)
+2024-09-22 13:04:58,280 WARNING: no GPU detected, will be using CPU
+2024-09-22 13:05:00,213 Found 6 citations for tools or databases
+2024-09-22 13:05:00,214 Query 1/1: isoform (length 110)
+2024-09-22 13:05:00,695 Setting max_seq=512, max_extra_seq=1609
+2024-09-22 13:06:51,605 alphafold2_ptm_model_1_seed_000 recycle=0 pLDDT=51.6 pTM=0.228
+2024-09-22 13:08:20,146 alphafold2_ptm_model_1_seed_000 recycle=1 pLDDT=50 pTM=0.229 tol=5.52
+2024-09-22 13:09:48,698 alphafold2_ptm_model_1_seed_000 recycle=2 pLDDT=50.4 pTM=0.229 tol=3.92
+2024-09-22 13:11:16,322 alphafold2_ptm_model_1_seed_000 recycle=3 pLDDT=50.7 pTM=0.23 tol=2.89
+2024-09-22 13:11:16,323 alphafold2_ptm_model_1_seed_000 took 363.5s (3 recycles)
+2024-09-22 13:12:44,906 alphafold2_ptm_model_2_seed_000 recycle=0 pLDDT=48.1 pTM=0.206
+2024-09-22 13:14:12,564 alphafold2_ptm_model_2_seed_000 recycle=1 pLDDT=47.3 pTM=0.211 tol=3.31
+2024-09-22 13:15:40,504 alphafold2_ptm_model_2_seed_000 recycle=2 pLDDT=47.2 pTM=0.21 tol=3.36
+2024-09-22 13:17:08,685 alphafold2_ptm_model_2_seed_000 recycle=3 pLDDT=47.6 pTM=0.21 tol=2.18
+2024-09-22 13:17:08,686 alphafold2_ptm_model_2_seed_000 took 352.3s (3 recycles)
+2024-09-22 13:18:37,752 alphafold2_ptm_model_3_seed_000 recycle=0 pLDDT=47.8 pTM=0.201
+2024-09-22 13:20:04,931 alphafold2_ptm_model_3_seed_000 recycle=1 pLDDT=47.3 pTM=0.201 tol=3.39
+2024-09-22 13:21:33,090 alphafold2_ptm_model_3_seed_000 recycle=2 pLDDT=47.8 pTM=0.203 tol=1.6
+2024-09-22 13:23:00,596 alphafold2_ptm_model_3_seed_000 recycle=3 pLDDT=47.4 pTM=0.201 tol=1.43
+2024-09-22 13:23:00,597 alphafold2_ptm_model_3_seed_000 took 351.9s (3 recycles)
+2024-09-22 13:24:28,775 alphafold2_ptm_model_4_seed_000 recycle=0 pLDDT=48.1 pTM=0.207
+2024-09-22 13:25:56,418 alphafold2_ptm_model_4_seed_000 recycle=1 pLDDT=47.1 pTM=0.21 tol=4.21
+2024-09-22 13:27:24,070 alphafold2_ptm_model_4_seed_000 recycle=2 pLDDT=46.7 pTM=0.213 tol=3.23
+2024-09-22 13:28:51,354 alphafold2_ptm_model_4_seed_000 recycle=3 pLDDT=46.8 pTM=0.212 tol=3.34
+2024-09-22 13:28:51,355 alphafold2_ptm_model_4_seed_000 took 350.7s (3 recycles)
+2024-09-22 13:30:19,953 alphafold2_ptm_model_5_seed_000 recycle=0 pLDDT=44.2 pTM=0.193
+2024-09-22 13:31:47,822 alphafold2_ptm_model_5_seed_000 recycle=1 pLDDT=44.1 pTM=0.194 tol=6.22
+2024-09-22 13:33:16,259 alphafold2_ptm_model_5_seed_000 recycle=2 pLDDT=43.3 pTM=0.194 tol=2.28
+2024-09-22 13:34:44,133 alphafold2_ptm_model_5_seed_000 recycle=3 pLDDT=42.8 pTM=0.196 tol=1.62
+2024-09-22 13:34:44,133 alphafold2_ptm_model_5_seed_000 took 352.8s (3 recycles)
+2024-09-22 13:34:44,154 reranking models by 'plddt' metric
+2024-09-22 13:34:46,612 Warning: importing 'simtk.openmm' is deprecated.  Import 'openmm' instead.
+2024-09-22 13:34:54,662 Relaxation took 10.5s
+2024-09-22 13:34:54,662 rank_001_alphafold2_ptm_model_1_seed_000 pLDDT=50.7 pTM=0.23
+2024-09-22 13:35:00,026 Relaxation took 5.4s
+2024-09-22 13:35:00,027 rank_002_alphafold2_ptm_model_2_seed_000 pLDDT=47.6 pTM=0.21
+2024-09-22 13:35:04,785 Relaxation took 4.8s
+2024-09-22 13:35:04,785 rank_003_alphafold2_ptm_model_3_seed_000 pLDDT=47.4 pTM=0.201
+2024-09-22 13:35:10,138 Relaxation took 5.3s
+2024-09-22 13:35:10,138 rank_004_alphafold2_ptm_model_4_seed_000 pLDDT=46.8 pTM=0.212
+2024-09-22 13:35:15,254 Relaxation took 5.1s
+2024-09-22 13:35:15,254 rank_005_alphafold2_ptm_model_5_seed_000 pLDDT=42.8 pTM=0.196
+2024-09-22 13:35:16,337 Done

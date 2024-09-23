@@ -418,31 +418,41 @@ rule add_scores_to_table:
         df = df.join(newTable)
         df.to_csv(output.table)
 
+rule simplify_table:
+    input:
+        "output/{gene}/clinvar_seqMUT_scores.csv",
+    output:
+        "output/{gene}/clinvar_seqMUT_scores_summary.html",
+    run:
+        import pandas as pd
+        df = pd.read_csv(input[0])
+        df = df[['data','ClinicalSignificance', 'PhenotypeList','aligned_length','rmsd','identical/aligned']]
+        df.columns = ['mutation','clinical significance', 'phenotype list', 'aligned length', 'rmsd', 'identical/aligned']
+        df["mutation"] = df["mutation"].apply( # insert links
+            lambda x: f"<a href='/isoform.html?gene={wildcards.gene}&mutation={x}'>"+x.split(":")[1]+"</a>"
+            )
+
+        df.to_html(
+            output[0],
+            render_links=True,
+            escape=False,
+            index=False
+        )
+        #df.to_csv(output[0])
+
 
 rule autofillList:
-    input:
-        "data/Homo_sapiens.GRCh38.109.gtf.pkl"
-        
     output:
         "autofill.js"
     run:
         import pickle
         from glob import glob
-        with open(input[0], 'rb') as f: 
-            general, isoforms = pickle.load(f)
         with open(output[0], 'w') as f:
             f.write(f"const autofill = [\n")
-            for i in ([i.split("/")[-1] for i in glob("output/*")]):
+            for i in ([i.split("/")[1] for i in glob("output/*/isoform_plot.html")]):
                 f.write(f"    '{i}',\n")
-                name = general[i]['name']
-                f.write(f"'{name}',\n")
             f.write("];\n")
-            f.write("const geneDict = {\n")
-            for i in ([i.split("/")[-1] for i in glob("output/*")]):
-                name = general[i]['name']
-                f.write(f"    '{name}':'{i}',\n")
-                f.write(f"    '{i}':'{i}',\n")
-            f.write("};\n")
+
 rule makeJsonForGene:
     input:
         "data/Homo_sapiens.GRCh38.109.gtf.pkl",
@@ -632,6 +642,7 @@ rule network_calculation:
         # Save the distance matrix
         pd.DataFrame(out, columns=["Protein1","Protein2","RMSD"]).to_csv(output[0], index=False)
 
+
 rule plotly_isoform_plots:
     input:
         table= "output/{gene}/clinvar_seqMUT_scores.csv"
@@ -668,7 +679,7 @@ rule plotly_isoform_plots:
 
         # Create hover text that includes useful information (customize as needed)
         df['hover_text'] = df['data'] +"<br>" + df['PhenotypeList'] + '<br>' + df[metric].astype(str) + ' ' + metric
-        df['url'] = "isoform.html?" + df['data']
+        df['url'] = f"isoform.html?gene={wildcards.gene}&mutation=" + df['data']
 
         # Create the interactive plot using Plotly Express
         fig = px.strip(df,
@@ -722,3 +733,91 @@ rule plotly_isoform_plots:
             });
             </script>
             ''')
+
+rule get_gene_indo:
+    output:
+        "output/{gene}/gene_info.json"
+    run:
+
+
+        import time
+        import xmltodict
+        from Bio import Entrez
+
+        def get_entrez_gene_summary(
+            gene_name, email, organism="human", max_gene_ids=100
+        ):
+            """Returns the 'Summary' contents for provided input
+            gene from the Entrez Gene database. All gene IDs 
+            returned for input gene_name will have their docsum
+            summaries 'fetched'.
+            
+            Args:
+                gene_name (string): Official (HGNC) gene name 
+                (e.g., 'KAT2A')
+                email (string): Required email for making requests
+                organism (string, optional): defaults to human. 
+                Filters results only to match organism. Set to None
+                to return all organism unfiltered.
+                max_gene_ids (int, optional): Sets the number of Gene
+                ID results to return (absolute max allowed is 10K).
+                
+            Returns:
+                dict: Summaries for all gene IDs associated with 
+                gene_name (where: keys → [orgn][gene name],
+                            values → gene summary)
+            """
+            Entrez.email = email
+
+            query = (
+                f"{gene_name}[Gene Name]"
+                if not organism
+                else f"({gene_name}[Gene Name]) AND {organism}[Organism]"
+            )
+            handle = Entrez.esearch(db="gene", term=query, retmax=max_gene_ids)
+            record = Entrez.read(handle)
+            handle.close()
+
+            gene_summaries = {}
+            gene_ids = record["IdList"]
+
+            print(
+                f"{len(gene_ids)} gene IDs returned associated with gene {gene_name}."
+            )
+            for gene_id in gene_ids:
+                print(f"\tRetrieving summary for {gene_id}...")
+                handle = Entrez.efetch(db="gene", id=gene_id, rettype="docsum")
+                gene_dict = xmltodict.parse(
+                    "".join([x.decode(encoding="utf-8") for x in handle.readlines()]),
+                    dict_constructor=dict,
+                )
+                gene_docsum = gene_dict["eSummaryResult"]["DocumentSummarySet"][
+                    "DocumentSummary"
+                ]
+                name = gene_docsum.get("Name")
+                summary = gene_docsum.get("Summary")
+                gene_summaries[name] = summary
+                handle.close()
+                time.sleep(0.34)  # Requests to NCBI are rate limited to 3 per second
+
+            return gene_summaries
+
+        email = "x"
+        gene_summaries = get_entrez_gene_summary("INS", email)
+        with open(f"output/{wildcards.gene}/gene_info.json", "w") as f:
+            json.dump(dict(gene_summaries), f)
+
+
+
+rule process_gene:
+    input:
+        "output/{gene}/isoform_plot.html",
+        "output/{gene}/clinvar_seqMUT_scores.csv",
+        "output/{gene}/clinvar_seqMUT_scores_summary.csv",
+        "output/{gene}/dot_plot.rmsd.png",
+        "output/{gene}/dot_plot.identical_v_aligned.png",
+        "output/{gene}/gene_info.json"
+    output:
+        "output/{gene}/DONE.txt"
+    shell:
+        "touch {output}"

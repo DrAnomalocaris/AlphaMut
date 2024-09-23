@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gene Information</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://3dmol.csb.pitt.edu/build/3Dmol-min.js"></script>
 </head>
 <body>
     <header>
@@ -34,16 +33,22 @@
     </header>
 
     <main>
+        <div id="gene-info">
+            <p id="loading">Loading gene information...</p>
+        </div>
+            <div id="mutant-plot">
+                <p id="loading">Loading plot...</p>
+            </div>
         <div class="card">
-            <h1>Gene Information</h1>
-            <div id="gene-info">
-                <p id="loading">Loading gene information...</p>
+            <div id="mutatnt-table">
+                <p id="loading">Loading mutants...</p>
             </div>
         </div>
+        
     </main>
-
-    <script src="genepage.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.18.2.min.js"></script>
     <script src="autofill.js"></script>
+    <script src="genepage.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

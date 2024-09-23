@@ -97,6 +97,7 @@ header nav .search-box button {
 /* Existing main styles */
 main {
     display: flex;
+    flex-direction: column; /* This will stack the cards vertically */
     justify-content: center;
     align-items: center;
     min-height: 35vh;
@@ -146,6 +147,8 @@ main {
     background-color: #fff; /* White background for the card */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for a card-like effect */
     border-radius: 8px; /* Rounded corners */
+    display: flex;
+    flex-direction: column; /* This will stack the cards vertically */
 }
 
 /* Card content */
@@ -311,4 +314,77 @@ main {
 
 .folded-proteins-list li a:hover {
     text-decoration: underline;
+}
+
+
+
+/* General table styling for the dataframe class */
+table.dataframe {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Remove space between table borders */
+    margin: 20px 0; /* Add some margin */
+    font-size: 16px; /* Adjust font size */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+/* Table header styling */
+table.dataframe th {
+    background-color: #4CAF50; /* Light green header background */
+    color: white; /* White text for contrast */
+    text-align: left; /* Align text to the left */
+    padding: 12px; /* Padding around the header text */
+    font-weight: bold; /* Bold headers */
+    cursor: pointer; /* Pointer cursor for sortable headers */
+}
+
+/* Table body row styling */
+table.dataframe td {
+    padding: 12px; /* Padding around each cell */
+    border-bottom: 1px solid #ddd; /* Light bottom border */
+    text-align: left; /* Align text to the left */
+}
+
+/* Zebra striping for rows */
+table.dataframe tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray for even rows */
+}
+
+/* Hover effect on table rows */
+table.dataframe tr:hover {
+    background-color: #f1f1f1; /* Slightly darker gray when hovering */
+}
+
+/* Style the clickable mutation links */
+table.dataframe td a {
+    color: #007BFF; /* Blue link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold link */
+}
+
+/* Hover effect on mutation links */
+table.dataframe td a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Style for the header when sorting */
+table.dataframe th.sorted-asc::after {
+    content: '▲'; /* Up arrow for ascending */
+    margin-left: 8px;
+    color: #fff; /* Keep arrow color white */
+}
+
+table.dataframe th.sorted-desc::after {
+    content: '▼'; /* Down arrow for descending */
+    margin-left: 8px;
+    color: #fff; /* Keep arrow color white */
+}
+
+#TMscore {
+    font-family: "Courier New", Courier, monospace; /* Set monospace font */
+    padding: 10px;
+    background-color: #f9f9f9; /* Light background for the card */
+    border: 1px solid #ddd;
+    white-space: pre; /* Preserve whitespace and newlines */
+    overflow-x: auto; /* Enable horizontal scroll */
+    max-width: 100%; /* Ensure the card does not exceed container width */
 }

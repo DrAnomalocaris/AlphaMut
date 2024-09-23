@@ -1,1 +1,57 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gene Information</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://3dmol.csb.pitt.edu/build/3Dmol-min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="src/LOGO.png" alt="Logo">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="methods.html">Methods</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="https://github.com/DrAnomalocaris/">Github</a></li>
+                <li>
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="Search for a gene or transcript...">
+                        <div id="autocomplete-list" class="autocomplete-items"></div>
+                        <button id="search-button">Send</button> 
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="card" id="title">
+
+        </div>    
+        <div class="card">
+            <div id="3d-viewer" style="width: 100%; height: 400px;"></div>
+            <div id="download-links">
+                <a id="download-pdb" href="#" download>PDB File</a> | 
+                <a id="download-plddt" href="#" download>PLDDT File</a>
+            </div>
+        </div>
+        <div class ="card" id="TMscore">
+        </div>
+        
+    </main>
+    <script src="autofill.js"></script>
+    <script src="script.js"></script>
+    <script src="isoform.js"></script>
+    
+</body>
+</html>

@@ -1,151 +1,116 @@
-// Extract the ENSG code directly from the URL
+// Extract the 'gene' parameter from the URL
 const urlParams = new URLSearchParams(window.location.search);
-const ensgId = urlParams.get('gene');
+const gene = urlParams.get('gene');
 
+// Select the gene-info div where you want to display the information
 const geneInfoDiv = document.getElementById('gene-info');
+const mutantPlotDiv = document.getElementById('mutant-plot');
+const mutantCardsDiv = document.getElementById('mutatnt-table');
 const loadingElement = document.getElementById('loading');
 
-if (ensgId) {
-    // Load the gene-specific data.js file using the ENSG code
-    const script = document.createElement('script');
-    script.src = `output/${ensgId}/data.js`; // Path to the gene's data.js file
-    script.onload = () => {
-        // Now the relaxed_pdb and scores objects are available
-        if (typeof relaxed_pdb === 'undefined' || typeof scores === 'undefined') {
-            // Gene data not found, redirect to 404 page with gene parameter
-            window.location.href = `404.html?gene=${encodeURIComponent(ensgId)}`;
-        } else {
-            displayGeneInformation(ensgId); // Pass the ENSG code directly
-        }
-    };
-    script.onerror = () => {
-        // Error loading gene data, redirect to 404 page with gene parameter
-        window.location.href = `404.html?gene=${encodeURIComponent(ensgId)}`;
-    };
-    document.head.appendChild(script);
-} else {
-    // No gene information available, redirect to 404 page
-    window.location.href = '404.html';
-}
 
-function displayGeneInformation(ensgId) {
-    // Clear loading message
-    loadingElement.style.display = 'none';
+// Function to load the pre-rendered mutant table
+function loadMutationTable(gene) {
+    const tableFilePath = `output/${gene}/clinvar_seqMUT_scores_summary.html`;
 
-    // Display basic gene information
-    let geneInfoHTML = `
-        <div class="card-content">
-            <h2>Gene Information for ${ensgId}</h2>
-            <p><strong>Ensembl ID:</strong> ${ensgId}</p>
-        </div>
-    `;
+    // Fetch the pre-rendered table HTML and embed it into the mutantCardsDiv
+    fetch(tableFilePath)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text();
+        })
+        .then(html => {
+            // Hide the loading message
+            loadingElement.style.display = 'none';
 
-    // Array to keep track of Blob URLs for revocation
-    const pdbBlobUrls = [];
-
-    // Add a card for each transcript with its own 3D viewer and image
-    if (typeof relaxed_pdb !== 'undefined' && typeof scores !== 'undefined') {
-        for (const [transcriptId, pdbContent] of Object.entries(relaxed_pdb)) {
-            // Create unique IDs for the viewer container
-            const viewerContainerId = `protein-viewer-${transcriptId}`;
-
-            // Construct the paths to the image and files
-            const imagePath = `output/${ensgId}/${transcriptId}/isoform_plddt.png`;
-            const scoresFilePath = `output/${ensgId}/${transcriptId}/data.json`; // Updated path to data.json
-
-            // Create a Blob URL for the PDB content
-            const pdbBlob = new Blob([pdbContent], { type: 'chemical/x-pdb' });
-            const pdbBlobUrl = URL.createObjectURL(pdbBlob);
-            pdbBlobUrls.push(pdbBlobUrl); // Keep track of Blob URLs to revoke later
-
-            // Add a new card for each transcript
-            geneInfoHTML += `
+            // Insert the pre-rendered HTML table into the div
+            mutantCardsDiv.innerHTML = html;
+        })
+        .catch(error => {
+            console.error('Error fetching the mutant table:', error);
+            mutantCardsDiv.innerHTML = `
                 <div class="card">
-                    <h3>${transcript_names[transcriptId]}</h3>
-                    <h4>${transcriptId}</h4>
-                    <p>
-                        <a href="${scoresFilePath}" download>Download Scores</a> |
-                        <a href="${pdbBlobUrl}" download="${transcriptId}_model.pdb">Download PDB</a>
-                    </p>
-                    <div class="card-content">
-                        <!-- Display the image on the left -->
-                        <div class="image-container">
-                            <img src="${imagePath}" alt="Isoform pLDDT Image" style="max-width: 100%; cursor: pointer;" onclick="openImageModal('${imagePath}')">
-                        </div>
-                        <!-- Display the 3D viewer on the right -->
-                        <div id="${viewerContainerId}" class="viewer-container" style="width: 100%; height: 400px; position: relative;"></div>
-                    </div>
+                    <h2>Error</h2>
+                    <p>There was an issue loading the mutant table. Please try again later.</p>
                 </div>
             `;
-        }
+        });
+}
+// Fetch the gene_info.json file for the specific gene
+if (gene) {
+    const filePath = `output/${gene}/gene_info.json`;
+    const plotFilePath = `output/${gene}/isoform_plot.html`;
 
-        // Revoke Blob URLs when the page unloads to prevent memory leaks
-        window.addEventListener('beforeunload', function() {
-            pdbBlobUrls.forEach(function(url) {
-                URL.revokeObjectURL(url);
-            });
+    // Fetch gene info JSON
+    fetch(filePath)
+        .then(response => response.json())
+        .then(data => {
+            if (data && data[gene]) {
+                loadingElement.style.display = 'none';
+                const geneInfo = data[gene];
+
+                geneInfoDiv.innerHTML = `
+                    <div class="card">
+                        <h2>Gene Information for ${gene}</h2>
+                        <p><strong>Description:</strong> ${geneInfo}</p>
+                    </div>
+                `;
+            } else {
+                geneInfoDiv.innerHTML = `
+                    <div class="card">
+                        <h2>Error: Gene not found</h2>
+                        <p>The gene you are looking for is not in our database.</p>
+                    </div>
+                `;
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching the gene info:', error);
+            geneInfoDiv.innerHTML = `
+                <div class="card">
+                    <h2>Error</h2>
+                    <p>There was an issue fetching the gene information. Please try again later.</p>
+                </div>
+            `;
         });
 
-    } else {
-        geneInfoHTML += '<p>No additional structural data available.</p>';
-    }
+    // Fetch the isoform plot HTML and embed it into the mutantPlotDiv
+    fetch(plotFilePath)
+        .then(response => response.text())
+        .then(html => {
+            // Hide the loading message and display the embedded HTML
+            document.getElementById('loading').style.display = 'none';
 
-    // Add the modal container for the enlarged image at the end of the gene info div
-    geneInfoHTML += `
-        <!-- Image Modal -->
-        <div id="image-modal" class="modal" onclick="closeImageModal()">
-            <span class="close-button" onclick="closeImageModal()">&times;</span>
-            <img class="modal-content" id="modal-image">
-        </div>
-    `;
+            // Create a temporary container to evaluate the HTML and inject scripts
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = html;
 
-    // Set the inner HTML of the gene info div
-    geneInfoDiv.innerHTML = geneInfoHTML;
-
-    // Ensure the viewer is loaded after the content is inserted into the DOM
-    if (typeof relaxed_pdb !== 'undefined') {
-        // Delay initialization slightly to ensure the DOM is fully rendered
-        setTimeout(() => {
-            for (const [transcriptId, pdbContent] of Object.entries(relaxed_pdb)) {
-                // Load the PDB content into the 3D viewer for this transcript
-                loadPDBInCard(transcriptId, pdbContent);
+            // Append the contents of the temp div to the mutant plot div
+            while (tempDiv.firstChild) {
+                mutantPlotDiv.appendChild(tempDiv.firstChild);
             }
-        }, 0); // Delay by 0 milliseconds to allow the DOM to update
-    }
-}
 
-function loadPDBInCard(transcriptId, pdbContent) {
-    const viewerContainerId = `protein-viewer-${transcriptId}`;
-    const viewerContainer = document.getElementById(viewerContainerId);
-
-    if (!viewerContainer) return;
-
-    // Set position to relative
-    viewerContainer.style.position = 'relative';
-
-    // Initialize 3Dmol.js Viewer for this card
-    const viewer = $3Dmol.createViewer(viewerContainer, {
-        defaultcolors: $3Dmol.rasmolElementColors
-    });
-
-    // Load the PDB content into the viewer
-    viewer.addModel(pdbContent, "pdb"); // Load PDB from string
-    viewer.setStyle({}, { cartoon: { color: 'spectrum' } });
-    viewer.zoomTo();
-    viewer.render();
-}
-
-// Function to open the image modal
-function openImageModal(imageSrc) {
-    const modal = document.getElementById('image-modal');
-    const modalImage = document.getElementById('modal-image');
-
-    modal.style.display = 'block';
-    modalImage.src = imageSrc;
-}
-
-// Function to close the image modal
-function closeImageModal() {
-    const modal = document.getElementById('image-modal');
-    modal.style.display = 'none';
+            // Manually execute any scripts in the loaded HTML
+            const scripts = mutantPlotDiv.getElementsByTagName('script');
+            for (let i = 0; i < scripts.length; i++) {
+                const script = document.createElement('script');
+                script.textContent = scripts[i].textContent;
+                document.body.appendChild(script);
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching the plot:', error);
+            mutantPlotDiv.innerHTML = `
+                <div class="card">
+                    <h2>Error</h2>
+                    <p>There was an issue loading the plot. Please try again later.</p>
+                </div>
+            `;
+        });
+        loadMutationTable(gene);
+} else {
+    // If no gene parameter is found, redirect to 404
+    window.location.href = '404.html';
 }

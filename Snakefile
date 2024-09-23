@@ -632,5 +632,93 @@ rule network_calculation:
         # Save the distance matrix
         pd.DataFrame(out, columns=["Protein1","Protein2","RMSD"]).to_csv(output[0], index=False)
 
+rule plotly_isoform_plots:
+    input:
+        table= "output/{gene}/clinvar_seqMUT_scores.csv"
+    output:
+        "output/{gene}/isoform_plot.html"
+    run:
+        import pandas as pd
+        import plotly.express as px
 
 
+        df = pd.read_csv(input.table)
+        metric = "rmsd"
+        if metric == "identical_v_aligned":
+            metric = "identical/aligned"
+
+        # Define the correct order for ClinicalSignificance
+        order = [
+            'Likely benign',
+            'Uncertain significance',
+            'Uncertain significance/Uncertain risk allele',
+            'Conflicting classifications of pathogenicity',
+            'not provided',
+            'Likely risk allele',
+            'Likely pathogenic/Likely risk allele',
+            'Pathogenic/Likely risk allele',
+            'Likely pathogenic',
+            'Pathogenic/Likely pathogenic/Likely risk allele',
+            'Pathogenic/Likely pathogenic',
+            'Pathogenic',
+        ]
+
+        # Convert ClinicalSignificance to a categorical type with the correct order
+        df['ClinicalSignificance'] = pd.Categorical(df['ClinicalSignificance'], categories=order, ordered=True)
+
+        # Create hover text that includes useful information (customize as needed)
+        df['hover_text'] = df['data'] +"<br>" + df['PhenotypeList'] + '<br>' + df[metric].astype(str) + ' ' + metric
+        df['url'] = "isoform.html?" + df['data']
+
+        # Create the interactive plot using Plotly Express
+        fig = px.strip(df,
+                        x="ClinicalSignificance",
+                        y=metric,
+                        hover_name="hover_text",  # Display hover information
+                        #hover_data=["PhenotypeList", metric],  # Other hover data
+                        color="PhenotypeList",  # Color points based on the phenotype
+                        category_orders={"ClinicalSignificance": order},  # Set category order
+                        #stripmode="overlay",  # Overlay scatter points
+                        )
+
+
+        # Add vertical lines to separate categories
+        for i in range(1, len(order)):
+            fig.add_vline(x=i - 0.5, line_width=1, line_dash="dash", line_color="gray")
+
+        # Customize the layout of the plot
+        fig.update_layout(
+            xaxis_title='Clinical Significance',
+            yaxis_title=metric,
+            title=f"{wildcards.gene}- {metric} vs. Clinical Significance",
+            xaxis={'categoryorder': 'array', 'categoryarray': order},
+            template='plotly_white',
+            showlegend=False  # This removes the legend
+        )
+        fig.layout.xaxis.fixedrange = True
+        fig.layout.yaxis.fixedrange = True
+
+        # Customize the hover text with hovertemplate and make the URL clickable
+        fig.update_traces(
+            marker=dict(size=10),
+            customdata=df['url'],  # Use the 'url' column from the dataframe for redirection
+            hovertemplate=(
+                "%{hovertext}<br>"  # Display the hover_text column
+                #"Clinical Significance: %{x}<br>"  # Show the x-axis value (Clinical Significance)
+                #f"{metric.capitalize()}: %{y}<br>"  # Show the y-axis value (RMSD or other metric)
+                "<extra></extra>"  # Remove default extra info
+            )
+        )
+
+
+        fig.write_html(output[0], include_plotlyjs='cdn', full_html=False, div_id='plotly_graph')
+        with open(output[0], 'a') as f:
+            f.write('''<script>
+            var plot = document.querySelectorAll('.js-plotly-plot')[0];  // Get the first Plotly plot
+            plot.on('plotly_click', function(data) {
+                var point = data.points[0];
+                var url = point.customdata;  // customdata contains the URL
+                window.open(url, "_blank");  // Opens the link in a new tab
+            });
+            </script>
+            ''')

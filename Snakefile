@@ -518,3 +518,77 @@ rule all:
         "rm autofill.js ; "
         "snakemake autofill.js -c1 --rerun-incomplete -p"
 
+rule dot_plot:
+    input:
+        table="output/{gene}/clinvar_seqMUT_scores.csv"
+    output:
+        "output/{gene}/dot_plot.{metric}.png"
+    run:
+        import seaborn as sns
+        import pandas as pd
+        import matplotlib.pyplot as plt
+        df = pd.read_csv(input.table)
+
+        # Define the correct order for ClinicalSignificance
+        order = [
+            'Likely benign',
+            'Uncertain significance',
+            'Uncertain significance/Uncertain risk allele',
+            'Conflicting classifications of pathogenicity',
+            'not provided',
+            'Likely risk allele',
+            'Likely pathogenic/Likely risk allele',
+            'Pathogenic/Likely risk allele',
+            'Likely pathogenic',
+            'Pathogenic/Likely pathogenic/Likely risk allele',
+            'Pathogenic/Likely pathogenic',
+            'Pathogenic',
+        ]
+
+        # Convert ClinicalSignificance to a categorical type with the correct order
+        df['ClinicalSignificance'] = pd.Categorical(df['ClinicalSignificance'], categories=order, ordered=True)
+
+        # Create the figure and axis
+        plt.figure(figsize=(10, 6))
+
+        # Add the boxplot to show distribution and mean
+        sns.boxplot(
+            y=wildcards.metric, 
+            x="ClinicalSignificance", 
+            data=df, 
+            order=order,
+            showcaps=True,  # Show caps on boxplot whiskers
+            boxprops={'facecolor': 'None'},  # Transparent boxplot to show points behind it
+            medianprops={'color': 'red'},  # Red line for the median
+            showmeans=True,  # Show the mean
+            #meanprops={"marker": "o", "markerfacecolor": "white", "markeredgecolor": "black", "markersize": "8"},  # Customize mean marker
+        )
+
+        # Overlay the stripplot (scatter with jitter)
+        sns.stripplot(
+            y=wildcards.metric, 
+            x="ClinicalSignificance", 
+            data=df, 
+            jitter=True,  # Add jitter for horizontal wiggle
+            dodge=True,   # Spread overlapping points
+            alpha=0.6,    # Make points slightly transparent for better visibility
+            linewidth=1,  # Add border to points
+            order=order
+        )
+
+        # Add vertical lines to separate categories
+        for i in range(1, len(order)):
+            plt.axvline(i - 0.5, color='gray', linestyle='--', alpha=0.6)
+
+        # Rotate the x-axis labels vertically
+        plt.xticks(rotation=90)
+
+        # Add labels and title
+        plt.xlabel('Clinical Significance')
+        plt.ylabel('RMSD')
+        plt.title(f"{wildcards.gene} - {wildcards.metric} vs. Clinical Significance")
+
+        # Save the figure
+        plt.savefig(output[0])
+
+

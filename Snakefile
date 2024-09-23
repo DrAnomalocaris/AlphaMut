@@ -528,6 +528,9 @@ rule dot_plot:
         import pandas as pd
         import matplotlib.pyplot as plt
         df = pd.read_csv(input.table)
+        metric = wildcards.metric
+        if metric == "identical_v_aligned":
+            metric = "identical/aligned"
 
         # Define the correct order for ClinicalSignificance
         order = [
@@ -553,7 +556,7 @@ rule dot_plot:
 
         # Overlay the stripplot (scatter with jitter)
         sns.stripplot(
-            y="rmsd", 
+            y=metric, 
             x="ClinicalSignificance", 
             data=df, 
             jitter=True,  # Add jitter for horizontal wiggle
@@ -574,11 +577,60 @@ rule dot_plot:
 
         # Add labels and title
         plt.xlabel('Clinical Significance')
-        plt.ylabel(wildcards.metric)
+        plt.ylabel(metric)
         plt.legend([],[], frameon=False)
-        plt.title(f"{wildcards.gene} - {wildcards.metric} vs. Clinical Significance")
+        plt.title(f"{wildcards.gene} - {metric} vs. Clinical Significance")
 
         # Save the figure
-        plt.savefig(output[0])
+        plt.savefig(output[0],bbox_inches='tight')
+
+
+rule network_calculation:
+    input:
+        table="output/{gene}/clinvar_seqMUT_scores.csv"
+    output:
+        "output/{gene}/network.csv"
+    run:
+        from glob import glob
+        from  tqdm import tqdm
+        import numpy as np
+        import subprocess
+        import itertools
+        import pandas as pd
+        pdb_files  = glob(f"output/{wildcards.gene}/*/rank1_relaxed.pdb")
+
+
+        def calculate_rmsd(pdb1, pdb2):
+            result = subprocess.run(["TMalign", pdb1, pdb2], capture_output=True, text=True)
+            # Check if the command ran successfully
+            if result.returncode != 0:
+                raise RuntimeError(f"TM-align failed: {result.stderr}")
+            
+            # Parse the output
+            output = result.stdout
+            
+            # Extract RMSD from the output using basic string manipulation
+            for line in output.splitlines():
+                if "RMSD=" in line:
+                    # Split by spaces and '=' to extract the RMSD value
+                    parts = line.split("RMSD=")[1].split()[0].replace(",", "")
+                    rmsd = float(parts)  # The RMSD value is the 5th element in the split line
+                    return rmsd
+            
+            # If RMSD was not found in the output, raise an error
+            raise ValueError("RMSD not found in TM-align output.")
+
+        # Initialize distance matrix
+        n = len(pdb_files)
+        distance_matrix = np.zeros((n, n))
+        out=[]
+        # Calculate pairwise RMSD for all PDB pairs
+        for i, j in tqdm(itertools.combinations(range(n), 2), total=n*(n-1)//2):
+            rmsd = calculate_rmsd(pdb_files[i], pdb_files[j])
+            out.append((i, j, rmsd))
+            
+        # Save the distance matrix
+        pd.DataFrame(out, columns=["Protein1","Protein2","RMSD"]).to_csv(output[0], index=False)
+
 
 

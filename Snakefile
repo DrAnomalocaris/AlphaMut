@@ -429,7 +429,7 @@ rule simplify_table:
         df = df[['data','ClinicalSignificance', 'PhenotypeList','aligned_length','rmsd','identical/aligned']]
         df.columns = ['mutation','clinical significance', 'phenotype list', 'aligned length', 'rmsd', 'identical/aligned']
         df["mutation"] = df["mutation"].apply( # insert links
-            lambda x: f"<a href='/isoform.html?gene={wildcards.gene}&mutation={x}'>"+x.split(":")[1]+"</a>"
+            lambda x: f"<a href='isoform.html?gene={wildcards.gene}&mutation={x}'>"+x.split(":")[1]+"</a>"
             )
 
         df.to_html(

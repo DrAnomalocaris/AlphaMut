@@ -551,29 +551,18 @@ rule dot_plot:
         # Create the figure and axis
         plt.figure(figsize=(10, 6))
 
-        # Add the boxplot to show distribution and mean
-        sns.boxplot(
-            y=wildcards.metric, 
-            x="ClinicalSignificance", 
-            data=df, 
-            order=order,
-            showcaps=True,  # Show caps on boxplot whiskers
-            boxprops={'facecolor': 'None'},  # Transparent boxplot to show points behind it
-            medianprops={'color': 'red'},  # Red line for the median
-            showmeans=True,  # Show the mean
-            #meanprops={"marker": "o", "markerfacecolor": "white", "markeredgecolor": "black", "markersize": "8"},  # Customize mean marker
-        )
-
         # Overlay the stripplot (scatter with jitter)
         sns.stripplot(
-            y=wildcards.metric, 
+            y="rmsd", 
             x="ClinicalSignificance", 
             data=df, 
             jitter=True,  # Add jitter for horizontal wiggle
             dodge=True,   # Spread overlapping points
             alpha=0.6,    # Make points slightly transparent for better visibility
             linewidth=1,  # Add border to points
-            order=order
+            order=order,
+            hue="PhenotypeList"
+
         )
 
         # Add vertical lines to separate categories
@@ -585,7 +574,8 @@ rule dot_plot:
 
         # Add labels and title
         plt.xlabel('Clinical Significance')
-        plt.ylabel('RMSD')
+        plt.ylabel(wildcards.metric)
+        plt.legend([],[], frameon=False)
         plt.title(f"{wildcards.gene} - {wildcards.metric} vs. Clinical Significance")
 
         # Save the figure

@@ -335,19 +335,58 @@ rule run_all_isoforms:
         shell(
             f"touch output/{gene}/done.txt"
             )
-rule find_best_folding:
+rule find_and_rotate_best_folding:
     input:
-        "output/{gene}/{transcript}/isoform.done.txt"
+        "output/{gene}/{transcript}/isoform.done.txt",
+        "output/ins/canonical/isoform.done.txt"
 
     output:
         pdb="output/{gene}/{transcript}/rank1_relaxed.pdb",
         json="output/{gene}/{transcript}/rank1_relaxed.json",
 
-    shell:
-        """
-        cp output/{wildcards.gene}/{wildcards.transcript}/isoform_relaxed_rank_001_alphafold2_ptm_model_*_seed_*.pdb {output.pdb};
-        cp output/{wildcards.gene}/{wildcards.transcript}/isoform_scores_rank_001_alphafold2_ptm_model_*_seed_*.json {output.json};
-        """
+    run:
+        from Bio.PDB import PDBParser, Superimposer, PDBIO, Select
+        from glob import glob
+        pdbMutant    = glob(f"output/{wildcards.gene}/{wildcards.transcript}/isoform_relaxed_rank_001_alphafold2_ptm_model_*_seed_*.pdb")[0]
+        pdbCanonical = glob(f"output/{wildcards.gene}/canonical/isoform_relaxed_rank_001_alphafold2_ptm_model_*_seed_*.pdb")[0]
+        if pdbMutant == pdbCanonical: 
+            shell(f"cp output/{wildcards.gene}/{wildcards.transcript}/isoform_relaxed_rank_001_alphafold2_ptm_model_*_seed_*.pdb {output.pdb};")   
+        shell(f"cp output/{wildcards.gene}/{wildcards.transcript}/isoform_scores_rank_001_alphafold2_ptm_model_*_seed_*.json {output.json};")
+
+        parser = PDBParser(QUIET=True)
+        structure1 = parser.get_structure('canonical',pdbCanonical)  # Canonical protein PDB
+        structure2 = parser.get_structure('mutant',pdbMutant)        # Mutant protein PDB
+        # Select alpha-carbons (CA atoms) for alignment from both structures
+        atoms1 = []
+        atoms2 = []
+
+        for model1, model2 in zip(structure1, structure2):
+            for chain1, chain2 in zip(model1, model2):
+                for residue1, residue2 in zip(chain1, chain2):
+                    # Select alpha carbon atoms
+                    if 'CA' in residue1 and 'CA' in residue2:
+                        atoms1.append(residue1['CA'])
+                        atoms2.append(residue2['CA'])
+        
+
+        # Initialize the superimposer
+        super_imposer = Superimposer()
+
+        # Perform the superimposition
+        super_imposer.set_atoms(atoms1, atoms2)
+
+        # Print RMSD
+        print(f"RMSD after superimposition: {super_imposer.rms:.4f} Å")
+
+        # Apply the transformation (rotate and translate mutant to align with canonical)
+        super_imposer.apply(structure2.get_atoms())
+
+        # Save the aligned mutant structure to a new PDB file
+        io = PDBIO()
+        io.set_structure(structure2)
+        io.save(output.pdb)
+
+          
 rule compare_folding:
     input:
         canonical = "output/{gene}/canonical/rank1_relaxed.pdb",
@@ -813,7 +852,7 @@ rule process_gene:
     input:
         "output/{gene}/isoform_plot.html",
         "output/{gene}/clinvar_seqMUT_scores.csv",
-        "output/{gene}/clinvar_seqMUT_scores_summary.csv",
+        "output/{gene}/clinvar_seqMUT_scores_summary.html",
         "output/{gene}/dot_plot.rmsd.png",
         "output/{gene}/dot_plot.identical_v_aligned.png",
         "output/{gene}/gene_info.json"

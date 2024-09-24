@@ -57,18 +57,6 @@ const scoreFilePath = `output/${gene}/${mutation_path}/score.txt`;
 // Get the TMscore container
 const TMscoreDiv = document.getElementById('TMscore');
 
-// Fetch and load the contents of score.txt
-fetch(scoreFilePath)
-    .then(response => response.text())
-    .then(scoreText => {
-        // Insert the file contents into the TMscore div
-        TMscoreDiv.innerHTML = `<pre>${scoreText}</pre>`; // Use <pre> to preserve formatting
-    })
-    .catch(error => {
-        console.error('Error loading score.txt:', error);
-        TMscoreDiv.innerHTML = '<p>Error loading TMscore.</p>';
-    });
-
 
 const pdbPath1 = `output/${gene}/canonical/rank1_relaxed.pdb`;  // Canonical protein
 const pdbPath2 = pdbPath; // Mutant protein (existing mutant PDB path)
@@ -133,7 +121,6 @@ jQuery.ajax( pdbPath2, {
 // Populate the dropdown with mutations from the CSV file using PapaParse
 jQuery.get("output/INS/clinvar_seqMUT_scores.csv", function(csvData) {
     const select = document.getElementById('mutant-select');
-
     // Use PapaParse to reliably parse the CSV data
     Papa.parse(csvData, {
         header: true, // Assumes the first row contains column headers
@@ -158,6 +145,7 @@ document.getElementById('mutant-select').addEventListener('change', function(eve
     if (selectedMutation) {
         // Update the path for the selected mutation's PDB
         loadMutantPDB(selectedMutation); // Load the new mutation PDB
+        updateTMScore(selectedMutation); // Update the TMscore card with the selected mutation
     }
 });
 
@@ -206,3 +194,53 @@ function loadMutantPDB(mutationName) {
         }
     });
 }
+
+Papa.parse(`output/${gene}/tmalign_network.csv`, {
+    download: true,
+    header: true, // Treat the first row as the header
+    complete: function(results) {
+        // Store the parsed data
+        tmalignData = results.data;
+        updateTMScore("canonical");
+
+    },
+    error: function(err) {
+        console.error("Error parsing TMalign CSV:", err);
+    }
+});
+// Function to update the TMscore card based on the selected mutation
+function updateTMScore(selectedMutation) {
+    const tmscoreDiv = document.getElementById('TMscore');
+    tmscoreDiv.innerHTML = ''; // Clear previous content
+    const selectedMutationNew = selectedMutation.replace(/\s/g, '')  // Replace spaces
+                                                .replace(/\(/g, '_') // Replace "(" with "_"
+                                                .replace(/\)/g, '')  // Remove ")"
+                                                .replace(/:/g, '_')  // Replace ":" with "_"
+                                                .replace(/>/g, '-'); // Replace ">" with "-"
+
+    // Loop through the TMalign data to find the matching rows for the canonical and selected mutation
+    const match = tmalignData.find(row => {
+        // Ensure Protein1 and Protein2 are defined before checking with .includes()
+        const protein1 = row.Protein1 ? row.Protein1 : '';
+        const protein2 = row.Protein2 ? row.Protein2 : '';
+ 
+        return (
+            (protein1 == selectedMutationNew && protein2 == mutation_path)
+        );
+    });
+    // If a match is found, update the TMscore card
+    if (match) {
+        tmscoreDiv.innerHTML = `<pre>${match.TMalign_Output}</pre>`;
+    } else {
+        tmscoreDiv.innerHTML = 'No TM-align result available for the selected mutation.';
+    }
+}
+
+// Event listener for mutation selection
+document.getElementById('mutant-select').addEventListener('change', function(event) {
+    const selectedMutation = event.target.value;
+    if (selectedMutation) {
+        updateTMScore(selectedMutation); // Update the TMscore card with the selected mutation
+    }
+});
+

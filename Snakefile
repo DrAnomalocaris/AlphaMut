@@ -643,7 +643,6 @@ rule network_calculation:
         from glob import glob
         from  tqdm import tqdm
         import numpy as np
-        import subprocess
         import itertools
         import pandas as pd
         pdb_files  = glob(f"output/{wildcards.gene}/*/rank1_relaxed.pdb")
@@ -855,8 +854,55 @@ rule process_gene:
         "output/{gene}/clinvar_seqMUT_scores_summary.html",
         "output/{gene}/dot_plot.rmsd.png",
         "output/{gene}/dot_plot.identical_v_aligned.png",
-        "output/{gene}/gene_info.json"
+        "output/{gene}/gene_info.json",
+        "output/{gene}/tmalign_network.csv"
+
     output:
         "output/{gene}/DONE.txt"
     shell:
         "touch {output}"
+
+
+
+rule network_calculation_tmalign:
+    input:
+        table="output/{gene}/clinvar_seqMUT_scores.csv"
+    output:
+        "output/{gene}/tmalign_network.csv"
+    run:
+        from glob import glob
+        from tqdm import tqdm
+        import numpy as np
+        import itertools
+        import pandas as pd
+        import subprocess
+
+        pdb_files = glob(f"output/{wildcards.gene}/*/rank1_relaxed.pdb")
+
+        def run_tmalign(pdb1, pdb2):
+            """
+            Run TMalign on two PDB files and return the full output.
+            """
+            result = subprocess.run(["TMalign", pdb1, pdb2], capture_output=True, text=True)
+            
+            # Check if the command ran successfully
+            if result.returncode != 0:
+                raise RuntimeError(f"TM-align failed: {result.stderr}")
+            
+            # Return the full output of TMalign
+            return result.stdout
+
+        # Initialize output list to store results
+        out = []
+        n=len(pdb_files)
+        def processName(name):
+            return name.split("/")[-2].replace(" ","").replace("(","_").replace(")","").replace(":","_").replace(">","-")
+
+        # Calculate pairwise TMalign output for all PDB pairs
+        for i in tqdm(pdb_files):
+            for j in pdb_files:
+                tmalign_output = run_tmalign(i, j)
+                out.append((processName(i), processName(j), tmalign_output))
+        
+        # Save the TMalign outputs to a CSV
+        pd.DataFrame(out, columns=["Protein1", "Protein2", "TMalign_Output"]).to_csv(output[0], index=False)

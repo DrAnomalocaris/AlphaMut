@@ -129,4 +129,80 @@ jQuery.ajax( pdbPath2, {
     },
   });
   
-  
+
+// Populate the dropdown with mutations from the CSV file using PapaParse
+jQuery.get("output/INS/clinvar_seqMUT_scores.csv", function(csvData) {
+    const select = document.getElementById('mutant-select');
+
+    // Use PapaParse to reliably parse the CSV data
+    Papa.parse(csvData, {
+        header: true, // Assumes the first row contains column headers
+        complete: function(results) {
+            results.data.forEach((row) => {
+                const mutation = row['data']; // Assuming 'data' is the name of the first column
+                if (mutation && mutation.trim() !== "") {
+                    // Add the mutation to the dropdown
+                    let option = document.createElement('option');
+                    option.value = mutation.trim(); // Ensure there's no extra space in the value
+                    option.text = mutation.trim();  // Trim any spaces for cleaner display
+                    select.appendChild(option);
+                }
+            });
+        }
+    });
+});
+
+// Handle mutation selection from the dropdown
+document.getElementById('mutant-select').addEventListener('change', function(event) {
+    const selectedMutation = event.target.value;
+    if (selectedMutation) {
+        // Update the path for the selected mutation's PDB
+        loadMutantPDB(selectedMutation); // Load the new mutation PDB
+    }
+});
+
+
+// Function to load PDB for both canonical and mutant proteins
+function loadMutantPDB(mutationName) {
+    // Clear the 3D viewer (remove all models)
+    viewerCompare.removeAllModels();
+    let newName = mutationName.replace(/\s/g, '')  // Replace spaces
+                                .replace(/\(/g, '_') // Replace "(" with "_"
+                                .replace(/\)/g, '')  // Remove ")"
+                                .replace(/:/g, '_')  // Replace ":" with "_"
+                                .replace(/>/g, '-'); // Replace ">" with "-"
+    let newMutationPath = `output/${gene}/${newName}/rank1_relaxed.pdb`; // Path to the PDB file
+    // Load the canonical protein first
+    jQuery.ajax(newMutationPath, {
+        success: function(data) {
+            let protein1 = viewerCompare.addModel(data, "pdb"); // Load canonical protein
+            viewerCompare.setStyle({ chain: 'A' }, { cartoon: { color: 'blue' } }); // Color canonical protein blue
+            viewerCompare.zoomTo(); // Adjust zoom
+            viewerCompare.render(); // Render the viewer
+
+            // Load the mutant protein after the canonical protein is loaded
+            jQuery.ajax( pdbPath2, { 
+                success: function(data) {
+                  let modifiedPdbData = renameChain(data, 'A', 'B');
+            
+                  let v = viewerCompare;
+                  v.addModel( modifiedPdbData, "pdb" );                       /* load data */
+                  v.setStyle({ chain: 'B' }, { cartoon: { color: 'red' } }); // Color mutant protein red
+                  v.zoomTo();                                      /* set camera */
+                  v.render();                                      /* render scene */
+                  v.zoom(1.2, 1000);                               /* slight zoom */
+                  const viewerDiv = document.getElementById('3d-compare');
+                  const canvasElement = viewerDiv.querySelector('canvas');    if (canvasElement) {
+                      canvasElement.style.position = 'relative';  // Reset position to relative
+                  }
+                },
+                error: function(hdr, status, err) {
+                  console.error( "Failed to load PDB " + pdbUri + ": " + err );
+                },
+              });;
+        },
+        error: function(hdr, status, err) {
+            console.error("Failed to load canonical PDB file " + pdbPath1 + ": " + err);
+        }
+    });
+}

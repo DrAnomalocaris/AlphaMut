@@ -714,7 +714,7 @@ rule plotly_isoform_plots:
             }});
             </script>
             ''')
-rule get_gene_indo:
+rule get_gene_info:
     output:
         "output/{gene}/gene_info.json"
     run:
@@ -783,7 +783,7 @@ rule get_gene_indo:
             return gene_summaries
 
         email = "x"
-        gene_summaries = get_entrez_gene_summary("INS", email)
+        gene_summaries = get_entrez_gene_summary(wildcards.gene, email)
         with open(f"output/{wildcards.gene}/gene_info.json", "w") as f:
             json.dump(dict(gene_summaries), f)
 

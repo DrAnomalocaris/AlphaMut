@@ -480,23 +480,39 @@ rule simplify_table:
         #df.to_csv(output[0])
 
 
+rule get_biomart:
+    output:
+        table = "data/hsapiens_gene_ensembl.csv"
+    run:
+        from pybiomart import Dataset
+
+        dataset = Dataset(name='hsapiens_gene_ensembl',
+                        host='http://www.ensembl.org')
+        data =dataset.query(attributes=['ensembl_gene_id', 'external_gene_name',"description"])
+        data.to_csv(output.table)
+
 rule autofillList:
+    input:
+        table = "data/hsapiens_gene_ensembl.csv",
     output:
         "completed.json"
     run:
         import json
+        import pandas as pd
         from glob import glob
         genes = [i.split("/")[1] for i in glob("output/*/isoform_plot.html")]
-
+        table = pd.read_csv(input.table)
+        GENES = {}
+        for gene in genes:
+            df = table[table['Gene name'] == gene]
+            names =[i.split(" [")[0] for i in  df['Gene description'].unique()]
+            GENES[gene] = gene
+            for name in names:
+                GENES[name] = gene
         with open("completed.json", "w") as f:
-            json.dump(genes, f)
+            json.dump(GENES, f)
+
             
-            
-            
-
-
-
-
 
 rule dot_plot:
     input:

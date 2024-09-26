@@ -1,0 +1,5 @@
+2024-09-26 14:15:49,062 Running colabfold 1.5.5 (4e198f5cecc6a808daa6baf7441899e5e76f7b9e)
+2024-09-26 14:15:49,383 WARNING: no GPU detected, will be using CPU
+2024-09-26 14:15:51,537 Found 6 citations for tools or databases
+2024-09-26 14:15:51,540 Query 1/1: isoform (length 116)
+2024-09-26 14:15:52,110 Setting max_seq=512, max_extra_seq=481

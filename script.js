@@ -4,8 +4,8 @@ let autofill = [];
 fetch('completed.json')
     .then(response => response.json()) // Parse JSON data
     .then(data => {
-        autofill = data; // Assign data to the autofill variable
-
+        autofill = Object.keys(data); // Extract keys from the data; // Assign data to the autofill variable
+        
         // Call the function to set up event listeners after data is loaded
         setupSearchFunctionality();
     })
@@ -23,8 +23,7 @@ function setupSearchFunctionality() {
     if (searchInput && autocompleteList && searchButton) {
         // Use the autofill array directly
         const exampleGenes = autofill;
-        console.log(exampleGenes);
-        
+       
         searchInput.addEventListener('input', () => {
             const inputValue = searchInput.value;
             autocompleteList.innerHTML = '';
@@ -60,7 +59,7 @@ function setupSearchFunctionality() {
             if (gene) {
                 // Gene not found in geneDict, but proceed anyway
                 // Redirect to gene.html with the user input as the gene parameter
-                window.location.href = `gene.html?gene=${encodeURIComponent(gene)}`;
+                window.location.href = `search.html?q=${encodeURIComponent(gene)}`;
             } else {
                 alert('Please enter a gene to search.');
             }

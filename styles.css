@@ -72,8 +72,10 @@ header nav .search-box button {
     max-height: 150px;
     overflow-y: auto;
     z-index: 99;
+    width: calc(100% - 2px); /* Ensure it matches the width of the input */
+    top: 100%; /* Position it right below the input */
+    left: 0; /* Align it to the left */
 }
-
 .autocomplete-items div {
     padding: 8px;
     cursor: pointer;
@@ -418,4 +420,13 @@ table.dataframe th.sorted-desc::after {
     border-radius: 5px;
     font-size: 12px;
     white-space: nowrap;  /* Prevent the hover text from wrapping */
+}
+
+
+.results {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+.results li {
+    margin: 5px 0; /* Space between items */
 }

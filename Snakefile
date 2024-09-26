@@ -687,7 +687,7 @@ rule plotly_isoform_plots:
         # Customize the hover text with hovertemplate and make the URL clickable
         fig.update_traces(
             marker=dict(size=10),
-            customdata=df['url'],  # Use the 'url' column from the dataframe for redirection
+            #customdata=df['url'],  # Use the 'url' column from the dataframe for redirection
             hovertemplate=(
                 "%{hovertext}<br>"  # Display the hover_text column
                 #"Clinical Significance: %{x}<br>"  # Show the x-axis value (Clinical Significance)
@@ -699,16 +699,21 @@ rule plotly_isoform_plots:
 
         fig.write_html(output[0], include_plotlyjs='cdn', full_html=False, div_id='plotly_graph')
         with open(output[0], 'a') as f:
-            f.write('''<script>
+            f.write(f'''<script>
             var plot = document.querySelectorAll('.js-plotly-plot')[0];  // Get the first Plotly plot
-            plot.on('plotly_click', function(data) {
+            plot.on('plotly_click', function(data) {{
                 var point = data.points[0];
-                var url = point.customdata;  // customdata contains the URL
-                window.open(url, "_blank");  // Opens the link in a new tab
-            });
+                let mutation = point.hovertext.split("<br>")[0];
+                mutation = mutation.replace(/\\s/g, '') 
+                                .replace(/\\(/g, '_') 
+                                .replace(/\\)/g, '')  
+                                .replace(/:/g, '_')  
+                                .replace(/>/g, '-'); 
+                console.log(mutation);
+                window.location.href = `isoform.html?mutation=${{mutation}}&gene={wildcards.gene}`; 
+            }});
             </script>
             ''')
-
 rule get_gene_indo:
     output:
         "output/{gene}/gene_info.json"

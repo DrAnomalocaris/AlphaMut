@@ -186,7 +186,7 @@ jQuery.get("output/INS/clinvar_seqMUT_scores.csv", function(csvData) {
                             source = id[0];
                             code = id[1];
                             if (source in databseDic) {
-                                idString += `<a href="${databseDic[source]}${code}">  ${source}:${code}</a>`;
+                                idString += `<a href="${databseDic[source]}${code}">  ${source}:${code}</a> `;
                             } else {
                                 idString += `${source}:${code} `;
                                 console.log(source,code);

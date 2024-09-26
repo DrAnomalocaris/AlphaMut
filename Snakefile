@@ -482,15 +482,17 @@ rule simplify_table:
 
 rule autofillList:
     output:
-        "autofill.js"
+        "completed.json"
     run:
-        import pickle
+        import json
         from glob import glob
-        with open(output[0], 'w') as f:
-            f.write(f"const autofill = [\n")
-            for i in ([i.split("/")[1] for i in glob("output/*/isoform_plot.html")]):
-                f.write(f"    '{i}',\n")
-            f.write("];\n")
+        genes = [i.split("/")[1] for i in glob("output/*/isoform_plot.html")]
+
+        with open("completed.json", "w") as f:
+            json.dump(genes, f)
+            
+            
+            
 
 
 

@@ -1,4 +1,19 @@
-document.addEventListener("DOMContentLoaded", () => {
+let autofill = [];
+
+// Load the JSON file
+fetch('completed.json')
+    .then(response => response.json()) // Parse JSON data
+    .then(data => {
+        autofill = data; // Assign data to the autofill variable
+
+        // Call the function to set up event listeners after data is loaded
+        setupSearchFunctionality();
+    })
+    .catch(error => {
+        console.error('Error loading the JSON file:', error);
+    });
+
+function setupSearchFunctionality() {
     // Common code for all pages (Search bar functionality)
     const searchInput = document.getElementById('search-input');
     const autocompleteList = document.getElementById('autocomplete-list');
@@ -8,7 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (searchInput && autocompleteList && searchButton) {
         // Use the autofill array directly
         const exampleGenes = autofill;
-
+        console.log(exampleGenes);
+        
         searchInput.addEventListener('input', () => {
             const inputValue = searchInput.value;
             autocompleteList.innerHTML = '';
@@ -53,6 +69,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Gene-specific code for gene.html
     const currentPage = window.location.pathname.split('/').pop();
+}
 
-
+// Ensure the search functionality is set up only after the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", () => {
+    // The fetch logic and setupSearchFunctionality() are already handled above,
+    // so no need to duplicate the code here.
 });

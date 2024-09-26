@@ -8,7 +8,7 @@ This project provides a platform for users to search for human genes and view de
 
 This is only a prototype proof of concept. All the foldings were done in my laptop using [local colabfold](https://github.com/YoshitakaMo/localcolabfold). I would love to set this up in a proper server and running foldings constantly using proper hardware.
 
-If you enjoyed this project consider checking out its sister project, [AlphaSplice](https://github.com/DrAnomalocaris/AlphaSplice), A similar project which is focused on splice variants rather than mutations. 
+If you enjoyed this project consider checking out its sister project, [AlphaSplice](https://github.com/DrAnomalocaris/AlphaSplice), A similar project which is focused on splice variants rather than mutations.
 
 ## Features
 
@@ -36,6 +36,7 @@ Back end features:
 * [ ] Add support for different species (as I use [clinvar](https://www.ncbi.nlm.nih.gov/clinvar/intro/), and it only has human data, adding another species would require modifying a lot of code)
 * [ ] Add a daemon to tally requested genes, to allow for the homepage to display the most popular genes and to prioritize gene folding for most requested genes that are not been processed yet.
 * [ ] Develop an API or creation of a large file to allow users to download bulk data.
+* [ ] Change to locally running MSA, as this runs on a laptop, I do not have enough storage to download the required files for running local MSA.
 
 ## Contact
 

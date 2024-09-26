@@ -140,8 +140,8 @@ main {
 
 /* Card layout */
 .card {
-    width: 100%; /* Make card take full width of its parent */
-    max-width: 800px; /* Set a maximum width for the card */
+    width: 90%; /* Make card take full width of its parent */
+    max-width: 1000px; /* Set a maximum width for the card */
     padding: 20px; /* Add padding inside the card */
     border: 1px solid #ddd; /* Light border around the card */
     background-color: #fff; /* White background for the card */
@@ -320,11 +320,14 @@ main {
 
 /* General table styling for the dataframe class */
 table.dataframe {
-    width: 100%; /* Full width */
     border-collapse: collapse; /* Remove space between table borders */
     margin: 20px 0; /* Add some margin */
     font-size: 16px; /* Adjust font size */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    width: inherit;
+    font-size:1vw;
+
+
 }
 
 /* Table header styling */
@@ -387,4 +390,32 @@ table.dataframe th.sorted-desc::after {
     white-space: pre; /* Preserve whitespace and newlines */
     overflow-x: auto; /* Enable horizontal scroll */
     max-width: 100%; /* Ensure the card does not exceed container width */
+}
+
+.sequence {
+    font-family: monospace;    /* Use monospace font for sequence */
+    white-space: pre-wrap;     /* Preserve whitespace and allow wrapping */
+    word-wrap: break-word;     /* Ensure long words break at container edges */
+    max-width: calc(80ch);     /* Maximum width of 80 characters */
+    margin: 0 auto;            /* Center the sequence if possible */
+    padding: 10px;
+    line-height: 1.5;          /* Adjust line height for better readability */
+}
+
+
+.highlight {
+    display: inline;  /* Ensures the span remains inline */
+    background-color: yellow;  /* Highlight background */
+    cursor: pointer;  /* Indicates hoverable text */
+}
+
+.highlight:hover::after {
+    content: attr(data-mutation);  /* Show the mutation detail */
+    position: absolute;  /* Avoid affecting document flow */
+    background-color: #333;  /* Background for the hover box */
+    color: #fff;  /* Text color */
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;  /* Prevent the hover text from wrapping */
 }

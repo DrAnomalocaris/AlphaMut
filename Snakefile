@@ -338,7 +338,7 @@ rule run_all_isoforms:
 rule find_and_rotate_best_folding:
     input:
         "output/{gene}/{transcript}/isoform.done.txt",
-        "output/ins/canonical/isoform.done.txt"
+        "output/{gene}/canonical/isoform.done.txt"
 
     output:
         pdb="output/{gene}/{transcript}/rank1_relaxed.pdb",
@@ -492,86 +492,16 @@ rule autofillList:
                 f.write(f"    '{i}',\n")
             f.write("];\n")
 
-rule makeJsonForGene:
-    input:
-        "data/Homo_sapiens.GRCh38.109.gtf.pkl",
-        "output/{gene}/done.txt",
-        gtf = "data/Homo_sapiens.GRCh38.109.gtf",
-        
-    output:
-        "output/{gene}/data.js"
-    run:
-        import pickle
-        from glob import glob
-        import json
-        from gtfparse import read_gtf
-        import polars as pl
-        import os
 
-        # Load the general and isoforms data from the pickle file
-        with open(input[0], 'rb') as f:
-            general, isoforms = pickle.load(f)
 
-        # Get the data for the specific gene
-        data = general[wildcards.gene]
-        transcripts = data["transcripts"]
 
-        # Initialize dictionaries for storing PDB content and scores
-        d = {}
-        s = {}
-
-        for transcript in transcripts:
-            # Read and store the content of the PDB file
-            if not os.path.exists(f"output/{wildcards.gene}/{transcript}"):continue
-            folded_path = glob(f"output/{wildcards.gene}/{transcript}/isoform_relaxed_rank_001_alphafold2_ptm_model_*_seed_*.pdb")[0]
-            with open(folded_path, 'r') as pdb_file:
-                pdb_content = pdb_file.read()
-            d[transcript] = pdb_content  # Store the PDB content directly
-
-            # Store the path to the scores file (or its content if needed)
-            scores_path = glob(f"output/{wildcards.gene}/{transcript}/isoform_scores_rank_001_alphafold2_ptm_model_*_seed_*.json")[0]
-            s[transcript] = scores_path  # Store the path to the scores file
-
-        # Create the JavaScript object with PDB content and scores
-        json_object = "const relaxed_pdb = " + json.dumps(d, indent=4) 
-        json_object += ";\nconst scores = " + json.dumps(s, indent=4)
-        gtf =  read_gtf(input["gtf"])
-        # Filter for transcripts of the specific gene
-        gtf = gtf.filter(
-            (pl.col("gene_biotype") == "protein_coding") & 
-            (pl.col("feature")      == "transcript") & 
-            (pl.col("gene_id")      == wildcards.gene)
-        )
-        transcript_dict = dict(zip(gtf['transcript_id'].to_list(), gtf['transcript_name'].to_list()))
-        json_object += ";\nconst transcript_names = " + json.dumps(transcript_dict, indent=4)
-
-        # Write the JavaScript object to the output file
-        with open(output[0], 'w') as f:
-            f.write(json_object)
-
-genes = [
-    "ENSG00000141510", #TP53
-    "ENSG00000254647", #insulin
-    "ENSG00000170315", #Ubiquitin UBB
-    "ENSG00000197061", #Histone H4, HIST1H4A
-    "ENSG00000164825", #Beta-Defensin1 DEFB1
-    "ENSG00000154620", #thymosin beta 4 Y-linked 
-    "ENSG00000164128", #Neuropeptide Y
-    "ENSG00000101200", #Vasopressin
-    ]
-
-rule all:
-    input:
-        expand("output/{gene}/data.js", gene=genes),
-    shell:
-        "rm autofill.js ; "
-        "snakemake autofill.js -c1 --rerun-incomplete -p"
 
 rule dot_plot:
     input:
         table="output/{gene}/clinvar_seqMUT_scores.csv"
     output:
-        "output/{gene}/dot_plot.{metric}.png"
+        plot="output/{gene}/dot_plot.{metric}.png",
+        table="output/{gene}/clinvar_seqMUT_scores.split_categories.{metric}.csv",
     run:
         import seaborn as sns
         import pandas as pd
@@ -583,23 +513,30 @@ rule dot_plot:
 
         # Define the correct order for ClinicalSignificance
         order = [
+            'Benign',
             'Likely benign',
             'Uncertain significance',
-            'Uncertain significance/Uncertain risk allele',
+            'Uncertain risk allele',
             'Conflicting classifications of pathogenicity',
             'not provided',
             'Likely risk allele',
-            'Likely pathogenic/Likely risk allele',
-            'Pathogenic/Likely risk allele',
             'Likely pathogenic',
-            'Pathogenic/Likely pathogenic/Likely risk allele',
-            'Pathogenic/Likely pathogenic',
             'Pathogenic',
         ]
 
         # Convert ClinicalSignificance to a categorical type with the correct order
-        df['ClinicalSignificance'] = pd.Categorical(df['ClinicalSignificance'], categories=order, ordered=True)
+        d2={}
+        for i, row in df.iterrows():
+            for significance in row["ClinicalSignificance"].split("/"):
+                row2 = row.copy()
+                row2["ClinicalSignificance"] = significance
+                d2[i]=row2
 
+        df = pd.DataFrame(d2).T
+        df['ClinicalSignificance'] = pd.Categorical(df['ClinicalSignificance'], categories=[i  for i in order if i in df["ClinicalSignificance"].unique()], ordered=True)
+        df = df.iloc[::-1]
+
+        df.to_csv(output.table)
         # Create the figure and axis
         plt.figure(figsize=(10, 6))
 
@@ -612,13 +549,12 @@ rule dot_plot:
             dodge=True,   # Spread overlapping points
             alpha=0.6,    # Make points slightly transparent for better visibility
             linewidth=1,  # Add border to points
-            order=order,
             hue="PhenotypeList"
 
         )
 
         # Add vertical lines to separate categories
-        for i in range(1, len(order)):
+        for i in range(1, len(df.ClinicalSignificance.unique())):
             plt.axvline(i - 0.5, color='gray', linestyle='--', alpha=0.6)
 
         # Rotate the x-axis labels vertically
@@ -631,7 +567,7 @@ rule dot_plot:
         plt.title(f"{wildcards.gene} - {metric} vs. Clinical Significance")
 
         # Save the figure
-        plt.savefig(output[0],bbox_inches='tight')
+        plt.savefig(output.plot,bbox_inches='tight')
 
 
 rule network_calculation:
@@ -683,7 +619,7 @@ rule network_calculation:
 
 rule plotly_isoform_plots:
     input:
-        table= "output/{gene}/clinvar_seqMUT_scores.csv"
+        table= "output/{gene}/clinvar_seqMUT_scores.split_categories.rmsd.csv"
     output:
         "output/{gene}/isoform_plot.html"
     run:
@@ -696,25 +632,8 @@ rule plotly_isoform_plots:
         if metric == "identical_v_aligned":
             metric = "identical/aligned"
 
-        # Define the correct order for ClinicalSignificance
-        order = [
-            'Likely benign',
-            'Uncertain significance',
-            'Uncertain significance/Uncertain risk allele',
-            'Conflicting classifications of pathogenicity',
-            'not provided',
-            'Likely risk allele',
-            'Likely pathogenic/Likely risk allele',
-            'Pathogenic/Likely risk allele',
-            'Likely pathogenic',
-            'Pathogenic/Likely pathogenic/Likely risk allele',
-            'Pathogenic/Likely pathogenic',
-            'Pathogenic',
-        ]
 
-        # Convert ClinicalSignificance to a categorical type with the correct order
-        df['ClinicalSignificance'] = pd.Categorical(df['ClinicalSignificance'], categories=order, ordered=True)
-
+        order = df.ClinicalSignificance.unique()
         # Create hover text that includes useful information (customize as needed)
         df['hover_text'] = df['data'] +"<br>" + df['PhenotypeList'] + '<br>' + df[metric].astype(str) + ' ' + metric
         df['url'] = f"isoform.html?gene={wildcards.gene}&mutation=" + df['data']
@@ -862,6 +781,15 @@ rule process_gene:
     shell:
         "touch {output}"
 
+rule all:
+    input:
+        expand("output/{gene}/DONE.txt",
+            gene=[
+                "INS",
+                "GCG",
+                "ADM",
+                "SST"]
+        )
 
 
 rule network_calculation_tmalign:

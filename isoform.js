@@ -8,11 +8,23 @@ const mutation_path=mutation.replace(/\s/g, '')  // Replace spaces
                             .replace(/>/g, '-'); // Replace ">" with "-"
 
 
-const titleContainer = document.getElementById('title');
-titleContainer.innerHTML = `
-                        <h1>${gene}</h1>
-                        <h2>${mutation}</h2>
-                    `;
+document.getElementById('gene-name').innerHTML = `<a href="gene.html?gene=${gene}">${gene}</a>`;
+document.getElementById('gene-mutation').innerHTML = `${mutation}`;
+document.getElementById('download-p-sequence').href = `output/${gene}/${mutation_path}/seq.fa`;
+
+fetch(`output/${gene}/gene_info.json`)
+    .then(response => response.json())
+    .then(data => {
+        if (data && data[gene]) {
+            document.getElementById('gene-description').innerHTML = `${data[gene]}`;
+        }
+    })
+    .catch(error => {
+        console.error('Error fetching the gene info:', error);
+
+    })
+
+
 
 const pdbPath = `output/${gene}/${mutation_path}/rank1_relaxed.pdb`; // Path to the PDB file
 const plddtPath = `output/${gene}/${mutation_path}/rank1_relaxed.json`; // Path to the plddt file
@@ -116,7 +128,13 @@ jQuery.ajax( pdbPath2, {
       console.error( "Failed to load PDB " + pdbUri + ": " + err );
     },
   });
-  
+  const aminoAcidMap = {
+    "Ala": "A", "Arg": "R", "Asn": "N", "Asp": "D", "Cys": "C",
+    "Gln": "Q", "Glu": "E", "Gly": "G", "His": "H", "Ile": "I",
+    "Leu": "L", "Lys": "K", "Met": "M", "Phe": "F", "Pro": "P",
+    "Ser": "S", "Thr": "T", "Trp": "W", "Tyr": "Y", "Val": "V",
+    "Sec": "U", "Pyl": "O"  // Include special cases like Selenocysteine (Sec) and Pyrrolysine (Pyl)
+};
 
 // Populate the dropdown with mutations from the CSV file using PapaParse
 jQuery.get("output/INS/clinvar_seqMUT_scores.csv", function(csvData) {
@@ -133,6 +151,86 @@ jQuery.get("output/INS/clinvar_seqMUT_scores.csv", function(csvData) {
                     option.value = mutation.trim(); // Ensure there's no extra space in the value
                     option.text = mutation.trim();  // Trim any spaces for cleaner display
                     select.appendChild(option);
+                };
+                let mutName=mutation.replace(/\s/g, '')  // Replace spaces
+                                    .replace(/\(/g, '_') // Replace "(" with "_"
+                                    .replace(/\)/g, '')  // Remove ")"
+                                    .replace(/:/g, '_')  // Replace ":" with "_"
+                                    .replace(/>/g, '-'); // Replace ">" with "-"
+                if (mutName === mutation_path) {
+                    let dnaSequence = row['WTcSeq'].toUpperCase();
+                    let proteinSequence = row['MUTpSeq'];
+                    let pathogenicity = row['ClinicalSignificance'].split('|');
+                    let phenotypes = row['PhenotypeList'].split('|');
+                    let phenotypesCodes = row['PhenotypeIDS'].split('|');
+
+                    let list = document.getElementById('pathogenicity');
+                    pathogenicity.forEach(item => {
+                        const listItem = document.createElement('li'); // Create a new list item
+                        listItem.textContent = item; // Set the text content
+                        list.appendChild(listItem); // Append to the li
+                    });
+                    
+                    databseDic={
+                        "MONDO":"https://www.ebi.ac.uk/ols4/ontologies/mondo/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252F",
+                        "MedGen":"https://www.ncbi.nlm.nih.gov/medgen/",
+                        "OMIM":"https://omim.org/entry/",
+                    };
+                    let list2 = document.getElementById('Phenotypes');
+                    phenotypes.forEach((item,index) => {
+                        let PhenotypeIDs = phenotypesCodes[index];
+                        idString=""
+                        
+                        PhenotypeIDs.split(",").forEach(id => {
+                            id = id.replace("MONDO:MONDO:","MONDO:").split(":");
+                            source = id[0];
+                            code = id[1];
+                            if (source in databseDic) {
+                                idString += `<a href="${databseDic[source]}${code}">  ${source}:${code}</a>`;
+                            } else {
+                                idString += `${source}:${code} `;
+                                console.log(source,code);
+                            }
+
+                            
+                        }
+
+                        )
+
+                        const listItem = document.createElement('li'); // Create a new list item
+                        listItem.innerHTML  = `${item} (${idString})`; // Set the text content
+                        list2.appendChild(listItem); // Append to the list
+                    });
+                    
+
+
+                    const dnaMatch = mutation.match(/c\.(\d+)([A-Z])>([A-Z])/); // Matches c.266G>A
+                    const proteinMatch = mutation.match(/p\.(\w{3})(\d+)(\w{3})/);  // Matches p.Arg89His
+                    if (dnaMatch) {
+                        let position = parseInt(dnaMatch[1], 10);   // Get the position (266)
+                        let original = dnaMatch[2];                 // Get the original nucleotide (G)
+                        let mutated = dnaMatch[3];                  // Get the mutated nucleotide (A)
+                
+                        // Replace the nucleotide at the given position with a span containing mutation info
+                        let highlightedDNA = dnaSequence.slice(0, position - 1) +
+                            `<span class="highlight" data-mutation="${position} ${original}>${mutated}">${mutated}</span>` +
+                            dnaSequence.slice(position);
+                
+                        document.getElementById('c-sequence').innerHTML = highlightedDNA;
+                    }
+                
+                    if (proteinMatch) {
+                        let position = parseInt(proteinMatch[2], 10);  // Get the position (89)
+                        let original = proteinMatch[1];                // Get the original amino acid (Arg)
+                        let mutated = proteinMatch[3];                 // Get the mutated amino acid (His)
+                
+                        // Replace the amino acid at the given position with a span containing mutation info
+                        let highlightedProtein = proteinSequence.slice(0, position - 1) +
+                            `<span class="highlight" data-mutation="${position} ${original}>${mutated}">${aminoAcidMap[mutated]}</span>` +
+                            proteinSequence.slice(position);
+                
+                        document.getElementById('p-sequence').innerHTML = highlightedProtein;
+                    }
                 }
             });
         }

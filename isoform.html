@@ -42,13 +42,27 @@
     <main>
 
         <div class="card" id="title">
+            <h1 id="gene-name"></h1>
+            <h2 id="gene-mutation"></h2>
+            <p id="gene-description"></p>
 
+            <h2>Pathogenicity</h2>
+            <p id="pathogenicity"></p>
+            <h2>Phenotypes</h2>
+            <p id="Phenotypes"></p>
+            <h2>Sequences</h2>
+            <h3 style="text-align: center;">mRNA</h3>
+            <p id="c-sequence" class="sequence"></p>
+            <h3 style="text-align: center;">Protein</h3>
+            <p id="p-sequence" class="sequence"></p>
         </div>    
         <div class="card">
             <div id="3d-viewer" style="width: 100%; height: 400px;"></div>
             <div id="download-links">
                 <a id="download-pdb" href="#" download>PDB File</a> | 
-                <a id="download-plddt" href="#" download>PLDDT File</a>
+                <a id="download-plddt" href="#" download>PLDDT File</a> |
+                <a id="download-p-sequence" href="#" download>fasta File</a>
+
             </div>
         </div>
         <div class="card">

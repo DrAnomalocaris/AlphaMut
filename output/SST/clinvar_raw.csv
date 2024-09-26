@@ -1,0 +1,15 @@
+data,ClinicalSignificance,PhenotypeIDS,PhenotypeList,Type,HGNC_ID
+NM_001048.4(SST):c.182A>C (p.Asn61Thr),Benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:11329
+NM_001048.4(SST):c.182A>C (p.Asn61Thr),Benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:11329
+NM_001048.4(SST):c.139-9C>T,Benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:11329
+NM_001048.4(SST):c.139-9C>T,Benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:11329
+NM_001048.4(SST):c.342A>G (p.Thr114=),Likely benign,MedGen:CN517202,not provided,single nucleotide variant,HGNC:11329
+NM_001048.4(SST):c.342A>G (p.Thr114=),Likely benign,MedGen:CN517202,not provided,single nucleotide variant,HGNC:11329
+NM_001048.4(SST):c.127G>T (p.Ala43Ser),Uncertain significance,MedGen:CN169374,not specified,single nucleotide variant,HGNC:11329
+NM_001048.4(SST):c.127G>T (p.Ala43Ser),Uncertain significance,MedGen:CN169374,not specified,single nucleotide variant,HGNC:11329
+NM_001048.4(SST):c.79T>C (p.Ser27Pro),Uncertain significance,MedGen:CN169374,not specified,single nucleotide variant,HGNC:11329
+NM_001048.4(SST):c.79T>C (p.Ser27Pro),Uncertain significance,MedGen:CN169374,not specified,single nucleotide variant,HGNC:11329
+NM_001048.4(SST):c.221C>T (p.Ser74Phe),Uncertain significance,MedGen:CN169374,not specified,single nucleotide variant,HGNC:11329
+NM_001048.4(SST):c.221C>T (p.Ser74Phe),Uncertain significance,MedGen:CN169374,not specified,single nucleotide variant,HGNC:11329
+NM_001048.4(SST):c.178C>T (p.Pro60Ser),Uncertain significance,MedGen:CN169374,not specified,single nucleotide variant,HGNC:11329
+NM_001048.4(SST):c.178C>T (p.Pro60Ser),Uncertain significance,MedGen:CN169374,not specified,single nucleotide variant,HGNC:11329

@@ -1,0 +1,10 @@
+{
+    "comparison": "(\":\" denotes aligned residue pairs of d < 5.0 A, \".\" denotes other aligned residues)\nMKSIYFVAGLFVMLVQGSWQRSLQDTEEKSRSFSAS---------------------------------------QADPLSDPDQMNED------KRHSQGTFT----SDYSKYLDSRRAQDFVQWLMNTKRNRNNIAKRH-DEFERHAE--GTF-TSDVSSYLEGQAAKEFIAWLVKGRGRRDF---PEEV---AIVE--ELGRRHAD-GSFSDEMNTILDNLAARDFINWLIQTKITDRK\n                                                                           ...                 ..::.        . .:::.::..:............... ....: ::.::.::  ..: ::::::::::::::::::::::::.:..    .      .     .  ..:.: :::::::::::::::::::::::::.......\n------------------------------------MKSIYFVAGLFVMLVQGSWQRSLQDTEEKSRSFSASQADPLS-----------DPDQMNEDKRH----SQGTF-TSDYSKYLDSRRAQDFVQWLMNTKR-NRNNIAKRHDEFERHAEGTFTSDVSSYLEGQAAKEFIAWLVKGRGRRD-FPEE---VAIV---EEL--GRRHADGSFSDEMNTVLDNLAARDFINWLIQTKITDRK",
+    "chain1": "output/GCG/canonical/rank1_relaxed.pdb",
+    "chain2": "output/GCG/NM_002054.5_GCG_c.472A-G_p.Ile158Val/rank1_relaxed.pdb",
+    "chain1_length": 180,
+    "chain2_length": 180,
+    "aligned_length": 118.0,
+    "rmsd": 5.31,
+    "identical/aligned": 0.525
+}

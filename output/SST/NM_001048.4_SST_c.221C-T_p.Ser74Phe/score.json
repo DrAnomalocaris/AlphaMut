@@ -1,0 +1,10 @@
+{
+    "comparison": "(\":\" denotes aligned residue pairs of d < 5.0 A, \".\" denotes other aligned residues)\nMLSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMR-LEL-QRSANSNPAMAPRER----------------KAG-CKNFFWKTFTSC--\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.. :.  ..                             ..  .      .:...  \nMLSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLFQAAEQDEMRLEL-QRS-------------ANSNPAMAPRERKAGCKN-FF------WKTFTSC",
+    "chain1": "output/SST/canonical/rank1_relaxed.pdb",
+    "chain2": "output/SST/NM_001048.4_SST_c.221C-T_p.Ser74Phe/rank1_relaxed.pdb",
+    "chain1_length": 116,
+    "chain2_length": 116,
+    "aligned_length": 95.0,
+    "rmsd": 2.9,
+    "identical/aligned": 0.884
+}

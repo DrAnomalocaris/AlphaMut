@@ -5,7 +5,7 @@ GENES =[
     "SST",
     "CA2"
     ]
-
+colabfoldExec = "/mnt/c/Users/lahat/colabfold/localcolabfold/colabfold-conda/bin/colabfold_batch"
 # Define all chromosomes to download
 CHROMOSOMES = [f"chr{i}" for i in range(1, 23)] + ["chrX", "chrY", "chrM"]
 
@@ -332,13 +332,19 @@ def get_mutations(gene):
 
 rule run_colabfold:
     input:
-        "output/{gene}/{transcript}/seq.fa"
+        "output/{gene}/{mutation}/seq.fa"
     output:
-        "output/{gene}/{transcript}/isoform_plddt.png",
-        "output/{gene}/{transcript}/isoform.done.txt",
+        #"output/{gene}/{mutation}/isoform_plddt.png",
+        #"output/{gene}/{mutation}/isoform.done.txt",
+        "output/{gene}/{mutation}/isoform_relaxed_rank_002_alphafold2_ptm_model_3_seed_{n}.pdb",
     shell:
         """
-        /mnt/c/Users/lahat/colabfold/localcolabfold/colabfold-conda/bin/colabfold_batch --amber "{input[0]}"  "output/{wildcards.gene}/{wildcards.transcript}/" 
+        {colabfoldExec} \
+            --amber     \
+            --num-seeds 1 \
+            --random-seed {wildcards.n} \
+            "{input[0]}"  \
+            "output/{wildcards.gene}/{wildcards.mutation}/" 
         """
 
 
@@ -357,11 +363,8 @@ rule rotate_foldings_to_match_first:
         "output/{gene}/{mutation}/isoform.done.txt",
 
     output: 
-        "output/{gene}/{mutation}/isoform_relaxed_rank_1_rotated.pdb",
-        "output/{gene}/{mutation}/isoform_relaxed_rank_2_rotated.pdb",
-        "output/{gene}/{mutation}/isoform_relaxed_rank_3_rotated.pdb",
-        "output/{gene}/{mutation}/isoform_relaxed_rank_4_rotated.pdb",
-        "output/{gene}/{mutation}/isoform_relaxed_rank_5_rotated.pdb",
+        "output/{gene}/{mutation}/isoform_relaxed_rank_{n}_rotated.pdb",
+
     run:
         from biopandas.pdb import PandasPdb
         from Bio.PDB import Superimposer, PDBParser, PDBIO
@@ -370,12 +373,12 @@ rule rotate_foldings_to_match_first:
         import numpy as np
 
         # Load the proteins
-        proteins = glob("output/{wildcards.gene}/{wildcards.mutation/isoform_relaxed_rank_*_alphafold2_ptm_model_*_seed_000.pdb")
+        protein_file  = glob(f"output/{wildcards.gene}/{wildcards.mutation}/isoform_relaxed_rank_{wildcards.n}_alphafold2_ptm_model_*_seed_000.pdb")[0]
+        reference_file = glob(f"output/{wildcards.gene}/{wildcards.mutation}/isoform_relaxed_rank_001_alphafold2_ptm_model_*_seed_000.pdb")[0]
         # Biopython PDB parser
         parser = PDBParser(QUIET=True)
 
         # Select a reference structure (use the first protein as reference)
-        reference_file = proteins[0]
         reference_structure = parser.get_structure("reference", reference_file)
 
         # Extract the CA atoms from the reference structure
@@ -385,37 +388,32 @@ rule rotate_foldings_to_match_first:
         sup = Superimposer()
 
         # Iterate over the proteins and superimpose each on the reference
-        for protein_file in tqdm(proteins):
-            a,b,c,d= protein_file.split("\\")[:]
-            rank = d.split("rank_")[1].split("_")[0]
-            newFile  = f"{a}\\{b}\\{c}\\isoform_relaxed_rank_{rank}_rotated.pdb"
-            target_structure = parser.get_structure("target", protein_file)
+        target_structure = parser.get_structure("target", protein_file)
+        
+        # Extract the CA atoms from the target structure
+        target_atoms = [atom for atom in target_structure.get_atoms() if atom.id == 'CA']
+        
+        # Ensure both structures have the same number of CA atoms
+        if len(ref_atoms) == len(target_atoms):
+            # Superimpose the target on the reference
+            sup.set_atoms(ref_atoms, target_atoms)
+            sup.apply(target_structure.get_atoms())  # Apply rotation and translation to all atoms
             
-            # Extract the CA atoms from the target structure
-            target_atoms = [atom for atom in target_structure.get_atoms() if atom.id == 'CA']
-            
-            # Ensure both structures have the same number of CA atoms
-            if len(ref_atoms) == len(target_atoms):
-                # Superimpose the target on the reference
-                sup.set_atoms(ref_atoms, target_atoms)
-                sup.apply(target_structure.get_atoms())  # Apply rotation and translation to all atoms
-                
-                # Save the aligned structure
-                io = PDBIO()
-                io.set_structure(target_structure)
-                io.save(newFile)
-            else:
-                print(f"Skipping {protein_file} due to mismatched atom counts.")
+            # Save the aligned structure
+            io = PDBIO()
+            io.set_structure(target_structure)
+            io.save(output[0])
+        else:
+            print(f"Skipping {protein_file} due to mismatched atom counts.")
 
 rule average_foldings:
     input:
-        "output/{gene}/{mutation}/isoform_relaxed_rank_1_rotated.pdb",
-        "output/{gene}/{mutation}/isoform_relaxed_rank_2_rotated.pdb",
-        "output/{gene}/{mutation}/isoform_relaxed_rank_3_rotated.pdb",
-        "output/{gene}/{mutation}/isoform_relaxed_rank_4_rotated.pdb",
-        "output/{gene}/{mutation}/isoform_relaxed_rank_5_rotated.pdb",   
+        lambda wc : expand("output/{gene}/{mutation}/isoform_relaxed_rank_{n:03d}_rotated.pdb", 
+                            gene=[wc.gene], 
+                            mutation=[wc.gene], 
+                            n=range(1,int(wc.n)+1)),
     output:
-        "output/{gene}/{mutation}/isoform_relaxed_averaged_rotated.pdb",
+        "output/{gene}/{mutation}/isoform_relaxed_averaged_{n}_rotated.pdb",
     run:
         from Bio.PDB import PDBParser, Superimposer, PDBIO, Select
         import pandas as pd

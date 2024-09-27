@@ -5,12 +5,10 @@ GENES =[
     "SST",
     "CA2"
     ]
+NUM_FOLDINGS = 6
 colabfoldExec = "/mnt/c/Users/lahat/colabfold/localcolabfold/colabfold-conda/bin/colabfold_batch"
-# Define all chromosomes to download
-CHROMOSOMES = [f"chr{i}" for i in range(1, 23)] + ["chrX", "chrY", "chrM"]
 
-# Define the output directory
-OUTPUT_DIR = "data/genome/human/"
+
 
 rule python_path:
     shell:
@@ -77,8 +75,6 @@ rule set_gene_specific_clinVar_file:
         pd.DataFrame(clinvar).to_csv(output.table, index=False)
 rule add_protein_WT_sequences_to_raw_clinVar:
     input:
-        #expand(f"{OUTPUT_DIR}{{chrom}}.fa", chrom=CHROMOSOMES),
-        #gtf = "data/Homo_sapiens.GRCh38.109.gtf.pkl",
         table="output/{gene}/clinvar_raw.csv"
 
     output:
@@ -91,7 +87,6 @@ rule add_protein_WT_sequences_to_raw_clinVar:
         import xmltodict
 
         clinvar = pd.read_csv(input.table)
-        print(clinvar)
         seqs = []
         cSeqs = []
         import functools
@@ -334,36 +329,29 @@ rule run_colabfold:
     input:
         "output/{gene}/{mutation}/seq.fa"
     output:
-        #"output/{gene}/{mutation}/isoform_plddt.png",
-        #"output/{gene}/{mutation}/isoform.done.txt",
-        "output/{gene}/{mutation}/isoform_relaxed_rank_002_alphafold2_ptm_model_3_seed_{n}.pdb",
+        relaxed   = "output/{gene}/{mutation}/isoform_relaxed_rank_001_alphafold2_ptm_model_3_seed_{n}.pdb",
+        unrelaxed = "output/{gene}/{mutation}/isoform_unrelaxed_rank_001_alphafold2_ptm_model_3_seed_{n}.pdb",
+        scores    = "output/{gene}/{mutation}/isoform_scores_rank_001_alphafold2_ptm_model_3_seed_{n}.json",
     shell:
         """
         {colabfoldExec} \
             --amber     \
             --num-seeds 1 \
             --random-seed {wildcards.n} \
+            --num-models 1 \
             "{input[0]}"  \
             "output/{wildcards.gene}/{wildcards.mutation}/" 
         """
 
 
-rule run_all_isoforms:
-    input:
-        lambda wc : expand("output/{gene}/{mutation}/score.json", gene=[wc.gene], mutation=get_mutations(wc.gene))
-
-    output:
-        "output/{gene}/done.txt",
-
-    shell:
-        "touch {output}"
         
 rule rotate_foldings_to_match_first:
     input:
-        "output/{gene}/{mutation}/isoform.done.txt",
+        protein     = "output/{gene}/{mutation}/isoform_relaxed_rank_001_alphafold2_ptm_model_3_seed_{n}.pdb",
+        canonical   = "output/{gene}/canonical/isoform_relaxed_rank_001_alphafold2_ptm_model_3_seed_{n}.pdb",
 
     output: 
-        "output/{gene}/{mutation}/isoform_relaxed_rank_{n}_rotated.pdb",
+        "output/{gene}/{mutation}/isoform_relaxed_seed_{n}_rotated.pdb",
 
     run:
         from biopandas.pdb import PandasPdb
@@ -373,8 +361,8 @@ rule rotate_foldings_to_match_first:
         import numpy as np
 
         # Load the proteins
-        protein_file  = glob(f"output/{wildcards.gene}/{wildcards.mutation}/isoform_relaxed_rank_{wildcards.n}_alphafold2_ptm_model_*_seed_000.pdb")[0]
-        reference_file = glob(f"output/{wildcards.gene}/{wildcards.mutation}/isoform_relaxed_rank_001_alphafold2_ptm_model_*_seed_000.pdb")[0]
+        protein_file  = input.protein
+        reference_file = input.canonical
         # Biopython PDB parser
         parser = PDBParser(QUIET=True)
 
@@ -408,7 +396,7 @@ rule rotate_foldings_to_match_first:
 
 rule average_foldings:
     input:
-        lambda wc : expand("output/{gene}/{mutation}/isoform_relaxed_rank_{n:03d}_rotated.pdb", 
+        lambda wc : expand("output/{gene}/{mutation}/isoform_relaxed_seed_{n:03d}_rotated.pdb", 
                             gene=[wc.gene], 
                             mutation=[wc.gene], 
                             n=range(1,int(wc.n)+1)),
@@ -431,11 +419,11 @@ rule average_foldings:
 
 rule find_and_rotate_best_folding:
     input:
-        pdbMutant = "output/{gene}/{mutation}/isoform_relaxed_averaged_rotated.pdb",
-        pdbCanonical = "output/{gene}/canonical/isoform_relaxed_averaged_rotated.pdb"
+        pdbMutant = "output/{gene}/{mutation}/isoform_relaxed_averaged_{n}_rotated.pdb",
+        pdbCanonical = "output/{gene}/canonical/isoform_relaxed_averaged_{n}_rotated.pdb"
 
     output:
-        pdb="output/{gene}/{mutation}/isoform_relaxed_averaged_rotated.pdb",
+        pdb="output/{gene}/{mutation}/isoform_relaxed_averaged_{n}_rotated.pdb",
         #json="output/{gene}/{mutation}/isoform_relaxed_averaged_rotated.json",
 
     run:
@@ -478,6 +466,19 @@ rule find_and_rotate_best_folding:
         io = PDBIO()
         io.set_structure(structure2)
         io.save(output.pdb)
+
+rule run_all_isoforms:
+    input:
+        lambda wc : expand("output/{gene}/{mutation}/isoform_relaxed_averaged_{n}_rotated.pdb", 
+            gene=[wc.gene], 
+            mutation=get_mutations(wc.gene),
+            n=[NUM_FOLDINGS])
+
+    output:
+        "output/{gene}/done.txt",
+
+    shell:
+        "touch {output}"
 
           
 rule compare_folding:
@@ -796,6 +797,9 @@ rule get_gene_info:
         import time
         import xmltodict
         from Bio import Entrez
+        from random import randint
+        from time import sleep
+        sleep(randint(3, 6)) #to space them out if using multiple threads
 
         def get_entrez_gene_summary(
             gene_name, email, organism="human", max_gene_ids=100

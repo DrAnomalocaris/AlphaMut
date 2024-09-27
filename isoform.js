@@ -27,14 +27,14 @@ fetch(`output/${gene}/gene_info.json`)
 
 
 
-const pdbPath = `output/${gene}/${mutation_path}/rank1_relaxed.pdb`; // Path to the PDB file
-const plddtPath = `output/${gene}/${mutation_path}/rank1_relaxed.json`; // Path to the plddt file
+const pdbPath = `output/${gene}/${mutation_path}/isoform_relaxed_averaged_rotated.pdb`; // Path to the PDB file
+const plddtPath = `output/${gene}/${mutation_path}/isoform_relaxed_averaged_rotated.json`; // Path to the plddt file
 const viewerContainer = document.getElementById('3d-viewer');
 const viewer = $3Dmol.createViewer(viewerContainer, {
     defaultcolors: $3Dmol.rasmolElementColors,
 });
 
-let pdbUri = `output/${gene}/${mutation_path}/rank1_relaxed.pdb`;  // PDB file path
+let pdbUri = `output/${gene}/${mutation_path}/isoform_relaxed_averaged_rotated.pdb`;  // PDB file path
 let plddtUri = `output/${gene}/${mutation_path}/plddt.json`;      // PLDDT file path (or another file)
 
 // Use jQuery.ajax to load the PDB file
@@ -71,7 +71,7 @@ const scoreFilePath = `output/${gene}/${mutation_path}/score.txt`;
 const TMscoreDiv = document.getElementById('TMscore');
 
 
-const pdbPath1 = `output/${gene}/canonical/rank1_relaxed.pdb`;  // Canonical protein
+const pdbPath1 = `output/${gene}/canonical/isoform_relaxed_averaged_rotated.pdb`;  // Canonical protein
 const pdbPath2 = pdbPath; // Mutant protein (existing mutant PDB path)
 
 // Get the viewer container
@@ -291,7 +291,7 @@ function loadMutantPDB(mutationName) {
                                 .replace(/\)/g, '')  // Remove ")"
                                 .replace(/:/g, '_')  // Replace ":" with "_"
                                 .replace(/>/g, '-'); // Replace ">" with "-"
-    let newMutationPath = `output/${gene}/${newName}/rank1_relaxed.pdb`; // Path to the PDB file
+    let newMutationPath = `output/${gene}/${newName}/isoform_relaxed_averaged_rotated.pdb`; // Path to the PDB file
     // Load the canonical protein first
     jQuery.ajax(newMutationPath, {
         success: function(data) {

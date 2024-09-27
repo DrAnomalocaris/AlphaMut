@@ -8,9 +8,10 @@ const mutation_path=mutation.replace(/\s/g, '')  // Replace spaces
                             .replace(/>/g, '-'); // Replace ">" with "-"
 
 
-document.getElementById('gene-name').innerHTML = `<a href="gene.html?gene=${gene}">${gene}</a>`;
+document.getElementById('title').href = `gene.html?gene=${gene}`;
 document.getElementById('gene-mutation').innerHTML = `${mutation}`;
 document.getElementById('download-p-sequence').href = `output/${gene}/${mutation_path}/seq.fa`;
+document.getElementById('gene-short-name').innerHTML = gene;
 
 fetch(`output/${gene}/gene_info.json`)
     .then(response => response.json())
@@ -136,6 +137,39 @@ jQuery.ajax( pdbPath2, {
     "Sec": "U", "Pyl": "O"  // Include special cases like Selenocysteine (Sec) and Pyrrolysine (Pyl)
 };
 
+
+fetch('completed.json')
+.then(response => {
+    if (!response.ok) {
+        throw new Error('Network response was not ok');
+    }
+    return response.json(); // Parse the JSON data
+})
+.then(data => {
+    let matchingKeys = [];
+
+    // Loop through the keys of the dictionary (data)
+    for (const [key, value] of Object.entries(data)) {
+        if (value === gene) {
+            matchingKeys.push(key); // Collect all keys that match the value
+        }
+    }
+
+
+    if (matchingKeys.length > 0) {
+        // Filter out the exact match (the short name)
+        const filteredKeys = matchingKeys.filter(key => key !== gene);
+        
+        // Get the first longer/descriptive name, or fallback to the original if no longer ones found
+        const preferredKey = filteredKeys.length > 0 ? filteredKeys[0] : gene;
+        document.getElementById('gene-long-name').innerHTML = preferredKey.charAt(0).toUpperCase() + preferredKey.slice(1).toLowerCase();;
+    } else {
+        console.log("No matching keys found for gene:", gene);
+    }
+})
+.catch(error => {
+    console.error('There was a problem with the fetch operation:', error);
+});
 // Populate the dropdown with mutations from the CSV file using PapaParse
 jQuery.get("output/INS/clinvar_seqMUT_scores.csv", function(csvData) {
     const select = document.getElementById('mutant-select');

@@ -7,7 +7,41 @@ const geneInfoDiv = document.getElementById('gene-info');
 const mutantPlotDiv = document.getElementById('mutant-plot');
 const mutantCardsDiv = document.getElementById('mutatnt-table');
 const loadingElement = document.getElementById('loading');
+document.getElementById('gene-short-name').innerHTML = gene;
 
+
+fetch('completed.json')
+.then(response => {
+    if (!response.ok) {
+        throw new Error('Network response was not ok');
+    }
+    return response.json(); // Parse the JSON data
+})
+.then(data => {
+    let matchingKeys = [];
+
+    // Loop through the keys of the dictionary (data)
+    for (const [key, value] of Object.entries(data)) {
+        if (value === gene) {
+            matchingKeys.push(key); // Collect all keys that match the value
+        }
+    }
+
+
+    if (matchingKeys.length > 0) {
+        // Filter out the exact match (the short name)
+        const filteredKeys = matchingKeys.filter(key => key !== gene);
+        
+        // Get the first longer/descriptive name, or fallback to the original if no longer ones found
+        const preferredKey = filteredKeys.length > 0 ? filteredKeys[0] : gene;
+        document.getElementById('gene-long-name').innerHTML = preferredKey.charAt(0).toUpperCase() + preferredKey.slice(1).toLowerCase();;
+    } else {
+        console.log("No matching keys found for gene:", gene);
+    }
+})
+.catch(error => {
+    console.error('There was a problem with the fetch operation:', error);
+});
 
 // Function to load the pre-rendered mutant table
 function loadMutationTable(gene) {
@@ -53,7 +87,6 @@ if (gene) {
 
                 geneInfoDiv.innerHTML = `
                     <div class="card">
-                        <h2>Gene Information for ${gene}</h2>
                         <p><strong>Description:</strong> ${geneInfo}</p>
                     </div>
                 `;

@@ -328,9 +328,9 @@ rule run_colabfold:
     input:
         fasta = "output/{gene}/{mutation}/seq.fa"
     output:
-        relaxed   = "output/{gene}/{mutation}/{seed}/isoform_relaxed_rank_001_alphafold2_ptm_model_1_seed_{n}.pdb",
-        unrelaxed = "output/{gene}/{mutation}/{seed}/isoform_unrelaxed_rank_001_alphafold2_ptm_model_1_seed_{n}.pdb",
-        scores    = "output/{gene}/{mutation}/{seed}/isoform_scores_rank_001_alphafold2_ptm_model_1_seed_{n}.json",
+        relaxed   = "output/{gene}/{mutation}/isoform_relaxed_rank_001_alphafold2_ptm_model_1_seed_{seed}.pdb",
+        unrelaxed = "output/{gene}/{mutation}/isoform_unrelaxed_rank_001_alphafold2_ptm_model_1_seed_{seed}.pdb",
+        scores    = "output/{gene}/{mutation}/isoform_scores_rank_001_alphafold2_ptm_model_1_seed_{seed}.json",
     shell:
         """
         {colabfoldExec} \
@@ -346,8 +346,8 @@ rule run_colabfold:
         
 rule rotate_foldings_to_match_first:
     input:
-        protein     = "output/{gene}/{mutation}/{seed}/isoform_relaxed_rank_001_alphafold2_ptm_model_1_seed_{seed}.pdb",
-        reference   = "output/{gene}/{mutation}/{seed}/isoform_relaxed_rank_001_alphafold2_ptm_model_1_seed_000.pdb",
+        protein     = "output/{gene}/{mutation}/isoform_relaxed_rank_001_alphafold2_ptm_model_1_seed_{seed}.pdb",
+        reference   = "output/{gene}/{mutation}/isoform_relaxed_rank_001_alphafold2_ptm_model_1_seed_000.pdb",
 
     output: 
         "output/{gene}/{mutation}/{seed}/isoform_relaxed_rotated.pdb",

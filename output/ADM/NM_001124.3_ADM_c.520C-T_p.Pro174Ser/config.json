@@ -28,7 +28,7 @@
     "host_url": "https://api.colabfold.com",
     "user_agent": "colabfold/1.5.5 (4e198f5cecc6a808daa6baf7441899e5e76f7b9e)",
     "stop_at_score": 100,
-    "random_seed": 4,
+    "random_seed": 1,
     "num_seeds": 1,
     "recompile_padding": 10,
     "commit": "4e198f5cecc6a808daa6baf7441899e5e76f7b9e",

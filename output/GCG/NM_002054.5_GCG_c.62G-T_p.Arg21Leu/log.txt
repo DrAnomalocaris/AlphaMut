@@ -1,47 +1,5 @@
-2024-09-26 04:48:49,536 Running colabfold 1.5.5 (4e198f5cecc6a808daa6baf7441899e5e76f7b9e)
-2024-09-26 04:48:49,814 WARNING: no GPU detected, will be using CPU
-2024-09-26 04:48:53,816 Found 6 citations for tools or databases
-2024-09-26 04:48:53,817 Query 1/1: isoform (length 180)
-2024-09-26 04:48:54,715 Sleeping for 8s. Reason: PENDING
-2024-09-26 04:49:03,455 Sleeping for 10s. Reason: RUNNING
-2024-09-26 04:49:14,180 Sleeping for 9s. Reason: RUNNING
-2024-09-26 04:49:23,879 Sleeping for 10s. Reason: RUNNING
-2024-09-26 04:49:36,527 Setting max_seq=512, max_extra_seq=945
-2024-09-26 04:52:28,849 alphafold2_ptm_model_1_seed_000 recycle=0 pLDDT=62.2 pTM=0.225
-2024-09-26 04:54:57,927 alphafold2_ptm_model_1_seed_000 recycle=1 pLDDT=61.8 pTM=0.238 tol=5.91
-2024-09-26 04:57:28,033 alphafold2_ptm_model_1_seed_000 recycle=2 pLDDT=62.4 pTM=0.236 tol=1.76
-2024-09-26 04:59:58,106 alphafold2_ptm_model_1_seed_000 recycle=3 pLDDT=63.1 pTM=0.235 tol=2.15
-2024-09-26 04:59:58,107 alphafold2_ptm_model_1_seed_000 took 608.3s (3 recycles)
-2024-09-26 05:02:29,169 alphafold2_ptm_model_2_seed_000 recycle=0 pLDDT=63.8 pTM=0.197
-2024-09-26 05:04:58,248 alphafold2_ptm_model_2_seed_000 recycle=1 pLDDT=64.1 pTM=0.199 tol=12.5
-2024-09-26 05:07:27,779 alphafold2_ptm_model_2_seed_000 recycle=2 pLDDT=64.4 pTM=0.203 tol=1.82
-2024-09-26 05:09:58,018 alphafold2_ptm_model_2_seed_000 recycle=3 pLDDT=64.8 pTM=0.205 tol=1.88
-2024-09-26 05:09:58,019 alphafold2_ptm_model_2_seed_000 took 599.9s (3 recycles)
-2024-09-26 05:12:27,971 alphafold2_ptm_model_3_seed_000 recycle=0 pLDDT=64 pTM=0.193
-2024-09-26 05:14:58,228 alphafold2_ptm_model_3_seed_000 recycle=1 pLDDT=63.9 pTM=0.199 tol=7.07
-2024-09-26 05:17:26,828 alphafold2_ptm_model_3_seed_000 recycle=2 pLDDT=63.1 pTM=0.204 tol=3.73
-2024-09-26 05:19:54,734 alphafold2_ptm_model_3_seed_000 recycle=3 pLDDT=63.3 pTM=0.207 tol=2.29
-2024-09-26 05:19:54,735 alphafold2_ptm_model_3_seed_000 took 596.7s (3 recycles)
-2024-09-26 05:22:24,577 alphafold2_ptm_model_4_seed_000 recycle=0 pLDDT=59 pTM=0.196
-2024-09-26 05:24:53,944 alphafold2_ptm_model_4_seed_000 recycle=1 pLDDT=62.9 pTM=0.193 tol=13
-2024-09-26 05:27:24,058 alphafold2_ptm_model_4_seed_000 recycle=2 pLDDT=61.7 pTM=0.197 tol=10.3
-2024-09-26 05:29:52,526 alphafold2_ptm_model_4_seed_000 recycle=3 pLDDT=63.8 pTM=0.198 tol=8.93
-2024-09-26 05:29:52,527 alphafold2_ptm_model_4_seed_000 took 597.7s (3 recycles)
-2024-09-26 05:32:21,571 alphafold2_ptm_model_5_seed_000 recycle=0 pLDDT=62.9 pTM=0.192
-2024-09-26 05:34:50,798 alphafold2_ptm_model_5_seed_000 recycle=1 pLDDT=64.9 pTM=0.191 tol=5.35
-2024-09-26 05:37:19,245 alphafold2_ptm_model_5_seed_000 recycle=2 pLDDT=66.1 pTM=0.195 tol=10.5
-2024-09-26 05:39:48,350 alphafold2_ptm_model_5_seed_000 recycle=3 pLDDT=65.7 pTM=0.196 tol=11.5
-2024-09-26 05:39:48,351 alphafold2_ptm_model_5_seed_000 took 595.8s (3 recycles)
-2024-09-26 05:39:48,396 reranking models by 'plddt' metric
-2024-09-26 05:39:51,699 Warning: importing 'simtk.openmm' is deprecated.  Import 'openmm' instead.
-2024-09-26 05:40:10,385 Relaxation took 22.0s
-2024-09-26 05:40:10,389 rank_001_alphafold2_ptm_model_5_seed_000 pLDDT=65.7 pTM=0.196
-2024-09-26 05:40:29,893 Relaxation took 19.5s
-2024-09-26 05:40:29,893 rank_002_alphafold2_ptm_model_2_seed_000 pLDDT=64.8 pTM=0.205
-2024-09-26 05:40:41,256 Relaxation took 11.4s
-2024-09-26 05:40:41,256 rank_003_alphafold2_ptm_model_4_seed_000 pLDDT=63.8 pTM=0.198
-2024-09-26 05:40:52,708 Relaxation took 11.4s
-2024-09-26 05:40:52,708 rank_004_alphafold2_ptm_model_3_seed_000 pLDDT=63.3 pTM=0.207
-2024-09-26 05:41:05,913 Relaxation took 13.2s
-2024-09-26 05:41:05,913 rank_005_alphafold2_ptm_model_1_seed_000 pLDDT=63.1 pTM=0.235
-2024-09-26 05:41:07,102 Done
+2024-09-27 13:07:03,963 Running colabfold 1.5.5 (4e198f5cecc6a808daa6baf7441899e5e76f7b9e)
+2024-09-27 13:07:04,296 WARNING: no GPU detected, will be using CPU
+2024-09-27 13:07:08,052 Found 6 citations for tools or databases
+2024-09-27 13:07:08,054 Query 1/1: isoform (length 180)
+2024-09-27 13:07:09,208 Setting max_seq=512, max_extra_seq=945

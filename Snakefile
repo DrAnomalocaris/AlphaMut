@@ -290,17 +290,17 @@ rule prepare_isoform_for_alphafold:
     input:
         "output/{gene}/isoforms.fa"
     output:
-        "output/{gene}/{transcript}/seq.fa"
+        "output/{gene}/{mutation}/seq.fa"
     run:
         from Bio import SeqIO
         
         # Extract the specific transcript ID from wildcards
-        transcript_id = wildcards.transcript
+        mutation_id = wildcards.mutation
         
         # Read the input fasta file and search for the transcript
         with open(input[0], "r") as fasta_in:
             for record in SeqIO.parse(fasta_in, "fasta"):
-                if record.id == transcript_id:
+                if record.id == mutation_id:
                     # Write the specific transcript to the output file
                     with open(output[0], "w") as fasta_out:
                         record.id = "isoform"
@@ -309,11 +309,10 @@ rule prepare_isoform_for_alphafold:
                         SeqIO.write(record , fasta_out, "fasta")
                     break
             else:
-                raise ValueError(f"Transcript {transcript_id} not found in {input[0]}")
+                raise ValueError(f"Transcript {mutation_id} not found in {input[0]}")
 
 def get_mutations(gene):
     mutations_file = checkpoints.set_output_folders.get(gene=gene).output[0]
-
     mutations=[]
     with open(mutations_file, 'r') as f: 
         for line in f:
@@ -398,7 +397,7 @@ rule average_foldings:
     input:
         lambda wc : expand("output/{gene}/{mutation}/isoform_relaxed_seed_{n:03d}_rotated.pdb", 
                             gene=[wc.gene], 
-                            mutation=[wc.gene], 
+                            mutation=[wc.mutation], 
                             n=range(1,int(wc.n)+1)),
     output:
         "output/{gene}/{mutation}/isoform_relaxed_averaged_{n}_rotated.pdb",

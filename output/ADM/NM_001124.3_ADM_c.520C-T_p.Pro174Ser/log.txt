@@ -1,47 +1,5 @@
-2024-09-24 15:51:37,277 Running colabfold 1.5.5 (4e198f5cecc6a808daa6baf7441899e5e76f7b9e)
-2024-09-24 15:51:37,502 WARNING: no GPU detected, will be using CPU
-2024-09-24 15:51:39,529 Found 6 citations for tools or databases
-2024-09-24 15:51:39,530 Query 1/1: isoform (length 185)
-2024-09-24 15:51:40,379 Sleeping for 8s. Reason: PENDING
-2024-09-24 15:51:49,956 Sleeping for 8s. Reason: RUNNING
-2024-09-24 15:51:58,667 Sleeping for 10s. Reason: RUNNING
-2024-09-24 15:52:09,404 Sleeping for 9s. Reason: RUNNING
-2024-09-24 15:52:21,261 Setting max_seq=512, max_extra_seq=624
-2024-09-24 15:55:16,352 alphafold2_ptm_model_1_seed_000 recycle=0 pLDDT=58.3 pTM=0.185
-2024-09-24 15:57:49,659 alphafold2_ptm_model_1_seed_000 recycle=1 pLDDT=57.7 pTM=0.179 tol=5.5
-2024-09-24 16:00:23,449 alphafold2_ptm_model_1_seed_000 recycle=2 pLDDT=57.8 pTM=0.18 tol=3.2
-2024-09-24 16:02:58,458 alphafold2_ptm_model_1_seed_000 recycle=3 pLDDT=57.7 pTM=0.182 tol=4.55
-2024-09-24 16:02:58,459 alphafold2_ptm_model_1_seed_000 took 624.5s (3 recycles)
-2024-09-24 16:05:31,334 alphafold2_ptm_model_2_seed_000 recycle=0 pLDDT=56.8 pTM=0.182
-2024-09-24 16:08:03,660 alphafold2_ptm_model_2_seed_000 recycle=1 pLDDT=55.7 pTM=0.176 tol=4.66
-2024-09-24 16:10:36,000 alphafold2_ptm_model_2_seed_000 recycle=2 pLDDT=56.2 pTM=0.18 tol=2.24
-2024-09-24 16:13:07,715 alphafold2_ptm_model_2_seed_000 recycle=3 pLDDT=56.3 pTM=0.18 tol=1.54
-2024-09-24 16:13:07,716 alphafold2_ptm_model_2_seed_000 took 609.2s (3 recycles)
-2024-09-24 16:15:41,710 alphafold2_ptm_model_3_seed_000 recycle=0 pLDDT=53.6 pTM=0.158
-2024-09-24 16:18:14,287 alphafold2_ptm_model_3_seed_000 recycle=1 pLDDT=54.1 pTM=0.167 tol=9.93
-2024-09-24 16:20:44,544 alphafold2_ptm_model_3_seed_000 recycle=2 pLDDT=54.9 pTM=0.168 tol=4.28
-2024-09-24 16:23:16,693 alphafold2_ptm_model_3_seed_000 recycle=3 pLDDT=54.9 pTM=0.169 tol=5.04
-2024-09-24 16:23:16,694 alphafold2_ptm_model_3_seed_000 took 608.9s (3 recycles)
-2024-09-24 16:25:48,955 alphafold2_ptm_model_4_seed_000 recycle=0 pLDDT=54 pTM=0.161
-2024-09-24 16:28:20,500 alphafold2_ptm_model_4_seed_000 recycle=1 pLDDT=54.4 pTM=0.159 tol=9.36
-2024-09-24 16:30:54,353 alphafold2_ptm_model_4_seed_000 recycle=2 pLDDT=54.9 pTM=0.163 tol=7.81
-2024-09-24 16:33:25,570 alphafold2_ptm_model_4_seed_000 recycle=3 pLDDT=54.8 pTM=0.163 tol=5.04
-2024-09-24 16:33:25,570 alphafold2_ptm_model_4_seed_000 took 608.8s (3 recycles)
-2024-09-24 16:35:58,526 alphafold2_ptm_model_5_seed_000 recycle=0 pLDDT=49.8 pTM=0.147
-2024-09-24 16:38:31,106 alphafold2_ptm_model_5_seed_000 recycle=1 pLDDT=51.1 pTM=0.15 tol=8.7
-2024-09-24 16:41:04,939 alphafold2_ptm_model_5_seed_000 recycle=2 pLDDT=51.2 pTM=0.151 tol=10.2
-2024-09-24 16:43:37,903 alphafold2_ptm_model_5_seed_000 recycle=3 pLDDT=50.3 pTM=0.153 tol=9.78
-2024-09-24 16:43:37,904 alphafold2_ptm_model_5_seed_000 took 612.3s (3 recycles)
-2024-09-24 16:43:37,945 reranking models by 'plddt' metric
-2024-09-24 16:43:41,487 Warning: importing 'simtk.openmm' is deprecated.  Import 'openmm' instead.
-2024-09-24 16:44:04,432 Relaxation took 26.5s
-2024-09-24 16:44:04,434 rank_001_alphafold2_ptm_model_1_seed_000 pLDDT=57.7 pTM=0.182
-2024-09-24 16:44:19,611 Relaxation took 15.2s
-2024-09-24 16:44:19,612 rank_002_alphafold2_ptm_model_2_seed_000 pLDDT=56.3 pTM=0.18
-2024-09-24 16:44:59,476 Relaxation took 39.9s
-2024-09-24 16:44:59,476 rank_003_alphafold2_ptm_model_3_seed_000 pLDDT=54.9 pTM=0.169
-2024-09-24 16:45:11,895 Relaxation took 12.4s
-2024-09-24 16:45:11,896 rank_004_alphafold2_ptm_model_4_seed_000 pLDDT=54.8 pTM=0.163
-2024-09-24 16:45:28,259 Relaxation took 16.4s
-2024-09-24 16:45:28,259 rank_005_alphafold2_ptm_model_5_seed_000 pLDDT=50.3 pTM=0.153
-2024-09-24 16:45:29,472 Done
+2024-09-27 12:40:45,271 Running colabfold 1.5.5 (4e198f5cecc6a808daa6baf7441899e5e76f7b9e)
+2024-09-27 12:40:45,505 WARNING: no GPU detected, will be using CPU
+2024-09-27 12:40:47,693 Found 6 citations for tools or databases
+2024-09-27 12:40:47,696 Query 1/1: isoform (length 185)
+2024-09-27 12:40:50,422 Setting max_seq=512, max_extra_seq=624

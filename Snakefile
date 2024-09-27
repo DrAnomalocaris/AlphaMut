@@ -1,3 +1,11 @@
+GENES =[
+    "INS",
+    "GCG",
+    "ADM",
+    "SST",
+    "CA2"
+    ]
+
 # Define all chromosomes to download
 CHROMOSOMES = [f"chr{i}" for i in range(1, 23)] + ["chrX", "chrY", "chrM"]
 
@@ -179,7 +187,7 @@ rule add_mutation_sequence_to_raw_clinVar:
                 cSeq = Seq(cSeq)
                 pSeq = cSeq.translate(to_stop=True)
                 mutations[data] = (mutation)
-                seqs[data] = seq2 
+                seqs[data] = pSeq 
 
             elif row.Type == "Deletion":
                 location=data.split(":")[1].split("c.")[-1].split("del")[-0].split("_")
@@ -190,7 +198,7 @@ rule add_mutation_sequence_to_raw_clinVar:
                 cSeq = Seq(cSeq)
                 pSeq = cSeq.translate(to_stop=True)
                 mutations[data] = (mutation)
-                seqs[data] = seq2 
+                seqs[data] = pSeq 
             elif row.Type == "Microsatellite" or row.Type == "Duplication":
                 if data.endswith("del)"):
                     if mutation.endswith("del"):
@@ -199,8 +207,19 @@ rule add_mutation_sequence_to_raw_clinVar:
                         location = int(mutation[1:])-1
                         pSeq = (seq2[:location-1]+seq2[location:])
                         mutations[data] = (mutation)
-                        seqs[data] = seq2 
+                        seqs[data] = pSeq 
                         continue     
+                if "del (" in data:
+                        cMutation = data.split(":")[1].split("c.")[-1].split("del")[-0].split("_")
+                        if len(cMutation)==1: cMutStart,cMutEnd = [int(cMutation[0])-1,int(cMutation[0])-1]
+                        else: cMutStart,cMutEnd = [int(x)-1 for x in cMutation]
+                        cSeq = row.WTcSeq
+                        cSeq = cSeq[:cMutStart]+cSeq[cMutEnd+1:]
+                        cSeq = Seq(cSeq)
+                        pSeq = cSeq.translate(to_stop=True)
+                        mutations[data] = (mutation)
+                        seqs[data] = pSeq
+                        continue
                 location=data.split(":")[1].split("c.")[-1].split(" ")[0].replace("dup","").split("_")
                 if len(location)==1: location = [location[0],location[0]]
                 start,end = [int(x)-1 for x in location]
@@ -209,7 +228,7 @@ rule add_mutation_sequence_to_raw_clinVar:
                 cSeq = Seq(cSeq)
                 pSeq = cSeq.translate(to_stop=True)
                 mutations[data] = (mutation)
-                seqs[data] = seq2 
+                seqs[data] = pSeq 
 
             else:
                 print(row.Type)
@@ -231,7 +250,7 @@ rule add_mutation_sequence_to_raw_clinVar:
         clinvar = clinvar.drop_duplicates()
         clinvar.to_csv(output.table)
 
-rule set_output_folders:
+checkpoint set_output_folders:
     # This needs to be altered to get mutated variants
     input:
         table="output/{gene}/clinvar_seqMUT.csv"   
@@ -296,6 +315,21 @@ rule prepare_isoform_for_alphafold:
                     break
             else:
                 raise ValueError(f"Transcript {transcript_id} not found in {input[0]}")
+
+def get_mutations(gene):
+    mutations_file = checkpoints.set_output_folders.get(gene=gene).output[0]
+
+    mutations=[]
+    with open(mutations_file, 'r') as f: 
+        for line in f:
+            if line.startswith(">"):
+                
+                mutation = line.split()[0][1:]
+                mutations.append(mutation)
+    return mutations
+    
+
+
 rule run_colabfold:
     input:
         "output/{gene}/{transcript}/seq.fa"
@@ -310,31 +344,15 @@ rule run_colabfold:
 
 rule run_all_isoforms:
     input:
-        fasta = "output/{gene}/isoforms.fa"
+        lambda wc : expand("output/{gene}/{mutation}/score.json", gene=[wc.gene], mutation=get_mutations(wc.gene))
 
     output:
         "output/{gene}/done.txt",
 
-    run:
-        import pickle
-        gene = wildcards.gene
-        transcripts=[]
-        with open(input.fasta, 'r') as f: 
-            for line in f:
-                if line.startswith(">"):
-                    
-                    transcript = line.split()[0][1:]
-                    transcripts.append(transcript)
-        to_do = []
-        for transcript in transcripts:
-            to_do.append( f"output/{gene}/{transcript}/score.json",)
-        to_do = " ".join(sorted(to_do))
-        shell(
-            f"snakemake {to_do} -c {threads} --rerun-incomplete -p"
-            )
-        shell(
-            f"touch output/{gene}/done.txt"
-            )
+    shell:
+        "touch {output}"
+        
+
 rule find_and_rotate_best_folding:
     input:
         "output/{gene}/{transcript}/isoform.done.txt",
@@ -491,26 +509,6 @@ rule get_biomart:
         data =dataset.query(attributes=['ensembl_gene_id', 'external_gene_name',"description"])
         data.to_csv(output.table)
 
-rule autofillList:
-    input:
-        table = "data/hsapiens_gene_ensembl.csv",
-    output:
-        "completed.json"
-    run:
-        import json
-        import pandas as pd
-        from glob import glob
-        genes = [i.split("/")[1] for i in glob("output/*/isoform_plot.html")]
-        table = pd.read_csv(input.table)
-        GENES = {}
-        for gene in genes:
-            df = table[table['Gene name'] == gene]
-            names =[i.split(" [")[0] for i in  df['Gene description'].unique()]
-            GENES[gene] = gene
-            for name in names:
-                GENES[name] = gene
-        with open("completed.json", "w") as f:
-            json.dump(GENES, f)
 
             
 
@@ -804,15 +802,6 @@ rule process_gene:
     shell:
         "touch {output}"
 
-rule all:
-    input:
-        expand("output/{gene}/DONE.txt",
-            gene=[
-                "INS",
-                "GCG",
-                "ADM",
-                "SST"]
-        )
 
 
 rule network_calculation_tmalign:
@@ -857,3 +846,31 @@ rule network_calculation_tmalign:
         
         # Save the TMalign outputs to a CSV
         pd.DataFrame(out, columns=["Protein1", "Protein2", "TMalign_Output"]).to_csv(output[0], index=False)
+
+
+rule completedDictionary:
+    input:
+        expand("output/{gene}/DONE.txt",gene=GENES),
+        table = "data/hsapiens_gene_ensembl.csv",
+
+    output:
+        "completed.json"
+    run:
+        import json
+        import pandas as pd
+        from glob import glob
+        genes = [i.split("/")[1] for i in glob("output/*/isoform_plot.html")]
+        table = pd.read_csv(input.table)
+        GENES = {}
+        for gene in genes:
+            df = table[table['Gene name'] == gene]
+            names =[i.split(" [")[0] for i in  df['Gene description'].unique()]
+            GENES[gene] = gene
+            for name in names:
+                GENES[name] = gene
+        with open("completed.json", "w") as f:
+            json.dump(GENES, f)
+
+rule all:
+    input:
+        "completed.json"

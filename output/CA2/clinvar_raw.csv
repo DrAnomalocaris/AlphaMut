@@ -1,0 +1,327 @@
+data,ClinicalSignificance,PhenotypeIDS,PhenotypeList,Type,HGNC_ID
+NM_000067.3(CA2):c.754A>G (p.Asn252Asp),Benign/Likely benign,"|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785|MedGen:C3661900",CARBONIC ANHYDRASE II VARIANT|Osteopetrosis with renal tubular acidosis|not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.754A>G (p.Asn252Asp),Benign/Likely benign,"|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785|MedGen:C3661900",CARBONIC ANHYDRASE II VARIANT|Osteopetrosis with renal tubular acidosis|not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.52A>G (p.Lys18Glu),Pathogenic,-,CARBONIC ANHYDRASE II VARIANT,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.52A>G (p.Lys18Glu),Pathogenic,-,CARBONIC ANHYDRASE II VARIANT,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.707C>A (p.Pro236His),Pathogenic,-,CARBONIC ANHYDRASE II VARIANT,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.707C>A (p.Pro236His),Pathogenic,-,CARBONIC ANHYDRASE II VARIANT,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.319C>T (p.His107Tyr),Pathogenic,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.319C>T (p.His107Tyr),Pathogenic,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.508-1G>C,Pathogenic,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.508-1G>C,Pathogenic,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.120T>G (p.Tyr40Ter),Pathogenic,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.120T>G (p.Tyr40Ter),Pathogenic,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.621del (p.Trp208fs),Pathogenic,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,Deletion,HGNC:1373
+NM_000067.3(CA2):c.621del (p.Trp208fs),Pathogenic,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,Deletion,HGNC:1373
+NM_000067.3(CA2):c.35-7C>A,Conflicting classifications of pathogenicity,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.35-7C>A,Conflicting classifications of pathogenicity,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.677G>A (p.Arg226His),Uncertain significance,"MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785|MeSH:D030342,MedGen:C0950123",not provided|Osteopetrosis with renal tubular acidosis|Inborn genetic diseases,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.677G>A (p.Arg226His),Uncertain significance,"MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785|MeSH:D030342,MedGen:C0950123",not provided|Osteopetrosis with renal tubular acidosis|Inborn genetic diseases,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.562T>C (p.Leu188=),Benign,"MedGen:CN169374|MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",not specified|not provided|Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.562T>C (p.Leu188=),Benign,"MedGen:CN169374|MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",not specified|not provided|Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.660G>A (p.Glu220=),Uncertain significance,MedGen:CN517202,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.660G>A (p.Glu220=),Uncertain significance,MedGen:CN517202,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.232+1G>A,Pathogenic,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785|MedGen:C3661900",Osteopetrosis with renal tubular acidosis|not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.232+1G>A,Pathogenic,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785|MedGen:C3661900",Osteopetrosis with renal tubular acidosis|not provided,single nucleotide variant,HGNC:1373
+NM_000067.2(CA2):c.-130C>A,Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.2(CA2):c.-130C>A,Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.2(CA2):c.-84_-82dup,Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,Duplication,HGNC:1373
+NM_000067.2(CA2):c.-84_-82dup,Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,Duplication,HGNC:1373
+NM_000067.3(CA2):c.508-7G>A,Conflicting classifications of pathogenicity,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785|MedGen:C3661900",Osteopetrosis with renal tubular acidosis|not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.508-7G>A,Conflicting classifications of pathogenicity,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785|MedGen:C3661900",Osteopetrosis with renal tubular acidosis|not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.*374A>G,Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.*374A>G,Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.*465A>C,Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.*465A>C,Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.2(CA2):c.-176C>T,Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.2(CA2):c.-176C>T,Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.2(CA2):c.-138G>A,Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.2(CA2):c.-138G>A,Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.*17G>A,Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.*17G>A,Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.-53G>T,Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.-53G>T,Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.539C>T (p.Pro180Leu),Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.539C>T (p.Pro180Leu),Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.40G>A (p.Glu14Lys),Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785|MeSH:D030342,MedGen:C0950123",Osteopetrosis with renal tubular acidosis|Inborn genetic diseases,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.40G>A (p.Glu14Lys),Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785|MeSH:D030342,MedGen:C0950123",Osteopetrosis with renal tubular acidosis|Inborn genetic diseases,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.648C>T (p.Ser216=),Benign/Likely benign,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785|MedGen:C3661900",Osteopetrosis with renal tubular acidosis|not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.648C>T (p.Ser216=),Benign/Likely benign,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785|MedGen:C3661900",Osteopetrosis with renal tubular acidosis|not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.*212A>G,Benign,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785|MedGen:C3661900",Osteopetrosis with renal tubular acidosis|not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.*212A>G,Benign,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785|MedGen:C3661900",Osteopetrosis with renal tubular acidosis|not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.*303C>T,Benign,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.*303C>T,Benign,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.*562T>C,Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.*562T>C,Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.2(CA2):c.-181A>T,Benign,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785|MedGen:C3661900",Osteopetrosis with renal tubular acidosis|not provided,single nucleotide variant,HGNC:1373
+NM_000067.2(CA2):c.-181A>T,Benign,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785|MedGen:C3661900",Osteopetrosis with renal tubular acidosis|not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.21C>A (p.Tyr7Ter),Pathogenic,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.21C>A (p.Tyr7Ter),Pathogenic,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.575C>T (p.Thr192Ile),Uncertain significance,"MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",not provided|Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.575C>T (p.Thr192Ile),Uncertain significance,"MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",not provided|Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.143_146del (p.Ser48fs),Conflicting classifications of pathogenicity,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785|MedGen:C3661900",Osteopetrosis with renal tubular acidosis|not provided,Microsatellite,HGNC:1373
+NM_000067.3(CA2):c.143_146del (p.Ser48fs),Conflicting classifications of pathogenicity,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785|MedGen:C3661900",Osteopetrosis with renal tubular acidosis|not provided,Microsatellite,HGNC:1373
+NM_000067.3(CA2):c.681del (p.Lys227fs),Pathogenic/Likely pathogenic,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785|MedGen:C3661900",Osteopetrosis with renal tubular acidosis|not provided,Deletion,HGNC:1373
+NM_000067.3(CA2):c.681del (p.Lys227fs),Pathogenic/Likely pathogenic,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785|MedGen:C3661900",Osteopetrosis with renal tubular acidosis|not provided,Deletion,HGNC:1373
+NM_000067.3(CA2):c.681A>G (p.Lys227=),Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.681A>G (p.Lys227=),Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.618G>A (p.Val206=),Benign/Likely benign,"MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",not provided|Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.618G>A (p.Val206=),Benign/Likely benign,"MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",not provided|Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.549C>G (p.Leu183=),Likely benign,"MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",not provided|Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.549C>G (p.Leu183=),Likely benign,"MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",not provided|Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.183C>T (p.Asn61=),Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.183C>T (p.Asn61=),Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.139C>T (p.Leu47=),Likely benign,"MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785|",not provided|Osteopetrosis with renal tubular acidosis|CA2-related disorder,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.139C>T (p.Leu47=),Likely benign,"MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785|",not provided|Osteopetrosis with renal tubular acidosis|CA2-related disorder,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.579C>G (p.Tyr193Ter),Likely pathogenic,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785|Human Phenotype Ontology:HP:0012758,MedGen:C4022738",Osteopetrosis with renal tubular acidosis|Neurodevelopmental delay,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.579C>G (p.Tyr193Ter),Likely pathogenic,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785|Human Phenotype Ontology:HP:0012758,MedGen:C4022738",Osteopetrosis with renal tubular acidosis|Neurodevelopmental delay,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.649G>A (p.Val217Ile),Uncertain significance,"MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",not provided|Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.649G>A (p.Val217Ile),Uncertain significance,"MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",not provided|Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.-43G>C,Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.-43G>C,Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.74G>A (p.Gly25Glu),Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.74G>A (p.Gly25Glu),Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.87C>T (p.Ser29=),Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.87C>T (p.Ser29=),Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.192T>C (p.His64=),Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.192T>C (p.His64=),Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.462G>A (p.Pro154=),Conflicting classifications of pathogenicity,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785|MedGen:C3661900",Osteopetrosis with renal tubular acidosis|not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.462G>A (p.Pro154=),Conflicting classifications of pathogenicity,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785|MedGen:C3661900",Osteopetrosis with renal tubular acidosis|not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.472A>G (p.Lys158Glu),Uncertain significance,"MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",not provided|Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.472A>G (p.Lys158Glu),Uncertain significance,"MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",not provided|Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.*173T>C,Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.*173T>C,Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.*535T>C,Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.*535T>C,Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.*624T>C,Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.*624T>C,Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.275A>C (p.Gln92Pro),Likely pathogenic,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.275A>C (p.Gln92Pro),Likely pathogenic,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.311G>T (p.Gly104Val),Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.311G>T (p.Gly104Val),Uncertain significance,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.427C>G (p.Leu143Val),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.427C>G (p.Leu143Val),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.96C>T (p.Asp32=),Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.96C>T (p.Asp32=),Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.351+21dup,Benign,MedGen:C3661900,not provided,Duplication,HGNC:1373
+NM_000067.3(CA2):c.351+21dup,Benign,MedGen:C3661900,not provided,Duplication,HGNC:1373
+NM_000067.3(CA2):c.663+281_663+282dup,Likely benign,MedGen:C3661900,not provided,Duplication,HGNC:1373
+NM_000067.3(CA2):c.663+281_663+282dup,Likely benign,MedGen:C3661900,not provided,Duplication,HGNC:1373
+NC_000008.11:g.85463771GAGCCCCG[6],Likely benign,MedGen:C3661900,not provided,Microsatellite,HGNC:1373
+NC_000008.11:g.85463771GAGCCCCG[6],Likely benign,MedGen:C3661900,not provided,Microsatellite,HGNC:1373
+NM_000067.3(CA2):c.663+82A>C,Benign,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785|MedGen:C3661900",Osteopetrosis with renal tubular acidosis|not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.663+82A>C,Benign,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785|MedGen:C3661900",Osteopetrosis with renal tubular acidosis|not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.663+282del,Benign,MedGen:C3661900,not provided,Deletion,HGNC:1373
+NM_000067.3(CA2):c.663+282del,Benign,MedGen:C3661900,not provided,Deletion,HGNC:1373
+NC_000008.11:g.85463771GAGCCCCG[5],Benign,MedGen:C3661900,not provided,Microsatellite,HGNC:1373
+NC_000008.11:g.85463771GAGCCCCG[5],Benign,MedGen:C3661900,not provided,Microsatellite,HGNC:1373
+NM_000067.3(CA2):c.444+52C>T,Benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.444+52C>T,Benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.664-224_664-223insGTT,Benign,MedGen:C3661900,not provided,Insertion,HGNC:1373
+NM_000067.3(CA2):c.664-224_664-223insGTT,Benign,MedGen:C3661900,not provided,Insertion,HGNC:1373
+NM_000067.3(CA2):c.664-197A>G,Benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.664-197A>G,Benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.507+139A>C,Benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.507+139A>C,Benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.664-225G>T,Benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.664-225G>T,Benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.35-164A>C,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.35-164A>C,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.664-244_664-243insG,Benign,MedGen:C3661900,not provided,Insertion,HGNC:1373
+NM_000067.3(CA2):c.664-244_664-243insG,Benign,MedGen:C3661900,not provided,Insertion,HGNC:1373
+NM_000067.3(CA2):c.664-331A>T,Benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.664-331A>T,Benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.664-243_664-242insGTG,Benign,MedGen:C3661900,not provided,Insertion,HGNC:1373
+NM_000067.3(CA2):c.664-243_664-242insGTG,Benign,MedGen:C3661900,not provided,Insertion,HGNC:1373
+NM_000067.3(CA2):c.663+282dup,Benign,MedGen:C3661900,not provided,Duplication,HGNC:1373
+NM_000067.3(CA2):c.663+282dup,Benign,MedGen:C3661900,not provided,Duplication,HGNC:1373
+NM_000067.3(CA2):c.508-278G>A,Benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.508-278G>A,Benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.664-43C>T,Benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.664-43C>T,Benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.508-154C>T,Benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.508-154C>T,Benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.664-214dup,Benign,MedGen:C3661900,not provided,Duplication,HGNC:1373
+NM_000067.3(CA2):c.664-214dup,Benign,MedGen:C3661900,not provided,Duplication,HGNC:1373
+NM_000067.3(CA2):c.663+113T>C,Benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.663+113T>C,Benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.733C>T (p.Arg245Cys),Uncertain significance,MedGen:C3661900|,not provided|CA2-related disorder,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.733C>T (p.Arg245Cys),Uncertain significance,MedGen:C3661900|,not provided|CA2-related disorder,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.503C>G (p.Thr168Arg),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.503C>G (p.Thr168Arg),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.508-204del,Likely benign,MedGen:C3661900,not provided,Deletion,HGNC:1373
+NM_000067.3(CA2):c.508-204del,Likely benign,MedGen:C3661900,not provided,Deletion,HGNC:1373
+NM_000067.3(CA2):c.352-66T>C,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.352-66T>C,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.281A>G (p.His94Arg),Uncertain significance,"MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",not provided|Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.281A>G (p.His94Arg),Uncertain significance,"MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",not provided|Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.35-5C>G,Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.35-5C>G,Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.433A>G (p.Ile145Val),Conflicting classifications of pathogenicity,"MedGen:C3661900|MeSH:D030342,MedGen:C0950123",not provided|Inborn genetic diseases,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.433A>G (p.Ile145Val),Conflicting classifications of pathogenicity,"MedGen:C3661900|MeSH:D030342,MedGen:C0950123",not provided|Inborn genetic diseases,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.566A>G (p.Asp189Gly),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.566A>G (p.Asp189Gly),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.541C>T (p.Arg181Cys),Uncertain significance,"MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",not provided|Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.541C>T (p.Arg181Cys),Uncertain significance,"MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",not provided|Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.163A>T (p.Thr55Ser),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.163A>T (p.Thr55Ser),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.424G>A (p.Val142Ile),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.424G>A (p.Val142Ile),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NC_000008.10:g.(?_86376311)_(86377718_?)del,Pathogenic,MedGen:C3661900,not provided,Deletion,HGNC:1373
+NM_000067.3(CA2):c.339A>G (p.Lys113=),Conflicting classifications of pathogenicity,"MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",not provided|Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.339A>G (p.Lys113=),Conflicting classifications of pathogenicity,"MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",not provided|Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NC_000008.10:g.(?_86376311)_(86393018_?)dup,Uncertain significance,MedGen:C3661900,not provided,Duplication,HGNC:1373
+NM_000067.3(CA2):c.444+3T>G,Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.444+3T>G,Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.701G>A (p.Gly234Asp),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.701G>A (p.Gly234Asp),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.657C>T (p.Ser219=),Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.657C>T (p.Ser219=),Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.445G>A (p.Val149Ile),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.445G>A (p.Val149Ile),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.709G>A (p.Glu237Lys),Uncertain significance,"MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",not provided|Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.709G>A (p.Glu237Lys),Uncertain significance,"MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",not provided|Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.534C>T (p.Phe178=),Likely benign,"MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",not provided|Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.534C>T (p.Phe178=),Likely benign,"MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",not provided|Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.129C>T (p.Ser43=),Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.129C>T (p.Ser43=),Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.664-11G>C,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.664-11G>C,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.508-12G>A,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.508-12G>A,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.453C>T (p.Ser151=),Likely benign,"MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",not provided|Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.453C>T (p.Ser151=),Likely benign,"MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",not provided|Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.667T>C (p.Leu223=),Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.667T>C (p.Leu223=),Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.759G>A (p.Arg253=),Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.759G>A (p.Arg253=),Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.445-19C>T,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.445-19C>T,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.35-18_35-17del,Likely benign,MedGen:C3661900,not provided,Deletion,HGNC:1373
+NM_000067.3(CA2):c.35-18_35-17del,Likely benign,MedGen:C3661900,not provided,Deletion,HGNC:1373
+NM_000067.3(CA2):c.508-19C>T,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.508-19C>T,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.351+9T>A,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.351+9T>A,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.607C>A (p.Leu203Met),Likely benign,"MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",not provided|Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.607C>A (p.Leu203Met),Likely benign,"MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",not provided|Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.444+18T>G,Likely benign,"MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",not provided|Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.444+18T>G,Likely benign,"MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",not provided|Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.2T>G (p.Met1Arg),Likely pathogenic,"Human Phenotype Ontology:HP:0012758,MedGen:C4022738",Neurodevelopmental delay,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.2T>G (p.Met1Arg),Likely pathogenic,"Human Phenotype Ontology:HP:0012758,MedGen:C4022738",Neurodevelopmental delay,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.630_641delinsCACA (p.Leu211fs),Pathogenic/Likely pathogenic,"MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",not provided|Osteopetrosis with renal tubular acidosis,Indel,HGNC:1373
+NM_000067.3(CA2):c.630_641delinsCACA (p.Leu211fs),Pathogenic/Likely pathogenic,"MedGen:C3661900|MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",not provided|Osteopetrosis with renal tubular acidosis,Indel,HGNC:1373
+NM_000067.3(CA2):c.537T>G (p.Asp179Glu),Uncertain significance,"MeSH:D030342,MedGen:C0950123|MedGen:C3661900",Inborn genetic diseases|not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.537T>G (p.Asp179Glu),Uncertain significance,"MeSH:D030342,MedGen:C0950123|MedGen:C3661900",Inborn genetic diseases|not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.779A>G (p.Lys260Arg),Uncertain significance,"MeSH:D030342,MedGen:C0950123|MedGen:C3661900",Inborn genetic diseases|not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.779A>G (p.Lys260Arg),Uncertain significance,"MeSH:D030342,MedGen:C0950123|MedGen:C3661900",Inborn genetic diseases|not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.484G>A (p.Val162Met),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.484G>A (p.Val162Met),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.663+9T>A,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.663+9T>A,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.351+21del,Benign,MedGen:C3661900,not provided,Deletion,HGNC:1373
+NM_000067.3(CA2):c.351+21del,Benign,MedGen:C3661900,not provided,Deletion,HGNC:1373
+NM_000067.3(CA2):c.508-20G>T,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.508-20G>T,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.125C>T (p.Pro42Leu),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.125C>T (p.Pro42Leu),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.552T>A (p.Leu184=),Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.552T>A (p.Leu184=),Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.124C>A (p.Pro42Thr),Uncertain significance,"MedGen:C3661900|MeSH:D030342,MedGen:C0950123",not provided|Inborn genetic diseases,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.124C>A (p.Pro42Thr),Uncertain significance,"MedGen:C3661900|MeSH:D030342,MedGen:C0950123",not provided|Inborn genetic diseases,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.749T>G (p.Leu250Arg),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.749T>G (p.Leu250Arg),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.165T>C (p.Thr55=),Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.165T>C (p.Thr55=),Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.508-3T>G,Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.508-3T>G,Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.352-5C>T,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.352-5C>T,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.619A>G (p.Thr207Ala),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.619A>G (p.Thr207Ala),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.233-13G>A,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.233-13G>A,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.508-18G>A,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.508-18G>A,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.240G>A (p.Lys80=),Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.240G>A (p.Lys80=),Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.34+19C>T,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.34+19C>T,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.434T>C (p.Ile145Thr),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.434T>C (p.Ile145Thr),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.655A>G (p.Ser219Gly),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.655A>G (p.Ser219Gly),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.115A>C (p.Lys39Gln),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.115A>C (p.Lys39Gln),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.734G>A (p.Arg245His),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.734G>A (p.Arg245His),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.52A>C (p.Lys18Gln),Benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.52A>C (p.Lys18Gln),Benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.654C>G (p.Ser218Arg),Uncertain significance,"MedGen:C3661900|MeSH:D030342,MedGen:C0950123",not provided|Inborn genetic diseases,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.654C>G (p.Ser218Arg),Uncertain significance,"MedGen:C3661900|MeSH:D030342,MedGen:C0950123",not provided|Inborn genetic diseases,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.441G>T (p.Leu147Phe),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.441G>T (p.Leu147Phe),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.664-11G>T,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.664-11G>T,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.16G>C (p.Gly6Arg),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.16G>C (p.Gly6Arg),Uncertain significance,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.430G>A (p.Gly144Ser),Uncertain significance,MedGen:CN517202,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.430G>A (p.Gly144Ser),Uncertain significance,MedGen:CN517202,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.765C>A (p.Ile255=),Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.765C>A (p.Ile255=),Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.664-226dup,Likely benign,MedGen:CN517202,not provided,Duplication,HGNC:1373
+NM_000067.3(CA2):c.664-226dup,Likely benign,MedGen:CN517202,not provided,Duplication,HGNC:1373
+NM_000067.3(CA2):c.364C>T (p.His122Tyr),Uncertain significance,"MeSH:D030342,MedGen:C0950123",Inborn genetic diseases,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.364C>T (p.His122Tyr),Uncertain significance,"MeSH:D030342,MedGen:C0950123",Inborn genetic diseases,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.514A>G (p.Ser172Gly),Uncertain significance,"MeSH:D030342,MedGen:C0950123",Inborn genetic diseases,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.514A>G (p.Ser172Gly),Uncertain significance,"MeSH:D030342,MedGen:C0950123",Inborn genetic diseases,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.710A>C (p.Glu237Ala),Uncertain significance,"MeSH:D030342,MedGen:C0950123",Inborn genetic diseases,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.710A>C (p.Glu237Ala),Uncertain significance,"MeSH:D030342,MedGen:C0950123",Inborn genetic diseases,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.409C>A (p.Pro137Thr),Uncertain significance,"MeSH:D030342,MedGen:C0950123",Inborn genetic diseases,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.409C>A (p.Pro137Thr),Uncertain significance,"MeSH:D030342,MedGen:C0950123",Inborn genetic diseases,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.58T>C (p.Phe20Leu),Uncertain significance,"MeSH:D030342,MedGen:C0950123",Inborn genetic diseases,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.58T>C (p.Phe20Leu),Uncertain significance,"MeSH:D030342,MedGen:C0950123",Inborn genetic diseases,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.508-30G>C,Likely benign,MedGen:CN517202,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.508-30G>C,Likely benign,MedGen:CN517202,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.542G>A (p.Arg181His),Uncertain significance,"MeSH:D030342,MedGen:C0950123",Inborn genetic diseases,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.542G>A (p.Arg181His),Uncertain significance,"MeSH:D030342,MedGen:C0950123",Inborn genetic diseases,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.453C>A (p.Ser151Arg),Uncertain significance,"MeSH:D030342,MedGen:C0950123",Inborn genetic diseases,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.453C>A (p.Ser151Arg),Uncertain significance,"MeSH:D030342,MedGen:C0950123",Inborn genetic diseases,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.232+2T>G,Likely pathogenic,-,CA2-related disorder,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.232+2T>G,Likely pathogenic,-,CA2-related disorder,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.708C>T (p.Pro236=),Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.708C>T (p.Pro236=),Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.610G>T (p.Glu204Ter),Pathogenic,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.610G>T (p.Glu204Ter),Pathogenic,"MONDO:MONDO:0009818,MedGen:C0345407,OMIM:259730,Orphanet:2785",Osteopetrosis with renal tubular acidosis,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.188_193del (p.Gly63_His64del),Uncertain significance,MedGen:C3661900,not provided,Deletion,HGNC:1373
+NM_000067.3(CA2):c.188_193del (p.Gly63_His64del),Uncertain significance,MedGen:C3661900,not provided,Deletion,HGNC:1373
+NM_000067.3(CA2):c.34+18C>A,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.34+18C>A,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.352-8G>T,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.352-8G>T,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.171G>A (p.Leu57=),Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.171G>A (p.Leu57=),Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.157C>G (p.Gln53Glu),Uncertain significance,"MedGen:C3661900|MeSH:D030342,MedGen:C0950123",not provided|Inborn genetic diseases,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.157C>G (p.Gln53Glu),Uncertain significance,"MedGen:C3661900|MeSH:D030342,MedGen:C0950123",not provided|Inborn genetic diseases,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.651C>G (p.Val217=),Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.651C>G (p.Val217=),Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.35-4C>T,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.35-4C>T,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.717G>A (p.Leu239=),Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.717G>A (p.Leu239=),Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.351+19_351+21del,Likely benign,MedGen:C3661900,not provided,Deletion,HGNC:1373
+NM_000067.3(CA2):c.351+19_351+21del,Likely benign,MedGen:C3661900,not provided,Deletion,HGNC:1373
+NM_000067.3(CA2):c.445-15T>A,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.445-15T>A,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.663+16A>G,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.663+16A>G,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.195T>G (p.Ala65=),Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.195T>G (p.Ala65=),Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.444+10T>A,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.444+10T>A,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.352-9C>T,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.352-9C>T,Likely benign,MedGen:C3661900,not provided,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.153T>A (p.Tyr51Ter),Likely pathogenic,-,CA2-related disorder,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.153T>A (p.Tyr51Ter),Likely pathogenic,-,CA2-related disorder,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.755A>G (p.Asn252Ser),Uncertain significance,"MeSH:D030342,MedGen:C0950123",Inborn genetic diseases,single nucleotide variant,HGNC:1373
+NM_000067.3(CA2):c.755A>G (p.Asn252Ser),Uncertain significance,"MeSH:D030342,MedGen:C0950123",Inborn genetic diseases,single nucleotide variant,HGNC:1373

@@ -1,14 +1,12 @@
-GENES =[
-    "INS",
-    "GCG",
-    "ADM",
-    "SST",
-    "CA2"
-    ]
-NUM_FOLDINGS = 5
-colabfoldExec = "/mnt/c/Users/lahat/colabfold/localcolabfold/colabfold-conda/bin/colabfold_batch"
+import yaml
 
+# Load the configuration file
+configfile: "config.yaml"
 
+# Access the variables from the config
+GENES = config["genes"]
+NUM_FOLDINGS = config["num_foldings"]
+colabfoldExec = config["colabfold_exec"]
 
 rule python_path:
     shell:
@@ -430,7 +428,7 @@ rule average_foldings:
             new[col] = sum([i.df['ATOM'][col] for i in pdbs])/len(pdbs)
         pdb = PandasPdb().read_pdb(input[0])
         pdb.df["ATOM"] = new
-        pdb.to_pdb('test.pdb') 
+        pdb.to_pdb(output[0]) 
 
 
 

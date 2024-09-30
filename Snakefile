@@ -5,7 +5,7 @@ GENES =[
     "SST",
     "CA2"
     ]
-NUM_FOLDINGS = 6
+NUM_FOLDINGS = 5
 colabfoldExec = "/mnt/c/Users/lahat/colabfold/localcolabfold/colabfold-conda/bin/colabfold_batch"
 
 
@@ -331,15 +331,29 @@ rule run_colabfold:
         relaxed   = "output/{gene}/{mutation}/isoform_relaxed_rank_001_alphafold2_ptm_model_1_seed_{seed}.pdb",
         unrelaxed = "output/{gene}/{mutation}/isoform_unrelaxed_rank_001_alphafold2_ptm_model_1_seed_{seed}.pdb",
         scores    = "output/{gene}/{mutation}/isoform_scores_rank_001_alphafold2_ptm_model_1_seed_{seed}.json",
+    log:
+        stdout = "output/{gene}/{mutation}/isoform_scores_rank_001_alphafold2_ptm_model_1_seed_{seed}.log",
+        stderr = "output/{gene}/{mutation}/isoform_scores_rank_001_alphafold2_ptm_model_1_seed_{seed}.err",
     shell:
         """
         {colabfoldExec} \
             --amber     \
             --num-seeds 1 \
             --random-seed {wildcards.seed} \
+            --overwrite-existing-results \
             --num-models 1 \
             "{input.fasta}"  \
-            "output/{wildcards.gene}/{wildcards.mutation}/{wildcards.seed}" 
+            "output/{wildcards.gene}/{wildcards.mutation}/" > {log.stdout} 2> {log.stderr}; \
+        rm -rf \
+            output/{wildcards.gene}/{wildcards.mutation}/isoform_env \
+            output/{wildcards.gene}/{wildcards.mutation}/config.json \
+            output/{wildcards.gene}/{wildcards.mutation}/isoform_coverage.png \
+            output/{wildcards.gene}/{wildcards.mutation}/isoform_pae.png \
+            output/{wildcards.gene}/{wildcards.mutation}/isoform_plddt.png \
+            output/{wildcards.gene}/{wildcards.mutation}/isoform_predicted_aligned_error_v1.json \
+            output/{wildcards.gene}/{wildcards.mutation}/isoform.a3m \
+            output/{wildcards.gene}/{wildcards.mutation}/isoform.done.txt \
+            output/{wildcards.gene}/{wildcards.mutation}/log.txt 
         """
 
 
@@ -405,7 +419,10 @@ rule average_foldings:
         "output/{gene}/{mutation}/isoform_relaxed_averaged_rotated.pdb",
     run:
         from Bio.PDB import PDBParser, Superimposer, PDBIO, Select
+        from biopandas.pdb import PandasPdb
+
         import pandas as pd
+        from tqdm import tqdm
         pdbs = [PandasPdb().read_pdb(i) for i in tqdm(input)]#
         new = pdbs[0].df["ATOM"].copy()
 
@@ -420,10 +437,16 @@ rule average_foldings:
 
 rule run_all_isoforms:
     input:
-        lambda wc : expand("output/{gene}/{mutation}/isoform_relaxed_averaged_rotated.pdb", 
+        lambda wc : expand("output/{gene}/{mutation}/{file}", 
             gene=[wc.gene], 
             mutation=get_mutations(wc.gene),
-            n=[NUM_FOLDINGS])
+            n=[NUM_FOLDINGS],
+            file=[
+                "isoform_relaxed_averaged_rotated.pdb",
+                "plddt.csv",
+                "plddt.html"
+                ]
+            )
 
     output:
         "output/{gene}/done.txt",
@@ -611,6 +634,111 @@ rule dot_plot:
 
         # Save the figure
         plt.savefig(output.plot,bbox_inches='tight')
+
+rule plddt_plot:
+    input:
+        jsons = lambda wc: expand("output/{gene}/{allele}/isoform_scores_rank_001_alphafold2_ptm_model_1_seed_{seed:03d}.json", 
+                        gene=[wc.gene],   
+                        allele=[wc.allele],
+                        seed=range(NUM_FOLDINGS)),
+        fasta = "output/{gene}/{allele}/seq.fa"
+    output:
+        table="output/{gene}/{allele}/plddt.csv",
+        plot="output/{gene}/{allele}/plddt.html"
+    run:
+        import json
+        import pandas as pd
+        import plotly.graph_objects as go
+        from Bio import SeqIO
+        from Bio.SeqUtils import seq3  # To convert amino acid to three-letter codes
+
+                
+        # Define variables
+        gene = wildcards.gene
+        allele = wildcards.allele
+        metric = "plddt"
+        seeds = range(NUM_FOLDINGS)
+        df = pd.DataFrame({i: json.loads(open(f"output/{gene}/{allele}/isoform_scores_rank_001_alphafold2_ptm_model_1_seed_{i:03d}.json").read())[metric] for i in seeds})
+        df.to_csv(output.table)
+        # Calculate the average across all seeds
+        df['average'] = df.mean(axis=1)
+
+        # Parse the FASTA file to get the amino acid sequence
+        fasta_file = f"output/{gene}/{allele}/seq.fa"
+        sequence = ""
+        for record in SeqIO.parse(fasta_file, "fasta"):
+            sequence = str(record.seq)
+
+        # Ensure the sequence length matches the DataFrame length
+        if len(sequence) != len(df):
+            raise ValueError("The length of the amino acid sequence and the DataFrame rows do not match!")
+
+        # Convert the single-letter amino acid code to the three-letter code
+        three_letter_sequence = [seq3(aa).capitalize() for aa in sequence]  # List of three-letter codes
+
+        # Use regex to extract the mutation position and amino acid change if present
+        mutation_match = re.search(r'p\.([A-Za-z]+)(\d+)([A-Za-z]+)', allele)
+
+        mutation_position = None
+        mutation_annotation = None
+        if mutation_match:
+            original_aa, position, mutated_aa = mutation_match.groups()
+            mutation_position = int(position)  # Mutation position as an integer
+            mutation_annotation = f"{(original_aa)} to {(mutated_aa)}"  # Formatted annotation
+
+        # Create the Plotly plot
+        fig = go.Figure()
+
+        # Add a line for each seed (with x position in hover template)
+        for i in seeds:
+            fig.add_trace(go.Scatter(
+                x=df.index + 1,  # Adding 1 to match amino acid positions starting from 1
+                y=df[i], 
+                mode='lines', 
+                name=f'{i}',
+                #hovertemplate="%{i}: %{x}<br>Score: %{y}<extra></extra>",  # Display x position and y-value
+            ))
+
+        # Add the average line (with amino acid and x position in hover template)
+        fig.add_trace(go.Scatter(
+            x=df.index + 1,  # Adding 1 to match amino acid positions starting from 1
+            y=df['average'], 
+            mode='lines', 
+            name='Average', 
+            line=dict(color='firebrick', width=4),
+            hovertemplate="<b>%{text}</b> : %{y}<extra></extra>",  # Custom hover with amino acid and position
+            text=three_letter_sequence  # Three-letter amino acid code
+        ))
+
+
+        # Add an annotation arrow for the mutation if applicable
+        if mutation_position:
+            fig.add_annotation(
+                x=mutation_position,  # X-coordinate is the mutation position
+                y=df['average'].iloc[mutation_position - 1],  # Y-coordinate is the average score at mutation position
+                text=mutation_annotation,  # Display the amino acid change
+                showarrow=True,
+                arrowhead=2,
+                ax=0,  # X offset for the annotation arrow
+                ay=-40,  # Y offset for the annotation arrow
+                #bgcolor="green",
+                #font=dict(color="black"),
+            )
+
+
+        # Update layout to adjust hover mode and axes
+        fig.update_layout(
+            title=f"{metric} scores for {gene} ({allele})",
+            xaxis_title="Position",
+            yaxis_title=f"{metric.capitalize()} Score",
+            legend_title="Seed",
+            hovermode="x unified",  # Unified hover mode to show all values at a given x position
+        )
+
+        # To export the plot as an embeddable HTML file
+        fig.write_html(output.plot)
+
+
 
 
 rule network_calculation:

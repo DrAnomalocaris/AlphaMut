@@ -171,7 +171,7 @@ fetch('completed.json')
     console.error('There was a problem with the fetch operation:', error);
 });
 // Populate the dropdown with mutations from the CSV file using PapaParse
-jQuery.get("output/INS/clinvar_seqMUT_scores.csv", function(csvData) {
+jQuery.get("output/" + gene + "/clinvar_seqMUT_scores.csv", function(csvData) {
     const select = document.getElementById('mutant-select');
     // Use PapaParse to reliably parse the CSV data
     Papa.parse(csvData, {

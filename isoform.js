@@ -35,7 +35,6 @@ const viewer = $3Dmol.createViewer(viewerContainer, {
 });
 
 let pdbUri = `output/${gene}/${mutation_path}/isoform_relaxed_averaged_rotated.pdb`;  // PDB file path
-let plddtUri = `output/${gene}/${mutation_path}/plddt.json`;      // PLDDT file path (or another file)
 
 // Use jQuery.ajax to load the PDB file
 jQuery.ajax(pdbUri, {
@@ -56,7 +55,6 @@ jQuery.ajax(pdbUri, {
 
         // Set download links for the PDB and other files
         document.getElementById('download-pdb').href = pdbUri;   // Link for PDB download
-        document.getElementById('download-plddt').href = plddtUri; // Link for PLDDT (or another file)
     },
     error: function(hdr, status, err) {
         console.error("Failed to load PDB " + pdbUri + ": " + err);
@@ -376,3 +374,42 @@ document.getElementById('mutant-select').addEventListener('change', function(eve
     }
 });
 
+
+
+
+
+const plddtPlotDiv = document.getElementById('plddt-plot');
+const plddtFilePath = `output/${gene}/${mutation_path}/plddt.html`;
+fetch(plddtFilePath)
+    .then(response => response.text())
+    .then(html => {
+        // Hide the loading message and display the embedded HTML
+        document.getElementById('loading').style.display = 'none';
+
+        // Create a temporary container to evaluate the HTML and inject scripts
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = html;
+
+        // Append the contents of the temp div to the mutant plot div
+        while (tempDiv.firstChild) {
+            plddtPlotDiv.appendChild(tempDiv.firstChild);
+        }
+
+        // Manually execute any scripts in the loaded HTML
+        const scripts = plddtPlotDiv.getElementsByTagName('script');
+        for (let i = 0; i < scripts.length; i++) {
+            const script = document.createElement('script');
+            script.textContent = scripts[i].textContent;
+                document.body.appendChild(script);
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching the plot:', error);
+            plddtPlotDiv.innerHTML = `
+                <div class="card">
+                    <h2>Error</h2>
+                    <p>There was an issue loading the plot. Please try again later.</p>
+                </div>
+            `;
+        });
+document.getElementById('plddt-table').href = `output/${gene}/${mutation_path}/plddt.csv`;

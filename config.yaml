@@ -1,0 +1,8 @@
+genes:
+  - INS
+  - GCG
+  - ADM
+  - SST
+  - CA2
+num_foldings: 1
+colabfold_exec: "/mnt/c/Users/lahat/colabfold/localcolabfold/colabfold-conda/bin/colabfold_batch"

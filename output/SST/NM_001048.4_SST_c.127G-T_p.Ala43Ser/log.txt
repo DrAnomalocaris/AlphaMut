@@ -1,47 +1,5 @@
-2024-09-26 12:13:23,569 Running colabfold 1.5.5 (4e198f5cecc6a808daa6baf7441899e5e76f7b9e)
-2024-09-26 12:13:23,975 WARNING: no GPU detected, will be using CPU
-2024-09-26 12:13:26,408 Found 6 citations for tools or databases
-2024-09-26 12:13:26,408 Query 1/1: isoform (length 116)
-2024-09-26 12:13:27,316 Sleeping for 6s. Reason: PENDING
-2024-09-26 12:13:34,049 Sleeping for 6s. Reason: PENDING
-2024-09-26 12:13:40,770 Sleeping for 7s. Reason: RUNNING
-2024-09-26 12:13:48,498 Sleeping for 10s. Reason: RUNNING
-2024-09-26 12:14:01,391 Setting max_seq=512, max_extra_seq=470
-2024-09-26 12:16:04,892 alphafold2_ptm_model_1_seed_000 recycle=0 pLDDT=62.7 pTM=0.229
-2024-09-26 12:17:46,768 alphafold2_ptm_model_1_seed_000 recycle=1 pLDDT=64.8 pTM=0.231 tol=12.8
-2024-09-26 12:19:20,270 alphafold2_ptm_model_1_seed_000 recycle=2 pLDDT=65.8 pTM=0.234 tol=3.67
-2024-09-26 12:20:54,489 alphafold2_ptm_model_1_seed_000 recycle=3 pLDDT=65.1 pTM=0.231 tol=3.76
-2024-09-26 12:20:54,490 alphafold2_ptm_model_1_seed_000 took 399.2s (3 recycles)
-2024-09-26 12:22:26,809 alphafold2_ptm_model_2_seed_000 recycle=0 pLDDT=57.5 pTM=0.217
-2024-09-26 12:24:10,919 alphafold2_ptm_model_2_seed_000 recycle=1 pLDDT=58.1 pTM=0.23 tol=9.48
-2024-09-26 12:25:54,761 alphafold2_ptm_model_2_seed_000 recycle=2 pLDDT=58.2 pTM=0.242 tol=4.3
-2024-09-26 12:27:37,317 alphafold2_ptm_model_2_seed_000 recycle=3 pLDDT=59 pTM=0.245 tol=2.61
-2024-09-26 12:27:37,319 alphafold2_ptm_model_2_seed_000 took 402.8s (3 recycles)
-2024-09-26 12:29:20,206 alphafold2_ptm_model_3_seed_000 recycle=0 pLDDT=59.9 pTM=0.228
-2024-09-26 12:31:05,881 alphafold2_ptm_model_3_seed_000 recycle=1 pLDDT=60.6 pTM=0.242 tol=10.6
-2024-09-26 12:32:47,188 alphafold2_ptm_model_3_seed_000 recycle=2 pLDDT=62.9 pTM=0.246 tol=3.43
-2024-09-26 12:34:28,472 alphafold2_ptm_model_3_seed_000 recycle=3 pLDDT=63.3 pTM=0.245 tol=1.39
-2024-09-26 12:34:28,478 alphafold2_ptm_model_3_seed_000 took 411.1s (3 recycles)
-2024-09-26 12:36:13,256 alphafold2_ptm_model_4_seed_000 recycle=0 pLDDT=58 pTM=0.226
-2024-09-26 12:37:55,474 alphafold2_ptm_model_4_seed_000 recycle=1 pLDDT=60.3 pTM=0.222 tol=4.42
-2024-09-26 12:39:36,274 alphafold2_ptm_model_4_seed_000 recycle=2 pLDDT=61.1 pTM=0.223 tol=1.16
-2024-09-26 12:41:14,658 alphafold2_ptm_model_4_seed_000 recycle=3 pLDDT=61.5 pTM=0.225 tol=0.859
-2024-09-26 12:41:14,659 alphafold2_ptm_model_4_seed_000 took 406.1s (3 recycles)
-2024-09-26 12:42:59,285 alphafold2_ptm_model_5_seed_000 recycle=0 pLDDT=55 pTM=0.232
-2024-09-26 12:44:41,630 alphafold2_ptm_model_5_seed_000 recycle=1 pLDDT=55.2 pTM=0.231 tol=6.93
-2024-09-26 12:46:23,592 alphafold2_ptm_model_5_seed_000 recycle=2 pLDDT=57.3 pTM=0.231 tol=2.92
-2024-09-26 12:48:05,480 alphafold2_ptm_model_5_seed_000 recycle=3 pLDDT=58.1 pTM=0.229 tol=1.26
-2024-09-26 12:48:05,482 alphafold2_ptm_model_5_seed_000 took 410.8s (3 recycles)
-2024-09-26 12:48:05,534 reranking models by 'plddt' metric
-2024-09-26 12:48:11,041 Warning: importing 'simtk.openmm' is deprecated.  Import 'openmm' instead.
-2024-09-26 12:48:21,952 Relaxation took 16.4s
-2024-09-26 12:48:21,952 rank_001_alphafold2_ptm_model_1_seed_000 pLDDT=65.1 pTM=0.231
-2024-09-26 12:48:30,766 Relaxation took 8.8s
-2024-09-26 12:48:30,767 rank_002_alphafold2_ptm_model_3_seed_000 pLDDT=63.3 pTM=0.245
-2024-09-26 12:48:37,483 Relaxation took 6.7s
-2024-09-26 12:48:37,483 rank_003_alphafold2_ptm_model_4_seed_000 pLDDT=61.5 pTM=0.225
-2024-09-26 12:48:42,699 Relaxation took 5.2s
-2024-09-26 12:48:42,701 rank_004_alphafold2_ptm_model_2_seed_000 pLDDT=59 pTM=0.245
-2024-09-26 12:48:48,821 Relaxation took 6.1s
-2024-09-26 12:48:48,822 rank_005_alphafold2_ptm_model_5_seed_000 pLDDT=58.1 pTM=0.229
-2024-09-26 12:48:50,751 Done
+2024-09-30 10:45:14,264 Running colabfold 1.5.5 (4e198f5cecc6a808daa6baf7441899e5e76f7b9e)
+2024-09-30 10:45:15,610 WARNING: no GPU detected, will be using CPU
+2024-09-30 10:45:25,062 Found 6 citations for tools or databases
+2024-09-30 10:45:25,064 Query 1/1: isoform (length 116)
+2024-09-30 10:45:33,878 Setting max_seq=512, max_extra_seq=470

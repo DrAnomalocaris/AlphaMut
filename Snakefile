@@ -9,9 +9,12 @@ NUM_FOLDINGS = config["num_foldings"]
 colabfoldExec = config["colabfold_exec"]
 
 rule python_path:
+    # this helps when debugging
     shell:
         "which python"
+
 rule download_variation_file_from_ClinVar:
+    #gets clinical variation data from https://www.ncbi.nlm.nih.gov/clinvar/
     output:
         "data/clinvar.txt"
     shell:
@@ -21,6 +24,7 @@ rule download_variation_file_from_ClinVar:
         """
 
 rule preprocess_variation_file:
+    #preprocess the clinical variation data into a dictionary with gene as key so future retrival is faster
     input:
         "data/clinvar.txt"
     output:
@@ -61,6 +65,7 @@ rule preprocess_variation_file:
             
 
 rule set_gene_specific_clinVar_file:
+    #sets the gene specific clinvar file
     input:
         table="data/clinvar.pk"
     output:
@@ -72,6 +77,7 @@ rule set_gene_specific_clinVar_file:
             clinvar = pickle.load(f)[wildcards.gene]
         pd.DataFrame(clinvar).to_csv(output.table, index=False)
 rule add_protein_WT_sequences_to_raw_clinVar:
+    #adds wildtype sequence to raw clinvar using entrez efetch
     input:
         table="output/{gene}/clinvar_raw.csv"
 
@@ -126,6 +132,7 @@ rule add_protein_WT_sequences_to_raw_clinVar:
         clinvar.to_csv(output.table, index=False)
         
 rule add_mutation_sequence_to_raw_clinVar:
+    #parses the mutation and adds it to the sequence
     input:
         table="output/{gene}/clinvar_seqWT.csv"
 
@@ -244,7 +251,7 @@ rule add_mutation_sequence_to_raw_clinVar:
         clinvar.to_csv(output.table)
 
 checkpoint set_output_folders:
-    # This needs to be altered to get mutated variants
+    # Creates a folder for a mutation output and includes an isoform fasta file with the mutations
     input:
         table="output/{gene}/clinvar_seqMUT.csv"   
     output:
@@ -285,6 +292,7 @@ checkpoint set_output_folders:
             SeqIO.write(records, handle, "fasta")
 
 rule prepare_isoform_for_alphafold:
+    #Extracts the specific transcript from the isoform fasta file
     input:
         "output/{gene}/isoforms.fa"
     output:
@@ -310,6 +318,7 @@ rule prepare_isoform_for_alphafold:
                 raise ValueError(f"Transcript {mutation_id} not found in {input[0]}")
 
 def get_mutations(gene):
+    # returns a list of mutations from the mutations fasta file
     mutations_file = checkpoints.set_output_folders.get(gene=gene).output[0]
     mutations=[]
     with open(mutations_file, 'r') as f: 
@@ -323,6 +332,7 @@ def get_mutations(gene):
 
 
 rule run_colabfold:
+    # Runs colabfold on the isoform
     input:
         fasta = "output/{gene}/{mutation}/seq.fa"
     output:
@@ -357,6 +367,7 @@ rule run_colabfold:
 
         
 rule rotate_foldings_to_match_first:
+    # Rotates the foldings to match the first protein (ie seed=000)
     input:
         protein     = "output/{gene}/{mutation}/isoform_relaxed_rank_001_alphafold2_ptm_model_1_seed_{seed}.pdb",
         reference   = "output/{gene}/{mutation}/isoform_relaxed_rank_001_alphafold2_ptm_model_1_seed_000.pdb",
@@ -408,6 +419,7 @@ rule rotate_foldings_to_match_first:
                 print(f"Skipping {protein_file} due to mismatched atom counts.")
 
 rule average_foldings:
+    # Averages the foldings
     input:
         lambda wc : expand("output/{gene}/{mutation}/{seed:03d}/isoform_relaxed_rotated.pdb", 
                             gene=[wc.gene], 
@@ -434,6 +446,7 @@ rule average_foldings:
 
 
 rule run_all_isoforms:
+    # Uses checkpoints to reasses the DAG, and run all isoforms
     input:
         lambda wc : expand("output/{gene}/{mutation}/{file}", 
             gene=[wc.gene], 
@@ -454,6 +467,7 @@ rule run_all_isoforms:
 
           
 rule compare_folding:
+    # Compares the folding using TMalign
     input:
         canonical = "output/{gene}/canonical/isoform_relaxed_averaged_rotated.pdb",
         mutant = "output/{gene}/{mut}/isoform_relaxed_averaged_rotated.pdb"
@@ -467,6 +481,7 @@ rule compare_folding:
         """
 
 rule parse_tmscore:
+    # Parses the TMscore into JSON
     input:
         table="output/{gene}/{mut}/score.txt"
     output:
@@ -498,6 +513,7 @@ rule parse_tmscore:
 
 
 rule add_scores_to_table:
+    # Adds the TMalign scores to the table
     input:
         "output/{gene}/done.txt",
         table="output/{gene}/clinvar_seqMUT.csv"   
@@ -524,6 +540,7 @@ rule add_scores_to_table:
         df.to_csv(output.table)
 
 rule simplify_table:
+    turns the table into html
     input:
         "output/{gene}/clinvar_seqMUT_scores.csv",
     output:
@@ -547,6 +564,7 @@ rule simplify_table:
 
 
 rule get_biomart:
+    # gets the biomaRt table
     output:
         table = "data/hsapiens_gene_ensembl.csv"
     run:
@@ -561,6 +579,7 @@ rule get_biomart:
             
 
 rule dot_plot:
+    # Makes a dot plot comparing tmalign scores with clinical significance
     input:
         table="output/{gene}/clinvar_seqMUT_scores.csv"
     output:
@@ -634,6 +653,7 @@ rule dot_plot:
         plt.savefig(output.plot,bbox_inches='tight')
 
 rule plddt_plot:
+    # Makes a plotly plddt plot
     input:
         jsons = lambda wc: expand("output/{gene}/{allele}/isoform_scores_rank_001_alphafold2_ptm_model_1_seed_{seed:03d}.json", 
                         gene=[wc.gene],   
@@ -739,6 +759,7 @@ rule plddt_plot:
 
 
 rule network_calculation:
+    #calculates the network by doing TMalign between all PDB pairs
     input:
         table="output/{gene}/clinvar_seqMUT_scores.csv"
     output:
@@ -786,6 +807,7 @@ rule network_calculation:
 
 
 rule plotly_isoform_plots:
+    #plots isoform dot plots with plotly
     input:
         table= "output/{gene}/clinvar_seqMUT_scores.split_categories.rmsd.csv"
     output:
@@ -865,11 +887,10 @@ rule plotly_isoform_plots:
             </script>
             ''')
 rule get_gene_info:
+    #Get gene info from NCBI
     output:
         "output/{gene}/gene_info.json"
     run:
-
-
         import time
         import xmltodict
         from Bio import Entrez
@@ -943,6 +964,7 @@ rule get_gene_info:
 
 
 rule process_gene:
+    #Process all isoforms for a given gene
     input:
         "output/{gene}/isoform_plot.html",
         "output/{gene}/clinvar_seqMUT_scores.csv",
@@ -950,7 +972,9 @@ rule process_gene:
         "output/{gene}/dot_plot.rmsd.png",
         "output/{gene}/dot_plot.identical_v_aligned.png",
         "output/{gene}/gene_info.json",
-        "output/{gene}/tmalign_network.csv"
+        "output/{gene}/tmalign_network.csv",
+        "output/{gene}/isoform_plot.html"
+
 
     output:
         "output/{gene}/DONE.txt"
@@ -1004,6 +1028,7 @@ rule network_calculation_tmalign:
 
 
 rule completedDictionary:
+    #create dictionary of completed genes, to be use for the search function
     input:
         expand("output/{gene}/DONE.txt",gene=GENES),
         table = "data/hsapiens_gene_ensembl.csv",

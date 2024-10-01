@@ -708,9 +708,8 @@ rule plddt_plot:
             text=three_letter_sequence  # Three-letter amino acid code
         ))
 
-
         # Add an annotation arrow for the mutation if applicable
-        if mutation_position:
+        if mutation_position and (mutation_position-1 in df.index):
             fig.add_annotation(
                 x=mutation_position,  # X-coordinate is the mutation position
                 y=df['average'].iloc[mutation_position - 1],  # Y-coordinate is the average score at mutation position

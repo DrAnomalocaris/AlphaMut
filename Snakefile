@@ -540,7 +540,7 @@ rule add_scores_to_table:
         df.to_csv(output.table)
 
 rule simplify_table:
-    turns the table into html
+    # Turns the table into html
     input:
         "output/{gene}/clinvar_seqMUT_scores.csv",
     output:

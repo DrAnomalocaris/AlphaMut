@@ -517,7 +517,8 @@ rule add_scores_to_table:
     # Adds the TMalign scores to the table
     input:
         "output/{gene}/done.txt",
-        table="output/{gene}/clinvar_seqMUT.csv"   
+        table="output/{gene}/clinvar_seqMUT.csv" ,
+        scores=lambda wc : expand("output/{gene}/{transcript}/score.json",gene=[wc.gene], transcript=get_mutations(wc.gene))
 
     output:
         table="output/{gene}/clinvar_seqMUT_scores.csv"
@@ -530,8 +531,6 @@ rule add_scores_to_table:
         for i in df.index:
             transcript = i.replace(" ","").replace("(","_").replace(")","").replace(":","_").replace(">","-")
             scores_json=f"output/{wildcards.gene}/{transcript}/score.json"
-            if not os.path.exists(scores_json): 
-                shell(f"snakemake {scores_json} -c {threads} --rerun-incomplete -p")
 
             with open(scores_json, 'r') as f:
                 score = json.load(f)

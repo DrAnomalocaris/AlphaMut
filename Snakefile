@@ -1054,4 +1054,29 @@ rule completedDictionary:
 
 rule all:
     input:
+        "completed.json",
+        expand("output/{gene}/isoform_plot.html",gene=GENES),
+        expand("output/{gene}/clinvar_seqMUT_scores.csv",gene=GENES),
+        expand("output/{gene}/clinvar_seqMUT_scores_summary.html",gene=GENES),
+        expand("output/{gene}/dot_plot.rmsd.png",gene=GENES),
+        expand("output/{gene}/dot_plot.identical_v_aligned.png",gene=GENES),
+        expand("output/{gene}/gene_info.json",gene=GENES),
+        expand("output/{gene}/tmalign_network.csv",gene=GENES),
+        expand("output/{gene}/isoform_plot.html",gene=GENES),
+        lambda wc: [f"output/{gene}/{allele}/plddt.html" for gene,allele in gene_mutants()],
+        lambda wc: [f"output/{gene}/{allele}/plddt.csv" for gene,allele in gene_mutants()],
         "completed.json"
+
+
+def gene_mutants():
+    mutations_files = {gene:checkpoints.set_output_folders.get(gene=gene).output[0] for gene in GENES}
+    mutations=[]
+    for gene,mutations_file in mutations_files.items():
+        
+        with open(mutations_file, 'r') as f: 
+            for line in f:
+                if line.startswith(">"):
+                    
+                    mutation = line.split()[0][1:]
+                    mutations.append((gene,mutation))
+    return mutations

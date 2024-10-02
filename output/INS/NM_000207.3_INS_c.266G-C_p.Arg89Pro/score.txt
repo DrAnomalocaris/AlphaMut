@@ -9,18 +9,18 @@
  * Please email your comments and suggestions to: zhng@umich.edu          *
  **************************************************************************
 
-Name of Chain_1: output/INS/canonical/rank1_relaxed.pdb            
-Name of Chain_2: output/INS/NM_000207.3_INS_c.266G-C_p.Arg89Pro/ran
+Name of Chain_1: output/INS/canonical/isoform_relaxed_averaged_rota
+Name of Chain_2: output/INS/NM_000207.3_INS_c.266G-C_p.Arg89Pro/iso
 Length of Chain_1:  110 residues
 Length of Chain_2:  110 residues
 
-Aligned length=  107, RMSD=   3.86, Seq_ID=n_identical/n_aligned= 0.879
-TM-score= 0.62793 (if normalized by length of Chain_1)
-TM-score= 0.62793 (if normalized by length of Chain_2)
+Aligned length=  107, RMSD=   3.87, Seq_ID=n_identical/n_aligned= 0.879
+TM-score= 0.62667 (if normalized by length of Chain_1)
+TM-score= 0.62667 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 (":" denotes aligned residue pairs of d < 5.0 A, "." denotes other aligned residues)
 MALWMRLLPLLALLALW-GPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAEDLQVGQVELGGGP-GA-GSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN
-::.::..:..:.....  ..::...:.:::::::::::::::::::::::::::::::..::... ::::::: :: ::::::: .....:::::::::::::::::::::::
+::.::..:..:.....  ..::...:.:::::::::::::::::::::::::::::::..::... ..::::: :: ::::::: .....:::::::::::::::::::::::
 MALWMRLLPLLALLAL-WGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAEDLQVG-QVELGGGPGAGSLQPLAL-EGSLQKPGIVEQCCTSICSLYQLENYCN
 

@@ -1,0 +1,10 @@
+{
+    "comparison": "(\":\" denotes aligned residue pairs of d < 5.0 A, \".\" denotes other aligned residues)\n------------------------M-SHHWGYGKHNGPEHWHKDFPIAKGERQSPVDIDTHTAKYDPSLKPLSVSYDQATSLRILNNGHAFNVEFDDSQDKAVLKGGPLDGTYRLIQFHFHWGSLDGQGSEHTVDKKKYAAELHLVHWNTKYGDFGKAVQQPDGLAVLGIFLKVGSAKPGLQKVVDVLDSIKTKGKSADFTNFDPR-GLLPESLDYWTYPGSLTTPPLLECVTWIV--LKEPISVSSEQVLKFRKLNFNGEGEPEELMVDNWRPAQPLKNRQIKASFK\n                        : :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: :::::::.                       .                                             .:: \nTQCRRPSRRRQIGADSCPAPTASATMSHHWGYGKHNGPEHWHKDFPIAKGERQSPVDIDTHTAKYDPSLKPLSVSYDQATSLRILNNGHAFNVEFDDSQDKAVLKGGPLDGTYRLIQFHFHWGSLDGQGSEHTVDKKKYAAELHLVHWNTKYGDFGKAVQQPDGLAVLGIFLKVGSAKPGLQKVVDVLDSIKTKGKSADFTNFDPRGSFLNPWIT---------------------GPT---------------------------------------------QAH-",
+    "chain1": "output/CA2/canonical/isoform_relaxed_averaged_rotated.pdb",
+    "chain2": "output/CA2/NM_000067.3_CA2_c.621del_p.Trp208fs/isoform_relaxed_averaged_rotated.pdb",
+    "chain1_length": 260,
+    "chain2_length": 221,
+    "aligned_length": 193.0,
+    "rmsd": 1.86,
+    "identical/aligned": 0.938
+}

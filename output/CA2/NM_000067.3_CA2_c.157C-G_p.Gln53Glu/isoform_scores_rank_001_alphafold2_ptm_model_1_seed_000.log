@@ -1,0 +1,23 @@
+2024-10-01 10:51:52,417 Running colabfold 1.5.5 (4e198f5cecc6a808daa6baf7441899e5e76f7b9e)
+2024-10-01 10:51:52,712 WARNING: no GPU detected, will be using CPU
+2024-10-01 10:51:55,034 Found 6 citations for tools or databases
+2024-10-01 10:51:55,034 Query 1/1: isoform (length 260)
+2024-10-01 10:51:55,954 Sleeping for 10s. Reason: PENDING
+2024-10-01 10:52:06,668 Sleeping for 6s. Reason: RUNNING
+2024-10-01 10:52:13,364 Sleeping for 5s. Reason: RUNNING
+2024-10-01 10:52:19,062 Sleeping for 8s. Reason: RUNNING
+2024-10-01 10:52:27,974 Sleeping for 5s. Reason: RUNNING
+2024-10-01 10:52:33,692 Sleeping for 7s. Reason: RUNNING
+2024-10-01 10:52:41,391 Sleeping for 7s. Reason: RUNNING
+2024-10-01 10:52:49,108 Sleeping for 10s. Reason: RUNNING
+2024-10-01 10:53:03,231 Setting max_seq=512, max_extra_seq=5120
+2024-10-01 10:58:00,074 alphafold2_ptm_model_1_seed_000 recycle=0 pLDDT=94.6 pTM=0.917
+2024-10-01 11:02:32,109 alphafold2_ptm_model_1_seed_000 recycle=1 pLDDT=96.3 pTM=0.928 tol=0.359
+2024-10-01 11:06:59,588 alphafold2_ptm_model_1_seed_000 recycle=2 pLDDT=96.8 pTM=0.93 tol=0.0855
+2024-10-01 11:11:27,011 alphafold2_ptm_model_1_seed_000 recycle=3 pLDDT=96.8 pTM=0.931 tol=0.0449
+2024-10-01 11:11:27,012 alphafold2_ptm_model_1_seed_000 took 1083.1s (3 recycles)
+2024-10-01 11:11:27,101 reranking models by 'plddt' metric
+2024-10-01 11:11:30,659 Warning: importing 'simtk.openmm' is deprecated.  Import 'openmm' instead.
+2024-10-01 11:12:01,730 Relaxation took 34.6s
+2024-10-01 11:12:01,730 rank_001_alphafold2_ptm_model_1_seed_000 pLDDT=96.8 pTM=0.931
+2024-10-01 11:12:02,381 Done

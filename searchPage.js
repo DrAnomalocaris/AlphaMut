@@ -63,7 +63,7 @@ function displayResults(genes) {
         sortedResults.forEach(gene => {
             const listItem = document.createElement('li');
             const link = document.createElement('a');
-            link.href = `gene.html?gene=${encodeURIComponent([gene])}`; // Adjust to your gene page
+            link.href = `gene.html?gene=${encodeURIComponent(genes[gene])}`; // Adjust to your gene page
             link.textContent = gene; // Display the gene name
             listItem.appendChild(link);
             resultsList.appendChild(listItem);

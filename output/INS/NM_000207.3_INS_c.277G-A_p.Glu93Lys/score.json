@@ -1,0 +1,10 @@
+{
+    "comparison": "(\":\" denotes aligned residue pairs of d < 5.0 A, \".\" denotes other aligned residues)\nMALWMRLLPLLALLALWG-PDPAAAFVNQHLCGSHLVEALYLVCG--ERGFFYTPKTRREAEDLQ--VGQVELGG-----GPGAGSLQPLALEGSLQK-RGIVEQCCTSICSLYQLENYCN\n:::::::::::::::::: ::.. .:.::::::::::::::::::  ::::::::.::..::.    .            ..::......: ::.... .....:::::::::::::::::\nMALWMRLLPLLALLALWGPDPAA-AFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAEDLQ--VGQ-------VELGGGPGAGSLQPLA-LEGSLQKRGIVKQCCTSICSLYQLENYCN",
+    "chain1": "output/INS/canonical/isoform_relaxed_averaged_rotated.pdb",
+    "chain2": "output/INS/NM_000207.3_INS_c.277G-A_p.Glu93Lys/isoform_relaxed_averaged_rotated.pdb",
+    "chain1_length": 110,
+    "chain2_length": 110,
+    "aligned_length": 99.0,
+    "rmsd": 4.59,
+    "identical/aligned": 0.737
+}

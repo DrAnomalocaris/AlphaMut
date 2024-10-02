@@ -512,6 +512,7 @@ rule parse_tmscore:
             json.dump(out, f, indent=4)
 
 
+
 rule add_scores_to_table:
     # Adds the TMalign scores to the table
     input:
@@ -977,7 +978,7 @@ rule process_gene:
 
 
     output:
-        "output/{gene}/DONE.txt"
+        "output/{gene}/DONE_all.txt"
     shell:
         "touch {output}"
 
@@ -1030,7 +1031,7 @@ rule network_calculation_tmalign:
 rule completedDictionary:
     #create dictionary of completed genes, to be use for the search function
     input:
-        expand("output/{gene}/DONE.txt",gene=GENES),
+        DONE = expand("output/{gene}/DONE_all.txt",gene=GENES),
         table = "data/hsapiens_gene_ensembl.csv",
 
     output:
@@ -1038,8 +1039,8 @@ rule completedDictionary:
     run:
         import json
         import pandas as pd
-        from glob import glob
-        genes = [i.split("/")[1] for i in glob("output/*/isoform_plot.html")]
+        print(input)
+        genes = [i.split("/")[1] for i in input.DONE]
         table = pd.read_csv(input.table)
         GENES = {}
         for gene in genes:

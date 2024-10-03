@@ -10,6 +10,8 @@ This is only a prototype proof of concept. All the foldings were done in my lapt
 
 If you enjoyed this project consider checking out its sister project, [AlphaSplice](https://github.com/DrAnomalocaris/AlphaSplice), A similar project which is focused on splice variants rather than mutations.
 
+As this is a prototype, there is only a handful of genes available. If you are particularly interested in a specific gene, feel free to contact me to have said gene processed.
+
 ## Features
 
 Front end features:
@@ -28,8 +30,8 @@ Back end features:
 ## Usage
 
 * **Search for a Gene** : Use the search bar at the top of the page to find a gene or transcript. Autocomplete suggestions will help you find the correct gene.
-* **View Folded Proteins** : Scroll down on the homepage to see a list of available folded proteins. Click on any gene to view detailed information.
 * **Gene Pages** : Explore the gene-specific pages to view protein structures and associated data.
+* **View Folded Proteins** : Scroll down on the homepage to see a list of available folded proteins. Click on any gene to view detailed information.
 
 ## Road map
 
@@ -37,6 +39,7 @@ Back end features:
 * [ ] Add a daemon to tally requested genes, to allow for the homepage to display the most popular genes and to prioritize gene folding for most requested genes that are not been processed yet.
 * [ ] Develop an API or creation of a large file to allow users to download bulk data.
 * [ ] Change to locally running MSA, as this runs on a laptop, I do not have enough storage to download the required files for running local MSA.
+* [ ] Implement a proper API which uses SQL in the backend, as this prototype is designed to be hosted in github pages, there were some limitations. However a proper implementation will have a proper SQL based backend.
 
 ## Contact
 
@@ -48,4 +51,4 @@ If you're interested in collaborating or have any questions, feel free to reach 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the [CC-NC ](https://creativecommons.org/licenses/by-nc/4.0/deed.en)License.

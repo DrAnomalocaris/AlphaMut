@@ -20,7 +20,7 @@
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="methods.html">Methods</a></li>
                 <li><a href="contact.html">Contact Me</a></li>
-                <li><a href="https://github.com/DrAnomalocaris/">Github</a></li>
+                <li><a href="https://github.com/DrAnomalocaris/AlphaMut">Github</a></li>
             </ul>
         </nav>
     </header>
@@ -44,6 +44,61 @@
             <!-- Folded Proteins Container -->
             <div id="folded-proteins-container" class="folded-proteins-container">
                 <!-- The list will be dynamically generated here -->
+            </div>
+            <div id="description">
+                <h2>Description</h2>
+                This project provides a platform for users to search for human genes and view detailed information about their folded protein structures. Utilizing interactive search features and a curated database of folded proteins, users can explore gene data, protein structures, and collaborate on further research.
+                <br>
+                This is only a prototype proof of concept. All the foldings were done in my laptop using <a href="https://github.com/YoshitakaMo/localcolabfold">local colabfold</a>. I would love to set this up in a proper server and running foldings constantly using proper hardware.
+                <br>
+                If you enjoyed this project consider checking out its sister project, <a href="https://github.com/DrAnomalocaris/AlphaSplice">AlphaSplice</a>, A similar project which is focused on splice variants rather than mutations.
+                <br>
+                As this is a prototype, there is only a handful of genes available. If you are particularly interested in a specific gene, feel free to contact me to have said gene processed.
+
+                <h2>Features</h2>
+
+                <h3>Front end features:</h3>
+                <ul>
+                    <li><strong>Interactive Search Bar</strong> : Autocomplete suggestions for genes and transcripts.</li>
+                    <li><strong>Available Folded Proteins List</strong> : Quick access to a list of genes with available folded protein data.</li>
+                    <li><strong>Gene Information Pages</strong> : Detailed pages displaying gene-specific data and protein structures.</li>
+                    <li><strong>Responsive Design</strong> : User-friendly interface compatible with various devices.</li>
+                    <li><strong>Collaboration Opportunities</strong> : Contact information for users interested in contributing.</li>
+                </ul>
+
+                <h3>Back end features:</h3>
+                <ul>
+                    <li><strong>Pipeline:</strong> Analysis pipeline in snakemake format</li>
+                    <li><strong>Ease of use:</strong> To process a specific gene, all that is needed is to request the output analysis file using snakemake, and snakemake will get the gene data and process it.</li>
+                </ul>
+
+                <h2>Usage</h2>
+                <ul>
+                    <li><strong>Search for a Gene</strong> : Use the search bar at the top of the page to find a gene or transcript. Autocomplete suggestions will help you find the correct gene.</li>
+                    <li><strong>Gene Pages</strong> : Explore the gene-specific pages to view protein structures and associated data.</li>
+                    <li><strong>View Folded Proteins</strong> : Scroll down on the homepage to see a list of available folded proteins. Click on any gene to view detailed information.</li>
+                </ul>
+
+                <h2>Road map</h2>
+                <ul>
+                    <li>Add support for different species (as I use <a href="https://www.ncbi.nlm.nih.gov/clinvar/intro/">clinvar</a>, and it only has human data, adding another species would require modifying a lot of code)</li>
+                    <li>Add a daemon to tally requested genes, to allow for the homepage to display the most popular genes and to prioritize gene folding for most requested genes that are not been processed yet.</li>
+                    <li>Develop an API or creation of a large file to allow users to download bulk data.</li>
+                    <li>Change to locally running MSA, as this runs on a laptop, I do not have enough storage to download the required files for running local MSA.</li>
+                    <li>Implement a proper API which uses SQL in the backend, as this prototype is designed to be hosted in github pages, there were some limitations. However a proper implementation will have a proper SQL based backend.</li>
+                </ul>
+
+                <h2>Contact</h2>
+                <p>If you're interested in collaborating or have any questions, feel free to reach out:</p>
+                <ul>
+                    <li><strong>Email</strong> : <a href="mailto:lahat.albert@gmail.com">lahat.albert@gmail.com</a></li>
+                    <li><strong>GitHub</strong> : <a href="https://github.com/DrAnomalocaris">DrAnomalocaris</a></li>
+                    <li><strong>LinkedIn</strong> : <a href="https://www.linkedin.com/in/dr-albert-lahat-85b30578/">Dr. Albert Lahat</a></li>
+                </ul>
+
+                <h2>License</h2>
+                <p>This project is licensed under the CC-NC License - see the <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.en">LICENSE</a> file for details.</p>
+
             </div>
         </div>
     </main>

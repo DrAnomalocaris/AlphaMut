@@ -113,8 +113,10 @@ main {
     flex-direction: column; /* Arrange children vertically */
     align-items: center; /* Center children horizontally */
     width: 100%;
+    max-width: 800px; /* Set a specific width for the text column */
+    margin: 0 auto; /* Center the column horizontally */
+    padding: 20px; /* Add some padding for a better look */
 }
-
 /* Center the search bar */
 .search-container {
     width: 100%;

@@ -64,6 +64,26 @@ header nav .search-box button {
     cursor: pointer;
 }
 
+/* Autocomplete List */
+.autocomplete-items {
+    position: absolute;
+    background-color: #fff;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 99;
+    width: calc(100% - 2px); /* Ensure it matches the width of the input */
+    top: 100%; /* Position it right below the input */
+    left: 0; /* Align it to the left */
+}
+.autocomplete-items div {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.autocomplete-items div:hover {
+    background-color: #e9e9e9;
+}
+
 .search-box {
     display: flex;
     align-items: center;

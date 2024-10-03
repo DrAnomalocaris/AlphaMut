@@ -17,7 +17,7 @@ rule plot_DAG:
     input:
         "Snakefile"
     output:
-        "dag.png"
+        "src/dag.png"
     shell:
         "snakemake --rulegraph all | dot -Gdpi=300 -Tpng > {output}"
 

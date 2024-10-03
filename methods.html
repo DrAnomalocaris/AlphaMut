@@ -37,10 +37,11 @@
         <div class="content-container">
 
             <h1>Methods</h1>
-            <p>The protein foldings were run using <a href="https://github.com/YoshitakaMo/localcolabfold">local collabfold.</a> on my laptop (using CPU) with relaxation.</p>
-            <p>Scores are calculated using <a href="https://seq2fun.dcmb.med.umich.edu//TM-align/">TMalign</a></p>
-            <p>The entire analysis is performed using a <a href="Snakefile">Snakefile</a>. </p>
-            <p>The snakefile is designed to arbitrarily work with any gene name, .</p>
+            <p>The protein foldings were run using <a href="https://github.com/YoshitakaMo/localcolabfold">local collabfold.</a> on my laptop (using CPU) with relaxation. To reduce noise, many foldings are made for each mutation (can be edited in the config file), those foldings then are rotated to match each other and averaged.</p>
+            <p>Scores are calculated using <a href="https://seq2fun.dcmb.med.umich.edu//TM-align/">TMalign</a> to compare them against the canonical (unmutated) ptotein and against all other mutations.</p>
+            <p>The entire analysis is performed using <a href="Snakefile">snakemake</a>. </p>
+            <img src="src/dag.png" alt="snakemake DAG">
+            <p>The snakefile is designed to arbitrarily work with any gene name. As long as it is in the ClinVar database. All that is needed is to add the gene name to the config file.</p>
             <p>Thank you.</p>
 
         </div>

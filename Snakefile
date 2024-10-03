@@ -12,6 +12,15 @@ rule python_path:
     # this helps when debugging
     shell:
         "which python"
+rule plot_DAG:
+    #plot the dag
+    input:
+        "Snakefile"
+    output:
+        "dag.png"
+    shell:
+        "snakemake --rulegraph all | dot -Gdpi=300 -Tpng > {output}"
+
 
 rule download_variation_file_from_ClinVar:
     #gets clinical variation data from https://www.ncbi.nlm.nih.gov/clinvar/

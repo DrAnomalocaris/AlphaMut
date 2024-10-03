@@ -14,13 +14,13 @@ Name of Chain_2: output/CA2/NM_000067.3_CA2_c.153T-A_p.Tyr51Ter/iso
 Length of Chain_1:  260 residues
 Length of Chain_2:   50 residues
 
-Aligned length=   45, RMSD=   3.48, Seq_ID=n_identical/n_aligned= 0.600
-TM-score= 0.14091 (if normalized by length of Chain_1)
-TM-score= 0.52124 (if normalized by length of Chain_2)
+Aligned length=   44, RMSD=   3.26, Seq_ID=n_identical/n_aligned= 0.614
+TM-score= 0.14013 (if normalized by length of Chain_1)
+TM-score= 0.52236 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 (":" denotes aligned residue pairs of d < 5.0 A, "." denotes other aligned residues)
-MSHHWGYGKHNGPEHWHKDFPIAKGERQSPVDIDTHTAKYDPSLKPLSVSYDQATSLRILNNGHAFNVEFDDSQDKAVLKGGPLDGTYRLIQFHF--HWGSLDGQGSEHTVDKKKYAAELHLVHWNTKYGDFGKAVQQPDGLAVLGIFLKVGSAKPGLQKVVDVLDSIKTKGKSADFTNFDPRG--LLPESLDYWTYPGSLTTPPLLECVTW-IVLKEPISVSSEQVLKFRKLNFNGEGEPEELMVDNWRPAQPLKNRQIKASFK
-:::::::::::::::::::::::::. :::                                                                   .::.::             :                                 ::. .                               .:.  .                     .                                                   
-MSHHWGYGKHNGPEHWHKDFPIAKGE-RQS-----------------------------------------------------------------PVDIDTHT-------------A---------------------------------KYD-P-----------------------------SLKPL--S--------------------VS---------------------------------------------------
+MSHHWGYGKHNGPEHWHKDFPIAKGERQSPVDIDTHTAKYDPSLKPLSVSYDQATSLRILNNGHAFNVEFDDSQDKAVLKGGPLDGTYRLIQFHF--HWGSLDGQGSEHTVDKKKYAAELHLVHWNTKYGDFGKAVQQPDGLAVLGIFLKVGSAKPGLQKVVDVLDSIKTKGKSADFTNFDPRG--LLPESLDYWTYPGSLTTPPLLECVTWIVLKEPISVSSEQVLKFRKLNFNGEGEPEELMVDNWRPAQPLKNRQIKASFK--
+:::::::::::::::::::::::::. :::                                                                   .::.::             :                                 ::. .                               .:.  .                                                                          
+MSHHWGYGKHNGPEHWHKDFPIAKGE-RQS-----------------------------------------------------------------PVDIDTHT-------------A---------------------------------KYD-P-----------------------------SLKPL--S------------------------------------------------------------------------VS
 

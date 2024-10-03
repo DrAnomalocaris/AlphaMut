@@ -42,15 +42,15 @@ Name of Chain_2: output/SST/NM_001048.4_SST_c.127G-T_p.Ala43Ser/iso
 Length of Chain_1:  116 residues
 Length of Chain_2:  116 residues
 
-Aligned length=  104, RMSD=   4.02, Seq_ID=n_identical/n_aligned= 0.548
-TM-score= 0.60126 (if normalized by length of Chain_1)
-TM-score= 0.60126 (if normalized by length of Chain_2)
+Aligned length=  110, RMSD=   3.93, Seq_ID=n_identical/n_aligned= 0.582
+TM-score= 0.61294 (if normalized by length of Chain_1)
+TM-score= 0.61294 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MLS-CRL-QCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNF--------FWKTFT-SC-
-... :.  .:..:...: ::::::::::::::::::::::::::::::::::::::::::::::::: ::.::  :: :::::::::::::::..:.::::::..:..          ...    .  
-MLSCRL-QCALAALSIV-LALGCVTGAPSDPRLRQFLQKSLAAASGKQELAKYFLAELLSEPNQTEN-DALEP--ED-LSQAAEQDEMRLELQRSANSNPAMAPRERK--AGCKNFFWKTF---TS-C
+-M--LSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNF---FWKTFTSC
+ .  .:...:..:...:...:..::.:::..  .: .:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: ::::.:.::.:.:   :::. .. 
+MLSCRLQCALAALSIVLALGCVTGAPSDPRL--RQ-FLQKSLAAASGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNP-AMAPRERKAGCKNFFWKTFT-SC-
 
 "
 canonical,NM_001048.4_SST_c.178C-T_p.Pro60Ser,"
@@ -69,15 +69,15 @@ Name of Chain_2: output/SST/NM_001048.4_SST_c.178C-T_p.Pro60Ser/iso
 Length of Chain_1:  116 residues
 Length of Chain_2:  116 residues
 
-Aligned length=   88, RMSD=   4.16, Seq_ID=n_identical/n_aligned= 0.705
-TM-score= 0.47902 (if normalized by length of Chain_1)
-TM-score= 0.47902 (if normalized by length of Chain_2)
+Aligned length=   92, RMSD=   3.77, Seq_ID=n_identical/n_aligned= 0.239
+TM-score= 0.50247 (if normalized by length of Chain_1)
+TM-score= 0.50247 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-ML----SCR---LQC-ALAALS-IVLALGCVTGAPSDPR-LRQFLQKSLAAAAGKQELAKYFLAELLSEP-NQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNF-------------FWKTFTSC----
-      .     ..  .:...: ::.::: :::.: .   .: .:::::::::::::::::::::::::: ::..: ..:::::::::::::::::::::::::::...                       .           
---MLSCR--LQCAL-AALSIVLALGCVTG-APSDP-R--LRQ-FLQKSLAAAAGKQELAKYFLAELLSESNQTEND-ALEPEDLSQAAEQDEMRLELQRSANSNPAMAP----------RERKAGCKNFFWKT-------FTSC
+ML-SCRLQCALAALSIVLALGC-VT-GAPSD-PRLRQFLQKSLAAAAGKQELAKYFLAELLSEP-NQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKTFTSC-------------------
+.. ....: ::.:::::::::: :: .:::: .::::::::::::::::::::::::::::::: :: ::...:.:::::::::::::::::: ::.::.                                        
+MLSCRLQC-ALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSESNQTEND-ALEPEDLSQAAEQDEMRLELQRSAN-SNPAMA---------------------PRERKAGCKNFFWKTFTSC
 
 "
 canonical,NM_001048.4_SST_c.182A-C_p.Asn61Thr,"
@@ -96,15 +96,15 @@ Name of Chain_2: output/SST/NM_001048.4_SST_c.182A-C_p.Asn61Thr/iso
 Length of Chain_1:  116 residues
 Length of Chain_2:  116 residues
 
-Aligned length=  115, RMSD=   3.21, Seq_ID=n_identical/n_aligned= 0.939
-TM-score= 0.66641 (if normalized by length of Chain_1)
-TM-score= 0.66641 (if normalized by length of Chain_2)
+Aligned length=  114, RMSD=   2.59, Seq_ID=n_identical/n_aligned= 0.904
+TM-score= 0.76778 (if normalized by length of Chain_1)
+TM-score= 0.76778 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MLSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERK-AGCKNFFWKTFTSC
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.......::::::::::::::::::::::::::::::: ::::::: ::::..
-MLSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPTQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFW-KTFTSC
+MLSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERK-AGCKNFFWKTFTSC-
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::........:::::::::::::::::::::::::::: ::::::: . :::: 
+MLSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPTQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFW-K-TFTSC
 
 "
 canonical,NM_001048.4_SST_c.221C-T_p.Ser74Phe,"
@@ -123,15 +123,15 @@ Name of Chain_2: output/SST/NM_001048.4_SST_c.221C-T_p.Ser74Phe/iso
 Length of Chain_1:  116 residues
 Length of Chain_2:  116 residues
 
-Aligned length=   95, RMSD=   2.90, Seq_ID=n_identical/n_aligned= 0.884
-TM-score= 0.64233 (if normalized by length of Chain_1)
-TM-score= 0.64233 (if normalized by length of Chain_2)
+Aligned length=  106, RMSD=   3.57, Seq_ID=n_identical/n_aligned= 0.604
+TM-score= 0.61931 (if normalized by length of Chain_1)
+TM-score= 0.61931 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MLSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMR-LEL-QRSANSNPAMAPRER----------------KAG-CKNFFWKTFTSC--
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.. :.  ..                             ..  .      .:...  
-MLSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLFQAAEQDEMRLEL-QRS-------------ANSNPAMAPRERKAGCKN-FF------WKTFTSC
+MLSCRLQCALAALSIVLALGCVTG-APSDP-R-LRQ-FLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSA-NSNP--AMAPR-ERKAGCKNFFWKTFTSC--
+   .:: ::::::::::::::::: ::::: : ..: ::::::::::::::::::::::::::::::::::::..::::::::::::::::::. :..   .:... ..:: :.:    .::::  
+---MLS-CRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLFQAAEQDEMRLELQRSANSNP-AMAPRERKAGCK-NFF----WKTFTSC
 
 "
 canonical,NM_001048.4_SST_c.79T-C_p.Ser27Pro,"
@@ -150,15 +150,15 @@ Name of Chain_2: output/SST/NM_001048.4_SST_c.79T-C_p.Ser27Pro/isof
 Length of Chain_1:  116 residues
 Length of Chain_2:  116 residues
 
-Aligned length=  109, RMSD=   3.67, Seq_ID=n_identical/n_aligned= 0.716
-TM-score= 0.64567 (if normalized by length of Chain_1)
-TM-score= 0.64567 (if normalized by length of Chain_2)
+Aligned length=  116, RMSD=   2.67, Seq_ID=n_identical/n_aligned= 0.991
+TM-score= 0.74927 (if normalized by length of Chain_1)
+TM-score= 0.74927 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MLSCRLQCALAALSIVLALG-CVTGAPSD--PRL--RQ-FLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRER-KAGCKNFFWKTFTSC
-    .. .:..::..:...: .:::::::  :.   .: ..:::::::::::::::::::::::::::::.....:::::::::::::::::::::::::::::::: :::::::. ::::::
-----ML-SCRLQCALAALSIVLALGCVTGAPPD-PRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFW-KTFTSC
+MLSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKTFTSC
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.::::::::::::::::::::::::::::::::::::::::....:::::
+MLSCRLQCALAALSIVLALGCVTGAPPDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKTFTSC
 
 "
 NM_001048.4_SST_c.127G-T_p.Ala43Ser,canonical,"
@@ -177,15 +177,15 @@ Name of Chain_2: output/SST/canonical/isoform_relaxed_averaged_rota
 Length of Chain_1:  116 residues
 Length of Chain_2:  116 residues
 
-Aligned length=  104, RMSD=   4.02, Seq_ID=n_identical/n_aligned= 0.548
-TM-score= 0.60126 (if normalized by length of Chain_1)
-TM-score= 0.60126 (if normalized by length of Chain_2)
+Aligned length=  110, RMSD=   3.93, Seq_ID=n_identical/n_aligned= 0.582
+TM-score= 0.61294 (if normalized by length of Chain_1)
+TM-score= 0.61294 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MLSCRLQ-CALAALSIV-LALGCVTGAPSDPRLRQFLQKSLAAASGKQELAKYFLAELLSEPNQTEN-DALEP--ED-LSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFW--KTFT---SC-
-... :.  .:..:...: ::::::::::::::::::::::::::::::::::::::::::::::::: ::.::  :: :::::::::::::::..:.::::::..:..          ...    .  
-MLS-CR-LQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCK--------NFFWK-TFTS-C
+MLSCRLQCALAALSIVLALGCVTGAPSDPRL--RQ-FLQKSLAAASGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNP-AMAPRERKAGCKNFFWKTFT-SC-
+ .  .:...:..:...:...:..::.:::..  .: .:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: ::::.:.::.:.:   :::. .. 
+-M--LSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNF---FWKTFTSC
 
 "
 NM_001048.4_SST_c.127G-T_p.Ala43Ser,NM_001048.4_SST_c.127G-T_p.Ala43Ser,"
@@ -231,15 +231,15 @@ Name of Chain_2: output/SST/NM_001048.4_SST_c.178C-T_p.Pro60Ser/iso
 Length of Chain_1:  116 residues
 Length of Chain_2:  116 residues
 
-Aligned length=  107, RMSD=   4.71, Seq_ID=n_identical/n_aligned= 0.813
-TM-score= 0.47547 (if normalized by length of Chain_1)
-TM-score= 0.47547 (if normalized by length of Chain_2)
+Aligned length=   94, RMSD=   3.88, Seq_ID=n_identical/n_aligned= 0.606
+TM-score= 0.53309 (if normalized by length of Chain_1)
+TM-score= 0.53309 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MLSCR--------L-QCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAASGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKTFTSC
-             . .......:::::::  ::. .. ......:::::::::::::::::::::::::........:::::::::::::::::::::::::::::........::::::::...
------MLSCRLQCALAALSIVLALGCVTG--APS-DP-RLRQFLQKSLAAAAGKQELAKYFLAELLSESNQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKTFTSC
+ML---SCR-LQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAASGKQELAKYFLAELLSEPNQTE-NDALEP--EDLSQAAEQDEMRLELQRSANSNPAM-APRERKAGCKN-----------FFWKTFTSC---
+     ..  .: ....:::::::::::::::::::::::::::::::::::::::::::::::::::. ::.:::  .::.:::::::::::::: ::.::.  .                     .:.         
+--MLSCR-LQC-ALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSESNQTENDALEPEDLSQAAEQDEMRLELQRSAN-SNPAMA-PR----------ERKAGCKNFFWKTF------TSC
 
 "
 NM_001048.4_SST_c.127G-T_p.Ala43Ser,NM_001048.4_SST_c.182A-C_p.Asn61Thr,"
@@ -258,15 +258,15 @@ Name of Chain_2: output/SST/NM_001048.4_SST_c.182A-C_p.Asn61Thr/iso
 Length of Chain_1:  116 residues
 Length of Chain_2:  116 residues
 
-Aligned length=   98, RMSD=   3.35, Seq_ID=n_identical/n_aligned= 0.704
-TM-score= 0.61593 (if normalized by length of Chain_1)
-TM-score= 0.61593 (if normalized by length of Chain_2)
+Aligned length=  100, RMSD=   3.42, Seq_ID=n_identical/n_aligned= 0.510
+TM-score= 0.56950 (if normalized by length of Chain_1)
+TM-score= 0.56950 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MLSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAASGKQELAKYFLAELLSEPNQTENDALEP-ED--LSQAAEQDEMRLEL-QRS--A-N-SNPA---MAPRERKAGCKNFFWKT--FTSC-----
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: ::  :::::::....... .    . . ...:   .:::               .        
-MLSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPTQTENDALEPEDLSQAAEQDEMRLELQRSAN--SNPAMAPRERKAGCKNF-------------FWK---TFTSC
+MLSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAASGKQELAKYFLAELLSEP-NQT--ENDA-LEPEDLSQAAEQDEMRLELQRS-ANS--N-PAMAP---RERKAGCKNFFWKTFTSC-----
+:::::::::::::::::::::::: ::: :  ::::::::::..:::::::::::::::: :::  :::: ::::::::::::::::::::.. ...  . ::.:    :::.    .     ..       
+MLSCRLQCALAALSIVLALGCVTG-APS-D--PRLRQFLQKSLAAAAGKQELAKYFLAELLSEPTQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRER-KAGCKNF----F-----WK--TFTSC
 
 "
 NM_001048.4_SST_c.127G-T_p.Ala43Ser,NM_001048.4_SST_c.221C-T_p.Ser74Phe,"
@@ -285,15 +285,15 @@ Name of Chain_2: output/SST/NM_001048.4_SST_c.221C-T_p.Ser74Phe/iso
 Length of Chain_1:  116 residues
 Length of Chain_2:  116 residues
 
-Aligned length=   97, RMSD=   4.67, Seq_ID=n_identical/n_aligned= 0.639
-TM-score= 0.45843 (if normalized by length of Chain_1)
-TM-score= 0.45843 (if normalized by length of Chain_2)
+Aligned length=   90, RMSD=   4.43, Seq_ID=n_identical/n_aligned= 0.656
+TM-score= 0.45294 (if normalized by length of Chain_1)
+TM-score= 0.45294 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MLSCR--LQC--ALAALSIVLALGCVTGAPSDP-R--LRQFLQKSLAAASGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSA-NS---NPAM-A----PRERKAGCKNFFWKT-FTSC--
-       .    ........:...:..:::::: :  ...:::::::::::::::::::::::::::::::::::::::::::::::::::::.... .    ..:. .    .::.            ....  
------MLS--CRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLFQAAEQDEMRLELQRSANS-NPAMAPRERKAGCKNFF-----------WKTFTSC
+MLSCRLQCALAA---LSIV--LALG---CVT--GAPS-DPRLRQFLQ-------KS--LA-AAS-G--KQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERK-AGCKNFFWKTFTSC-
+               .     .      .    ...  .::....         .   .. ... :  ::::::::::::::::::::::...............::::::::::::::::::::: ::::::  :::::: 
+------------MLSC---RLQ---CALA--ALSIV-LALGCVTG--APSDPRLR-QFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLFQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFF--WKTFTSC
 
 "
 NM_001048.4_SST_c.127G-T_p.Ala43Ser,NM_001048.4_SST_c.79T-C_p.Ser27Pro,"
@@ -312,15 +312,15 @@ Name of Chain_2: output/SST/NM_001048.4_SST_c.79T-C_p.Ser27Pro/isof
 Length of Chain_1:  116 residues
 Length of Chain_2:  116 residues
 
-Aligned length=   90, RMSD=   4.54, Seq_ID=n_identical/n_aligned= 0.344
-TM-score= 0.46727 (if normalized by length of Chain_1)
-TM-score= 0.46727 (if normalized by length of Chain_2)
+Aligned length=  112, RMSD=   4.51, Seq_ID=n_identical/n_aligned= 0.509
+TM-score= 0.57757 (if normalized by length of Chain_1)
+TM-score= 0.57757 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MLSCRLQC---ALA--ALSI--VLA-LGCV-TG-APSDPRLRQ-FLQKSLAAASGKQELAKYFLAELLSEP-NQTEND--A-LEPEDLSQAAEQDEMRLELQRSANSN-PAMAPRE---RKAGCKNFFWK-TFTSC------
-           .    ..    ..  .:.  .: .::::. :. ..:..::.::::::::::::::::::: ::.::.  : ..:::::::::::::::::::::::: ::::...   .:  .       ..         
---------MLSC--RLQC--ALAA-LSIV-LALGCVTGAP-PDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCK--N------FFW---KTFTSC
+MLSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAS-GKQELAKYFLAELLSEPNQ--TENDA-LEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKTFTSC
+    .....................:::::.....:..::::: :::::::::::::::::::  :::.: ::::::::::::::::::::::::::::::::::::::::.......::
+----MLSCRLQCALAALSIVLALGCVTGAPPDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKTFTSC
 
 "
 NM_001048.4_SST_c.178C-T_p.Pro60Ser,canonical,"
@@ -339,15 +339,15 @@ Name of Chain_2: output/SST/canonical/isoform_relaxed_averaged_rota
 Length of Chain_1:  116 residues
 Length of Chain_2:  116 residues
 
-Aligned length=   88, RMSD=   4.16, Seq_ID=n_identical/n_aligned= 0.705
-TM-score= 0.47902 (if normalized by length of Chain_1)
-TM-score= 0.47902 (if normalized by length of Chain_2)
+Aligned length=   92, RMSD=   3.77, Seq_ID=n_identical/n_aligned= 0.239
+TM-score= 0.50247 (if normalized by length of Chain_1)
+TM-score= 0.50247 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MLSC--RLQC--ALA-ALSIVLALGCVTG-APSDP-RL--RQ-FLQKSLAAAAGKQELAKYFLAELLSESNQTEND-ALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWK----------TFTSC-------
-      .     ..  .:...: ::.::: :::.: .   .: .:::::::::::::::::::::::::: ::..: ..:::::::::::::::::::::::::::...                       .           
-----MLS---CRLQ-CALAALS-IVLALGCVTGAPSD-PRLRQFLQKSLAAAAGKQELAKYFLAELLSEP-NQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAP-------------RERKAGCKNFF----WKTFTSC
+MLSCRLQC-ALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSESNQTEND-ALEPEDLSQAAEQDEMRLELQRSAN-SNPAMAPRERKAGCKNFFWKTFTSC---------------------
+.. ....: ::.:::::::::: :: .:::: .::::::::::::::::::::::::::::::: :: ::...:.:::::::::::::::::: ::.::.                                        
+ML-SCRLQCALAALSIVLALGC-VT-GAPSD-PRLRQFLQKSLAAAAGKQELAKYFLAELLSEP-NQTENDALEPEDLSQAAEQDEMRLELQRSANSNPA-------------------MAPRERKAGCKNFFWKTFTSC
 
 "
 NM_001048.4_SST_c.178C-T_p.Pro60Ser,NM_001048.4_SST_c.127G-T_p.Ala43Ser,"
@@ -366,15 +366,15 @@ Name of Chain_2: output/SST/NM_001048.4_SST_c.127G-T_p.Ala43Ser/iso
 Length of Chain_1:  116 residues
 Length of Chain_2:  116 residues
 
-Aligned length=  107, RMSD=   4.71, Seq_ID=n_identical/n_aligned= 0.813
-TM-score= 0.47547 (if normalized by length of Chain_1)
-TM-score= 0.47547 (if normalized by length of Chain_2)
+Aligned length=   94, RMSD=   3.88, Seq_ID=n_identical/n_aligned= 0.606
+TM-score= 0.53309 (if normalized by length of Chain_1)
+TM-score= 0.53309 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MLSCRLQC-----ALAALSIVLALGCVTG--APS-DP-RLRQFLQKSLAAAAGKQELAKYFLAELLSESNQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKTFTSC
-             . .......:::::::  ::. .. ......:::::::::::::::::::::::::........:::::::::::::::::::::::::::::........::::::::...
---------MLSCRL-QCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAASGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKTFTSC
+MLS--CRL-QC-ALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSESNQTENDALEPEDLSQAAEQDEMRLELQRSAN-SNPAMAP-RERKAGCKNFFW----------KTFTSC------
+     ..  .: ....:::::::::::::::::::::::::::::::::::::::::::::::::::. ::.:::  .::.:::::::::::::: ::.::.  .                     .:.         
+---MLSC-RLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAASGKQELAKYFLAELLSEPNQTE-NDALEP--EDLSQAAEQDEMRLELQRSANSNPA-MA-----------PRERKAGCKNFFW---KTFTSC
 
 "
 NM_001048.4_SST_c.178C-T_p.Pro60Ser,NM_001048.4_SST_c.178C-T_p.Pro60Ser,"
@@ -420,15 +420,15 @@ Name of Chain_2: output/SST/NM_001048.4_SST_c.182A-C_p.Asn61Thr/iso
 Length of Chain_1:  116 residues
 Length of Chain_2:  116 residues
 
-Aligned length=   91, RMSD=   4.32, Seq_ID=n_identical/n_aligned= 0.121
-TM-score= 0.47382 (if normalized by length of Chain_1)
-TM-score= 0.47382 (if normalized by length of Chain_2)
+Aligned length=   96, RMSD=   3.28, Seq_ID=n_identical/n_aligned= 0.927
+TM-score= 0.56743 (if normalized by length of Chain_1)
+TM-score= 0.56743 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MLSC--RLQ-CALAALSIVLALGCVTG-APSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSESNQTEND-ALEPEDLSQAAEQDEMRLELQRSANS--NPAMAP--RERKAGCKNFFWK---------TFTSC-------
-      .   ....:: :::::::::: .:..:....:..::::::::::::::::::::::::::: :: ::....::::::::::::::::::::  :.:.    .                     .:          
-----MLS--CRLQCAL-AALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEP-TQTENDALEPEDLSQAAEQDEMRLELQRSANSNPA--MAP------------RERKAGCKNFF---WKTFTSC
+MLSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSESNQTENDALEPEDLSQAAEQDEMRLELQRSA-NSNP-AMAPRERKAGCKNFFWKTFTSC------------------
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::...::::::.:::::::::::::::.:: :.:. ..                                      
+MLSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPTQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAP--------------------RERKAGCKNFFWKTFTSC
 
 "
 NM_001048.4_SST_c.178C-T_p.Pro60Ser,NM_001048.4_SST_c.221C-T_p.Ser74Phe,"
@@ -447,15 +447,15 @@ Name of Chain_2: output/SST/NM_001048.4_SST_c.221C-T_p.Ser74Phe/iso
 Length of Chain_1:  116 residues
 Length of Chain_2:  116 residues
 
-Aligned length=   86, RMSD=   4.10, Seq_ID=n_identical/n_aligned= 0.744
-TM-score= 0.46632 (if normalized by length of Chain_1)
-TM-score= 0.46632 (if normalized by length of Chain_2)
+Aligned length=   83, RMSD=   3.92, Seq_ID=n_identical/n_aligned= 0.096
+TM-score= 0.45431 (if normalized by length of Chain_1)
+TM-score= 0.45431 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MLSCRLQCALAALSIVLA--LGCVTGAPSDPRLRQFL--QKSL--------------------AAA---A-GKQELAKYFLAELLSESNQT-ENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKN-FFWKTFTSC
-                    .:. .:::...  :.    .                       .     : ::::::::::::::::: :: ......:::::::::::::::::::::::::::::::::::::: :.::: :::
-------------------MLSCR-LQCALAA--LS--IVL---ALGCVTGAPSDPRLRQFLQKS--LAAAAGKQELAKYFLAELLSEP-NQTENDALEPEDLFQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKTF-TSC
+MLSC--RLQC--ALA-ALSIVLALG-CVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSESNQTENDALEP-EDLSQAAEQDEMRLELQRSAN-SNPAM-APRERKAGCKNFFWKTFTSC------------------------
+      .     ..  .: :::::: : ...: :  :::...:::::::::::::::::::::::::::::::::. .::: :::::::::::::::: ::.:. .                                           
+----MLS---CRLQ-CAL-AALSIVLA-LGCV-T--GAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDAL-EPEDLFQAAEQDEMRLELQRSANS-------------------NPAMAPRERKAGCKNFFWKTFTSC
 
 "
 NM_001048.4_SST_c.178C-T_p.Pro60Ser,NM_001048.4_SST_c.79T-C_p.Ser27Pro,"
@@ -474,15 +474,15 @@ Name of Chain_2: output/SST/NM_001048.4_SST_c.79T-C_p.Ser27Pro/isof
 Length of Chain_1:  116 residues
 Length of Chain_2:  116 residues
 
-Aligned length=   78, RMSD=   3.91, Seq_ID=n_identical/n_aligned= 0.808
-TM-score= 0.43684 (if normalized by length of Chain_1)
-TM-score= 0.43684 (if normalized by length of Chain_2)
+Aligned length=   89, RMSD=   4.09, Seq_ID=n_identical/n_aligned= 0.719
+TM-score= 0.50604 (if normalized by length of Chain_1)
+TM-score= 0.50604 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MLSCRLQCALAALSIVLALGCV--TGA-PSDPRL--RQFLQKSLAAA----------------------------A-GKQELAKYFLAELLSESNQTEND--A-LEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKT-FTSC
-                        ... ::::    .                                      . .::::::::::::::::. :.    . ...::::::::::::::::::::::::::::::::::::::..:: ::: 
-----------------------MLSCRLQCAL--AAL----------SIVLALGCVTGAPPDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPN-QT--ENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKTFTSC-
+MLSCRLQCALAALSI--VLAL--GCVTGAP-SDPRL--RQFL--------------QKS--LA-AAAGKQELAKYFLAELLSESNQTEN-DA-LEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFF-WKTFTSC
+                 ..    :...::: ...    .                 .    .. ..::::::::::::::::::: :.  .. ..:::::::::::::::::::::::::::::::::::::::. :::::: 
+---------------MLSC--RLQCALAALSIVL--ALG---CVTGAPPDPRLRQFL--QKSLAAAAGKQELAKYFLAELLSEPN-QT-ENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKTFTSC-
 
 "
 NM_001048.4_SST_c.182A-C_p.Asn61Thr,canonical,"
@@ -501,15 +501,15 @@ Name of Chain_2: output/SST/canonical/isoform_relaxed_averaged_rota
 Length of Chain_1:  116 residues
 Length of Chain_2:  116 residues
 
-Aligned length=  115, RMSD=   3.21, Seq_ID=n_identical/n_aligned= 0.939
-TM-score= 0.66641 (if normalized by length of Chain_1)
-TM-score= 0.66641 (if normalized by length of Chain_2)
+Aligned length=  114, RMSD=   2.59, Seq_ID=n_identical/n_aligned= 0.904
+TM-score= 0.76778 (if normalized by length of Chain_1)
+TM-score= 0.76778 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MLSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPTQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFW-KTFTSC
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.......::::::::::::::::::::::::::::::: ::::::: ::::..
-MLSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERK-AGCKNFFWKTFTSC
+MLSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPTQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFW-K-TFTSC
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::........:::::::::::::::::::::::::::: ::::::: . :::: 
+MLSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERK-AGCKNFFWKTFTSC-
 
 "
 NM_001048.4_SST_c.182A-C_p.Asn61Thr,NM_001048.4_SST_c.127G-T_p.Ala43Ser,"
@@ -528,15 +528,15 @@ Name of Chain_2: output/SST/NM_001048.4_SST_c.127G-T_p.Ala43Ser/iso
 Length of Chain_1:  116 residues
 Length of Chain_2:  116 residues
 
-Aligned length=   98, RMSD=   3.35, Seq_ID=n_identical/n_aligned= 0.704
-TM-score= 0.61593 (if normalized by length of Chain_1)
-TM-score= 0.61593 (if normalized by length of Chain_2)
+Aligned length=  100, RMSD=   3.42, Seq_ID=n_identical/n_aligned= 0.510
+TM-score= 0.56950 (if normalized by length of Chain_1)
+TM-score= 0.56950 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MLSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPTQTENDALEPEDLSQAAEQDEMRLELQRSANSN--PAMAPRERKAGCKNFFW-------------KTFTSC---
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: ::  :::::::....... .    . . ...:   .:::               .        
-MLSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAASGKQELAKYFLAELLSEPNQTENDALEP-ED--LSQAAEQDEMRLEL-Q--RSA-N-SNPA---MAPR--ERKAGCKNFFWKTF-----TSC
+MLSCRLQCALAALSIVLALGCVTG-APS-D--PRLRQFLQKSLAAAAGKQELAKYFLAELLSEPTQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAG-CKNF----F-----WKTFTSC--
+:::::::::::::::::::::::: ::: :  ::::::::::..:::::::::::::::: :::  :::: ::::::::::::::::::::.. ...  . ::.:    :::.    .     ..       
+MLSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAASGKQELAKYFLAELLSEP-NQT--ENDA-LEPEDLSQAAEQDEMRLELQRS-ANS--N-PAMA---PRERKAGCKNFFWKTFT-----SC
 
 "
 NM_001048.4_SST_c.182A-C_p.Asn61Thr,NM_001048.4_SST_c.178C-T_p.Pro60Ser,"
@@ -555,15 +555,15 @@ Name of Chain_2: output/SST/NM_001048.4_SST_c.178C-T_p.Pro60Ser/iso
 Length of Chain_1:  116 residues
 Length of Chain_2:  116 residues
 
-Aligned length=   91, RMSD=   4.32, Seq_ID=n_identical/n_aligned= 0.121
-TM-score= 0.47382 (if normalized by length of Chain_1)
-TM-score= 0.47382 (if normalized by length of Chain_2)
+Aligned length=   96, RMSD=   3.28, Seq_ID=n_identical/n_aligned= 0.927
+TM-score= 0.56743 (if normalized by length of Chain_1)
+TM-score= 0.56743 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-ML----SC--RLQCAL-AALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEP-TQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMA--PRERKAGCKN------------FFWKTFTSC---
-      .   ....:: :::::::::: .:..:....:..::::::::::::::::::::::::::: :: ::....::::::::::::::::::::  :.:.    .                     .:          
---MLSCR-LQCALAALSIVLALGCVTG-APSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSESNQTEND-ALEPEDLSQAAEQDEMRLELQRSANS--NPAM--APR---------ERKAGCKNFFWKTF-------TSC
+MLSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPTQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKTFTSC--------------------
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::...::::::.:::::::::::::::.:: :.:. ..                                      
+MLSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSESNQTENDALEPEDLSQAAEQDEMRLELQRSA-NSNP-AM------------------APRERKAGCKNFFWKTFTSC
 
 "
 NM_001048.4_SST_c.182A-C_p.Asn61Thr,NM_001048.4_SST_c.182A-C_p.Asn61Thr,"
@@ -609,15 +609,15 @@ Name of Chain_2: output/SST/NM_001048.4_SST_c.221C-T_p.Ser74Phe/iso
 Length of Chain_1:  116 residues
 Length of Chain_2:  116 residues
 
-Aligned length=  111, RMSD=   2.91, Seq_ID=n_identical/n_aligned= 0.721
-TM-score= 0.72175 (if normalized by length of Chain_1)
-TM-score= 0.72175 (if normalized by length of Chain_2)
+Aligned length=  110, RMSD=   3.48, Seq_ID=n_identical/n_aligned= 0.727
+TM-score= 0.63519 (if normalized by length of Chain_1)
+TM-score= 0.63519 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MLSCRLQCALAALSIVLALGCVTG--APSD-P-RLRQFLQKSLAAAAGKQELAKYFLAELLSEPTQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERK-AGCKNFFWKTFTSC
- .  .: ....:..::::::::::  :::. : .:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: ::::::::: ....
--M--LS-CRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLFQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKT-FTSC
+MLSC-RLQCALAALSIVLALGCVTGAPSDPR-L--RQ-FLQKSLAAAAGKQELAKYFLAELLSEPTQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGC-KNFFWKTFTSC
+     .. ....:..::::::::::.::::. .  .: .::::::::::::::::::::::::::::::::::::::::::::::::::::::::::...:::::::::: ::::: :::::
+----MLS-CRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLFQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWK-TFTSC
 
 "
 NM_001048.4_SST_c.182A-C_p.Asn61Thr,NM_001048.4_SST_c.79T-C_p.Ser27Pro,"
@@ -636,15 +636,15 @@ Name of Chain_2: output/SST/NM_001048.4_SST_c.79T-C_p.Ser27Pro/isof
 Length of Chain_1:  116 residues
 Length of Chain_2:  116 residues
 
-Aligned length=  103, RMSD=   3.52, Seq_ID=n_identical/n_aligned= 0.777
-TM-score= 0.57077 (if normalized by length of Chain_1)
-TM-score= 0.57077 (if normalized by length of Chain_2)
+Aligned length=  113, RMSD=   3.25, Seq_ID=n_identical/n_aligned= 0.673
+TM-score= 0.66559 (if normalized by length of Chain_1)
+TM-score= 0.66559 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MLSCR--LQC--ALAA--LSI-VLALGCVT-GAPS--DP-RLRQFLQKSLAAAAGKQELAKYFLAELLSEPTQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKT-FTS-C
-       .    ..    ..  .: ....: ::.:  :: .:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.  :: ..: .
------MLS--CRLQ--CALA-ALS-IVLALGCVTGAPPDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNF--FWKTFTSC
+MLSCRLQCALAALSIVLALGCVTGAPSDP-RLRQFLQKSLAAAAGKQELAKYFLAELLSEPTQTENDALEPED-LSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFF-WKTFTSC
+:: ::..::.:::.::..::.:::::::: ::::::::::::::::::::::::::::::::::::: :::.: .....::::::::::::::::::::::::::::::.: ..:::. 
+ML-SCRLQCALAALSIVLALGCVTGAPPDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTEND-ALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKTFTSC-
 
 "
 NM_001048.4_SST_c.221C-T_p.Ser74Phe,canonical,"
@@ -663,15 +663,15 @@ Name of Chain_2: output/SST/canonical/isoform_relaxed_averaged_rota
 Length of Chain_1:  116 residues
 Length of Chain_2:  116 residues
 
-Aligned length=   95, RMSD=   2.90, Seq_ID=n_identical/n_aligned= 0.884
-TM-score= 0.64233 (if normalized by length of Chain_1)
-TM-score= 0.64233 (if normalized by length of Chain_2)
+Aligned length=  106, RMSD=   3.57, Seq_ID=n_identical/n_aligned= 0.604
+TM-score= 0.61931 (if normalized by length of Chain_1)
+TM-score= 0.61931 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MLSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLFQAAEQDEMRLELQ-RSANSNPAMAPRERKAGC-------------KNF-F------WKTFTSC
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.. :.  ..                             ..  .      .:...  
-MLSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMR-LE-LQR----------------SANSNPAMAPRERKA-GCKNFFWKTFTSC--
+---MLS-CRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLFQAAEQDEMRLELQRSANSNPAM-APRERKAGCK-NFF----WKTFTSC
+   .:: ::::::::::::::::: ::::: : ..: ::::::::::::::::::::::::::::::::::::..::::::::::::::::::. :..   .:... ..:: :.:    .::::  
+MLSCRLQCALAALSIVLALGCVTG-APSDP-R-LRQ-FLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSA-NSN--PAMAPR-ERKAGCKNFFWKTFTSC--
 
 "
 NM_001048.4_SST_c.221C-T_p.Ser74Phe,NM_001048.4_SST_c.127G-T_p.Ala43Ser,"
@@ -690,15 +690,15 @@ Name of Chain_2: output/SST/NM_001048.4_SST_c.127G-T_p.Ala43Ser/iso
 Length of Chain_1:  116 residues
 Length of Chain_2:  116 residues
 
-Aligned length=   97, RMSD=   4.67, Seq_ID=n_identical/n_aligned= 0.639
-TM-score= 0.45843 (if normalized by length of Chain_1)
-TM-score= 0.45843 (if normalized by length of Chain_2)
+Aligned length=   90, RMSD=   4.43, Seq_ID=n_identical/n_aligned= 0.656
+TM-score= 0.45294 (if normalized by length of Chain_1)
+TM-score= 0.45294 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-ML-----SCR--LQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLFQAAEQDEMRLELQRSANSNPA-MAPRERKAGCKNFFW-----------KTFTSC
-       .    ........:...:..:::::: :  ...:::::::::::::::::::::::::::::::::::::::::::::::::::::.... .    ..:. .    .::.            ....  
---MLSCRL--QCALAALSIVLALGCVTGAPSDP-R--LRQFLQKSLAAASGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSA-N---SNPAM-A----PRER-KAGCKNFFWKTFTSC--
+MLS------------CRL---QCAL---AAL--SIVL-ALGCVTGAPSDPRL--RQF-LQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLFQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFF--WKTFTSC
+               .     .      .    ...  .::....         .   .. ... :  ::::::::::::::::::::::...............::::::::::::::::::::: ::::::  :::::: 
+---MLSCRLQCALAAL--SIVL---ALGC--VTGAP-SDPRLRQF-------LQK--SLA-AAS-G--KQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERK-AGCKNFFWKTFTSC-
 
 "
 NM_001048.4_SST_c.221C-T_p.Ser74Phe,NM_001048.4_SST_c.178C-T_p.Pro60Ser,"
@@ -717,15 +717,15 @@ Name of Chain_2: output/SST/NM_001048.4_SST_c.178C-T_p.Pro60Ser/iso
 Length of Chain_1:  116 residues
 Length of Chain_2:  116 residues
 
-Aligned length=   86, RMSD=   4.10, Seq_ID=n_identical/n_aligned= 0.744
-TM-score= 0.46632 (if normalized by length of Chain_1)
-TM-score= 0.46632 (if normalized by length of Chain_2)
+Aligned length=   83, RMSD=   3.92, Seq_ID=n_identical/n_aligned= 0.096
+TM-score= 0.45431 (if normalized by length of Chain_1)
+TM-score= 0.45431 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-ML------------------SCR-LQCALAA--LSIV--LALGCVTGAPSDPRLRQFLQK---SLAA--AAGKQELAKYFLAELLSEP-NQTENDALEPEDLFQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKTF-TSC
-                    .:. .:::...  :.    .                       .     : ::::::::::::::::: :: ......:::::::::::::::::::::::::::::::::::::: :.::: :::
---MLSCRLQCALAALSIVLALGCVTGAPSDPRLRQ--FLQ--------------------KSLA---AAA-GKQELAKYFLAELLSESNQT-ENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKN-FFWKTFTSC
+ML----SCR---LQC-AL-AALSIVLA-LGCV-T--GAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDAL-EPEDLFQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKTFTSC-------------------
+      .     ..  .: :::::: : ...: :  :::...:::::::::::::::::::::::::::::::::. .::: :::::::::::::::: ::.:. .                                           
+--MLSCR--LQCAL-AALSIVLALG-CVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSESNQTENDALEP-EDLSQAAEQDEMRLELQRSAN-SNPAM-A------------------------PRERKAGCKNFFWKTFTSC
 
 "
 NM_001048.4_SST_c.221C-T_p.Ser74Phe,NM_001048.4_SST_c.182A-C_p.Asn61Thr,"
@@ -744,15 +744,15 @@ Name of Chain_2: output/SST/NM_001048.4_SST_c.182A-C_p.Asn61Thr/iso
 Length of Chain_1:  116 residues
 Length of Chain_2:  116 residues
 
-Aligned length=  111, RMSD=   2.91, Seq_ID=n_identical/n_aligned= 0.721
-TM-score= 0.72175 (if normalized by length of Chain_1)
-TM-score= 0.72175 (if normalized by length of Chain_2)
+Aligned length=  110, RMSD=   3.48, Seq_ID=n_identical/n_aligned= 0.727
+TM-score= 0.63519 (if normalized by length of Chain_1)
+TM-score= 0.63519 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
--M--LS-CRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLFQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKT-FTSC
- .  .: ....:..::::::::::  :::. : .:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: ::::::::: ....
-MLSCRLQCALAALSIVLALGCVTG--APSD-P-RLRQFLQKSLAAAAGKQELAKYFLAELLSEPTQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERK-AGCKNFFWKTFTSC
+M----LS-CRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLFQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWK-TFTSC
+     .. ....:..::::::::::.::::. .  .: .::::::::::::::::::::::::::::::::::::::::::::::::::::::::::...:::::::::: ::::: :::::
+-MLSCRLQCALAALSIVLALGCVTGAPSDPR-L--RQ-FLQKSLAAAAGKQELAKYFLAELLSEPTQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGC-KNFFWKTFTSC
 
 "
 NM_001048.4_SST_c.221C-T_p.Ser74Phe,NM_001048.4_SST_c.221C-T_p.Ser74Phe,"
@@ -798,15 +798,15 @@ Name of Chain_2: output/SST/NM_001048.4_SST_c.79T-C_p.Ser27Pro/isof
 Length of Chain_1:  116 residues
 Length of Chain_2:  116 residues
 
-Aligned length=  116, RMSD=   3.37, Seq_ID=n_identical/n_aligned= 0.983
-TM-score= 0.66364 (if normalized by length of Chain_1)
-TM-score= 0.66364 (if normalized by length of Chain_2)
+Aligned length=  112, RMSD=   3.20, Seq_ID=n_identical/n_aligned= 0.768
+TM-score= 0.66854 (if normalized by length of Chain_1)
+TM-score= 0.66854 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MLSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLFQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKTFTSC
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::...::::::::::..:......::
-MLSCRLQCALAALSIVLALGCVTGAPPDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKTFTSC
+MLSCRLQCALAALSIVLALGCV-TGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLFQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFW---KTFTSC
+.::::::::::::::::::::: :::::.: ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.. .::..:. .::::::   :::.. 
+MLSCRLQCALAALSIVLALGCVTGAPPDPR-LRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNP-AMAPRER-KAGCKNFFWKTFTSC-
 
 "
 NM_001048.4_SST_c.79T-C_p.Ser27Pro,canonical,"
@@ -825,15 +825,15 @@ Name of Chain_2: output/SST/canonical/isoform_relaxed_averaged_rota
 Length of Chain_1:  116 residues
 Length of Chain_2:  116 residues
 
-Aligned length=  109, RMSD=   3.67, Seq_ID=n_identical/n_aligned= 0.716
-TM-score= 0.64567 (if normalized by length of Chain_1)
-TM-score= 0.64567 (if normalized by length of Chain_2)
+Aligned length=  116, RMSD=   2.67, Seq_ID=n_identical/n_aligned= 0.991
+TM-score= 0.74927 (if normalized by length of Chain_1)
+TM-score= 0.74927 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-----ML-SCRLQCALAALSIVLALGCVTGAPPDPR-LRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFW-KTFTSC
-    .. .:..::..:...: .:::::::  :.   .: ..:::::::::::::::::::::::::::::.....:::::::::::::::::::::::::::::::: :::::::. ::::::
-MLSCRLQCALAALSIVLALG-CVTGAPSD--PR--LRQ-FLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRER-KAGCKNFFWKTFTSC
+MLSCRLQCALAALSIVLALGCVTGAPPDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKTFTSC
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.::::::::::::::::::::::::::::::::::::::::....:::::
+MLSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKTFTSC
 
 "
 NM_001048.4_SST_c.79T-C_p.Ser27Pro,NM_001048.4_SST_c.127G-T_p.Ala43Ser,"
@@ -852,15 +852,15 @@ Name of Chain_2: output/SST/NM_001048.4_SST_c.127G-T_p.Ala43Ser/iso
 Length of Chain_1:  116 residues
 Length of Chain_2:  116 residues
 
-Aligned length=   90, RMSD=   4.54, Seq_ID=n_identical/n_aligned= 0.344
-TM-score= 0.46727 (if normalized by length of Chain_1)
-TM-score= 0.46727 (if normalized by length of Chain_2)
+Aligned length=  112, RMSD=   4.51, Seq_ID=n_identical/n_aligned= 0.509
+TM-score= 0.57757 (if normalized by length of Chain_1)
+TM-score= 0.57757 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MLS--------CRL--QCAL--AAL-SIVL-ALGCVTGAP-PDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCK--NF------FWKTFTSC---
-           .    ..    ..  .:.  .: .::::. :. ..:..::.::::::::::::::::::: ::.::.  : ..:::::::::::::::::::::::: ::::...   .:  .       ..         
----MLSCRLQCA--LAAL--SIVL-ALGC-VTG-APSDPRLRQ-FLQKSLAAASGKQELAKYFLAELLSEP-NQTEND--A-LEPEDLSQAAEQDEMRLELQRSANSN-PAMAPRE---RKAGC-KNFFWKTF------TSC
+----MLSCRLQCALAALSIVLALGCVTGAPPDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKTFTSC
+    .....................:::::.....:..::::: :::::::::::::::::::  :::.: ::::::::::::::::::::::::::::::::::::::::.......::
+MLSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAS-GKQELAKYFLAELLSEPNQ--TENDA-LEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKTFTSC
 
 "
 NM_001048.4_SST_c.79T-C_p.Ser27Pro,NM_001048.4_SST_c.178C-T_p.Pro60Ser,"
@@ -879,15 +879,15 @@ Name of Chain_2: output/SST/NM_001048.4_SST_c.178C-T_p.Pro60Ser/iso
 Length of Chain_1:  116 residues
 Length of Chain_2:  116 residues
 
-Aligned length=   78, RMSD=   3.91, Seq_ID=n_identical/n_aligned= 0.808
-TM-score= 0.43684 (if normalized by length of Chain_1)
-TM-score= 0.43684 (if normalized by length of Chain_2)
+Aligned length=   89, RMSD=   4.09, Seq_ID=n_identical/n_aligned= 0.719
+TM-score= 0.50604 (if normalized by length of Chain_1)
+TM-score= 0.50604 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-ML----------------------SCRLQCALAA--LSIVLALGCVTGAPPDPRLRQFLQKSLAA----------AAGKQELAKYFLAELLSEPN-QTEN--DALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKTFTSC-
-                        ... ::::    .                                      . .::::::::::::::::. :.    . ...::::::::::::::::::::::::::::::::::::::..:: ::: 
---MLSCRLQCALAALSIVLALGCVTGA-PSDP--RLR----------------------------QFLQKSLAAAA-GKQELAKYFLAELLSESNQTE--NDA-LEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKT-FTSC
+ML---------------SCRL--QCALAALSIVLAL--GCVTGAPPDPRLRQF---LQK--SLAAAAGKQELAKYFLAELLSEPN-QTE-NDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKTFTSC-
+                 ..    :...::: ...    .                 .    .. ..::::::::::::::::::: :.  .. ..:::::::::::::::::::::::::::::::::::::::. :::::: 
+--MLSCRLQCALAALSIVL--ALGCVTGAP-SDP--RLR--------------QFLQ--KSLA-AAAGKQELAKYFLAELLSESNQTE-NDA-LEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFF-WKTFTSC
 
 "
 NM_001048.4_SST_c.79T-C_p.Ser27Pro,NM_001048.4_SST_c.182A-C_p.Asn61Thr,"
@@ -906,15 +906,15 @@ Name of Chain_2: output/SST/NM_001048.4_SST_c.182A-C_p.Asn61Thr/iso
 Length of Chain_1:  116 residues
 Length of Chain_2:  116 residues
 
-Aligned length=  103, RMSD=   3.52, Seq_ID=n_identical/n_aligned= 0.777
-TM-score= 0.57077 (if normalized by length of Chain_1)
-TM-score= 0.57077 (if normalized by length of Chain_2)
+Aligned length=  113, RMSD=   3.25, Seq_ID=n_identical/n_aligned= 0.673
+TM-score= 0.66559 (if normalized by length of Chain_1)
+TM-score= 0.66559 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-ML-----SCR--LQCA--LAA-LS-IVLALGCVTGAPPDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNF--FWKTFTSC
-       .    ..    ..  .: ....: ::.:  :: .:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.  :: ..: .
---MLSCRL--QCAL--AALS-IVLALGCVT-GAPS--DP-RLRQFLQKSLAAAAGKQELAKYFLAELLSEPTQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKT-FTS-C
+ML-SCRLQCALAALSIVLALGCVTGAPPDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTEND-ALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKTFTSC-
+:: ::..::.:::.::..::.:::::::: ::::::::::::::::::::::::::::::::::::: :::.: .....::::::::::::::::::::::::::::::.: ..:::. 
+MLSCRLQCALAALSIVLALGCVTGAPSDP-RLRQFLQKSLAAAAGKQELAKYFLAELLSEPTQTENDALEPED-LSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFF-WKTFTSC
 
 "
 NM_001048.4_SST_c.79T-C_p.Ser27Pro,NM_001048.4_SST_c.221C-T_p.Ser74Phe,"
@@ -933,15 +933,15 @@ Name of Chain_2: output/SST/NM_001048.4_SST_c.221C-T_p.Ser74Phe/iso
 Length of Chain_1:  116 residues
 Length of Chain_2:  116 residues
 
-Aligned length=  116, RMSD=   3.37, Seq_ID=n_identical/n_aligned= 0.983
-TM-score= 0.66364 (if normalized by length of Chain_1)
-TM-score= 0.66364 (if normalized by length of Chain_2)
+Aligned length=  112, RMSD=   3.20, Seq_ID=n_identical/n_aligned= 0.768
+TM-score= 0.66854 (if normalized by length of Chain_1)
+TM-score= 0.66854 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MLSCRLQCALAALSIVLALGCVTGAPPDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKTFTSC
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::...::::::::::..:......::
-MLSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLFQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKTFTSC
+MLSCRLQCALAALSIVLALGCVTGAPPDPR-LRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNP-AMAPRER-KAGCKNFFWKTFTSC-
+.::::::::::::::::::::: :::::.: ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.. .::..:. .::::::   :::.. 
+MLSCRLQCALAALSIVLALGCV-TGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLFQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFW---KTFTSC
 
 "
 NM_001048.4_SST_c.79T-C_p.Ser27Pro,NM_001048.4_SST_c.79T-C_p.Ser27Pro,"

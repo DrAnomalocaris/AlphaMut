@@ -5,6 +5,6 @@
     "chain1_length": 260,
     "chain2_length": 260,
     "aligned_length": 260.0,
-    "rmsd": 0.18,
+    "rmsd": 0.15,
     "identical/aligned": 0.996
 }

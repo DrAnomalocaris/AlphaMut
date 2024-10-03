@@ -14,13 +14,13 @@ Name of Chain_2: output/CA2/NM_000067.3_CA2_c.143_146del_p.Ser48fs/
 Length of Chain_1:  260 residues
 Length of Chain_2:   67 residues
 
-Aligned length=   38, RMSD=   3.61, Seq_ID=n_identical/n_aligned= 0.079
-TM-score= 0.11371 (if normalized by length of Chain_1)
-TM-score= 0.29676 (if normalized by length of Chain_2)
+Aligned length=   39, RMSD=   3.65, Seq_ID=n_identical/n_aligned= 0.077
+TM-score= 0.11502 (if normalized by length of Chain_1)
+TM-score= 0.29290 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 (":" denotes aligned residue pairs of d < 5.0 A, "." denotes other aligned residues)
-MSHHWGYGKHNGPEHWHKDFPIAKGERQSPVDIDTHTAKYDPSLKPLSVSYDQATSLRI--------------------------LNNGHAFNVEFDDSQDKAVLKGGPLDGTYRLIQFHFHWGSLDGQGSEHTVDKKKYAAELHLVHWNTKYGDFGKAVQQPDGLAVLGIFLKVGSAKPGLQKVVD-VLDSIKTKGKSADFTNFDPRGLLPESLDYWTYPGSLTTPPLLECVTWIVLKEPISVSSEQVLKFRKLNFNGEGEPEELMVD-NWRPAQ-PLKNRQIKASFK
-                                                                                     ::    ..                                                                                           ::: .:.                                                        : ::::::.          ::: .::::: ::: ::::..::
------------------------------------------------------------TQCRRPSRRRQIGADSCPAPTASATMSH----HW-------------------------------------------------------------------------------------------GYGKHNG--------------------------------------------------------P-EHWHKDF----------PIGESASPLLTSTL-IQPSMTLP
+MSHHWGYGKHNGPEHWHKDFPIAKGERQSPVDIDTHTAKYDPSLKPLSVSYDQATSLRI--------------------------LNNGHAFNVEFDDSQDKAVLKGGPLDGTYRLIQFHFHWGSLDGQGSEHTVDKKKYAAELHLVHWNTKYGDFGKAVQQPDGLAVLGIFLKVGSAKPGLQKVVD-VLDSIKTKGKSADFTNFDPRGLLPESLDYWTYPGSLTTPPLLECVTWIVLKEPISVSSEQVLKFRKLNFNGEGEPEELMVD-NWRPAQPLKNRQIKASFK
+                                                                                     ::    ..                                                                                           ::: .:.                                                        : ::::::.          ::: .:::::::::::::..::
+-----------------------------------------------------------TQCRRPSRRRQIGADSCPAPTASATMSH----HW-------------------------------------------------------------------------------------------GYGKHNG--------------------------------------------------------P-EHWHKDF----------PIGESASPLLTSTLIQPSMTLP
 

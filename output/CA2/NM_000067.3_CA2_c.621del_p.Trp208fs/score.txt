@@ -15,8 +15,8 @@ Length of Chain_1:  260 residues
 Length of Chain_2:  221 residues
 
 Aligned length=  193, RMSD=   1.86, Seq_ID=n_identical/n_aligned= 0.938
-TM-score= 0.69524 (if normalized by length of Chain_1)
-TM-score= 0.81116 (if normalized by length of Chain_2)
+TM-score= 0.69507 (if normalized by length of Chain_1)
+TM-score= 0.81095 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 (":" denotes aligned residue pairs of d < 5.0 A, "." denotes other aligned residues)

@@ -1,10 +1,10 @@
 {
-    "comparison": "(\":\" denotes aligned residue pairs of d < 5.0 A, \".\" denotes other aligned residues)\nMSHHWGYGKHNGPEHWHKDFPIAKGERQSPVDIDTHTAKYDPSLKPLSVSYDQATSLRILNNGH--AFNVEFDDSQDKAVLKGGPLDGTYRLIQFHFHWGSL-DGQGSEHTVDKKKYAAELHLVHWNTKYGDFGKAVQQPDGLAVLGIFLKVGSAKPGLQKVVDVLDSIKTKGKSADFTNFDPRGLLPESLDYWTYPGSLTTPPLLECVTWIVLKEPISVSSEQVLKFRKLNFNGEGEPEELMVDNWRPAQPLKNRQIKASFK\n:::::::::::::::::::::::::: ::.                                    .                              ::.   :             :                                :                                                                                                                \nMSHHWGYGKHNGPEHWHKDFPIAKGE-RQS----------------------------------PVD------------------------------IDT--HT-------------A--------------------------------K----------------------------------------------------------------------------------------------------------------",
+    "comparison": "(\":\" denotes aligned residue pairs of d < 5.0 A, \".\" denotes other aligned residues)\nMSHHWGYGKHNGPEHWHKDFPIAKGERQSPVDIDTHTAKYDPSLKPLSVSYDQATSLRILNNGHAFNVEFDDSQDKAVLKGGPLDGTYRLIQFHFHWGSLDGQGSEHTVDKKKYAAELHLVHWNTKYGDFGKAVQQPDGLAVLGIFLKVGSAKPGLQKVVDVLDSIKTKGKSADFTNFDPRGLLPESLDYWTYPGSLTTPPLLECVTWIVLKEPISVSSEQVLKFRKLNFNGEGEPEELMVDNWRPAQPLKNRQIKASFK\n.::::::::::::::::::::::::. :::.                                                                         .::      :                                ::.                                                               .:                                              \nMSHHWGYGKHNGPEHWHKDFPIAKGE-RQSP-------------------------------------------------------------------------VDI------D--------------------------------THT---------------------------------------------------------------AK----------------------------------------------",
     "chain1": "output/CA2/canonical/isoform_relaxed_averaged_rotated.pdb",
     "chain2": "output/CA2/NM_000067.3_CA2_c.120T-G_p.Tyr40Ter/isoform_relaxed_averaged_rotated.pdb",
     "chain1_length": 260,
     "chain2_length": 39,
-    "aligned_length": 36.0,
-    "rmsd": 2.58,
-    "identical/aligned": 0.778
+    "aligned_length": 39.0,
+    "rmsd": 3.02,
+    "identical/aligned": 0.667
 }

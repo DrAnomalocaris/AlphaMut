@@ -14,13 +14,13 @@ Name of Chain_2: output/INS/NM_000207.3_INS_c.104T-C_p.Leu35Pro/iso
 Length of Chain_1:  110 residues
 Length of Chain_2:  110 residues
 
-Aligned length=   89, RMSD=   4.67, Seq_ID=n_identical/n_aligned= 0.584
-TM-score= 0.45121 (if normalized by length of Chain_1)
-TM-score= 0.45121 (if normalized by length of Chain_2)
+Aligned length=   83, RMSD=   4.68, Seq_ID=n_identical/n_aligned= 0.434
+TM-score= 0.40771 (if normalized by length of Chain_1)
+TM-score= 0.40771 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 (":" denotes aligned residue pairs of d < 5.0 A, "." denotes other aligned residues)
-MALWMRLLPLLALLALWGPDPAAAFVNQHLCGS-HLVEALYLVCGERGFFYTPKTRREAE-DLQVGQV---------ELGGGP--GAGSL-----QPLALEGSLQKRG--IV-EQCCTSICSLYQLENYCN
-.:::::::::::::::.:.::.:::::::::.. :. .::::::: ::::.. . .. .  .               ..      .::.      ..:::::.::..   .: .:::  :: :::::::::
-MALWMRLLPLLALLALWGPDPAAAFVNQHLCGSHPV-EALYLVCG-ERGFFY-T-PK-T-RR------EAEDLQVGQVE----LGGGPG-AGSLQPLALEGSLQKRG-IVEQCCTSI--CS-LYQLENYCN
+M-A-LWMRLLPLLALLALWGPDPAA-AFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAEDLQVGQVELGGGPGA--------------------G----SLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN
+  . ::.::::::::.... ..... ...:.::...:: ::::::::  :::....                                         .    ...::::::::::.. .::::::::::::::::::
+-MALWMRLLPLLALLALWG-PDPAAAFVNQHLCGSHPV-EALYLVCG--ERGFFYT---------------------PKTRREAEDLQVGQVELGGGPGAGSLQPLALEGSLQKRGI-VEQCCTSICSLYQLENYCN
 

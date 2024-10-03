@@ -4,4 +4,5 @@ genes:
   - ADM
   - SST
   - CA2
+num_foldings: 2
 colabfold_exec: "/mnt/c/Users/lahat/colabfold/localcolabfold/colabfold-conda/bin/colabfold_batch"

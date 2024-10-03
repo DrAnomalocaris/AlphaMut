@@ -1,10 +1,10 @@
 {
-    "comparison": "(\":\" denotes aligned residue pairs of d < 5.0 A, \".\" denotes other aligned residues)\n-----MAL--WMR-LLPLLALL-----ALWGPDPAAAFVNQHLCGSHLVEALY------------------LVCGERGFFYTPKTRREAEDLQVGQVELGGGPGAGSLQP--LALE-GSLQK-RG-IVEQCCTSICSLYQLENYCN--------------\n     :::  :.  ..           .  . :::. :::.                              .::.   : ::::.:: :::: ::::::::.          . :: .:.:: :: :: ::::..                         \nMALWMRLLPLLA-LLA------LWGPDP--A-AAFV-NQHL------------CVSHLVEALYLVCGERGFFYTP---K-TRREAED-LQVG-QVELGGGPG--------AGS-LQPLALEGSLQKRG-IVEQCC-----------TSICSLYQLENYCN",
+    "comparison": "(\":\" denotes aligned residue pairs of d < 5.0 A, \".\" denotes other aligned residues)\n--M--A--LWMRLLPLLAL--LALWGPDPAAAFVNQHLCGSHLVEALY------------------LVCGERGFFYTPKTRREAEDLQVGQVELGGGPGAGSLQPLAL-------EG--SLQKRG-IVEQCC-T-SIC--SL-YQLENYCN-\n  .  :  :::::....    ..    .::: :::..                             .::    ..::: ::::::: ::::.:.::.                  .   :::::: :::::: : ..   .. . ..     \nMALWMRLLPLLALLALW--GPDP----AAAF-VNQHL-----------CVSHLVEALYLVCGERGFFYT----PKTRR-EAEDLQV-GQVELGGGPG-----------AGSLQPLA-LEGSLQKRGIVEQCCTSICS-LYQLEN-YC----N",
     "chain1": "output/INS/canonical/isoform_relaxed_averaged_rotated.pdb",
     "chain2": "output/INS/NM_000207.3_INS_c.95G-T_p.Gly32Val/isoform_relaxed_averaged_rotated.pdb",
     "chain1_length": 110,
     "chain2_length": 110,
-    "aligned_length": 60.0,
-    "rmsd": 4.39,
-    "identical/aligned": 0.1
+    "aligned_length": 68.0,
+    "rmsd": 4.85,
+    "identical/aligned": 0.191
 }

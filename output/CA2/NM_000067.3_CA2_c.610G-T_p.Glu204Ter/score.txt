@@ -14,9 +14,9 @@ Name of Chain_2: output/CA2/NM_000067.3_CA2_c.610G-T_p.Glu204Ter/is
 Length of Chain_1:  260 residues
 Length of Chain_2:  203 residues
 
-Aligned length=  203, RMSD=   0.93, Seq_ID=n_identical/n_aligned= 1.000
-TM-score= 0.76388 (if normalized by length of Chain_1)
-TM-score= 0.97344 (if normalized by length of Chain_2)
+Aligned length=  203, RMSD=   0.95, Seq_ID=n_identical/n_aligned= 1.000
+TM-score= 0.76332 (if normalized by length of Chain_1)
+TM-score= 0.97255 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 (":" denotes aligned residue pairs of d < 5.0 A, "." denotes other aligned residues)

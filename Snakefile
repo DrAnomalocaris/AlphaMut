@@ -98,11 +98,11 @@ rule add_protein_WT_sequences_to_raw_clinVar:
         import requests
         import pandas as pd
         import xmltodict
+        import functools
 
         clinvar = pd.read_csv(input.table)
         seqs = []
         cSeqs = []
-        import functools
 
         @functools.cache
         def fetch(gene):
@@ -119,6 +119,7 @@ rule add_protein_WT_sequences_to_raw_clinVar:
             response = requests.get(url, params=params)
             extra = xmltodict.parse(response.text)
             from pprint import pprint
+            if not "GBSet" in extra: return "",""
             GBfeatures =  extra["GBSet"]["GBSeq"]["GBSeq_feature-table"]["GBFeature"]
             cSeq = extra["GBSet"]["GBSeq"]['GBSeq_sequence']
             for feature in GBfeatures:
@@ -274,7 +275,6 @@ checkpoint set_output_folders:
 
         clinvar = pd.read_csv(input.table, index_col=0)
         records = []
-
         record = SeqRecord(
             Seq(clinvar['WTpSeq'].iloc[0]),           # The sequence itself
             id="canonical",            # The sequence ID
@@ -895,6 +895,77 @@ rule plotly_isoform_plots:
             }});
             </script>
             ''')
+
+rule PCAplottable:
+    input:
+        pdbs=lambda wc : expand("output/{gene}/{mutation}/isoform_relaxed_averaged_rotated.pdb", 
+            gene=[wc.gene], 
+            mutation=get_mutations(wc.gene),
+            ),
+        data="output/{gene}/clinvar_seqMUT_scores.csv"
+    output:
+        "output/{gene}/PCA.csv"
+    run:
+        import numpy as np
+        import pandas as pd
+        from sklearn.decomposition import PCA
+        from scipy.interpolate import interp1d
+        import prody as pr
+        from glob import glob
+        gene = "INS"
+
+        # Function to extract C-alpha coordinates from PDB files
+        def extract_coordinates_from_pdb(pdb_files):
+            paths = []
+            
+            for pdb in pdb_files:
+                structure = pr.parsePDB(pdb)  # Parse the PDB file
+                ca_coords = structure.select('calpha').getCoords()  # Extract C-alpha coordinates
+                paths.append(ca_coords)
+            
+            return paths
+
+        # List of PDB files for different mutations
+        pdb_files = input.pdbs
+        data = pd.read_csv(input.data)
+        data.index = [i.replace(" ", "").replace("(", "_").replace(")", "").replace(":", "_").replace(">", "-") for i in data['data']]
+
+        # Extract XYZ coordinates from the PDB files
+        paths = extract_coordinates_from_pdb(pdb_files)
+
+        # Define a common number of points for interpolation
+        common_length = max([i.shape[0] for i in paths]) * 2
+
+        # Interpolate each path to have the same number of points
+        interpolated_paths = []
+        for path in paths:
+            t = np.linspace(0, 1, len(path))  # Original parameter
+            interpolated_t = np.linspace(0, 1, common_length)  # New parameter
+            interpolated_path = []
+
+            for dim in range(3):  # For x, y, z
+                interp_func = interp1d(t, path[:, dim], kind='linear', fill_value='extrapolate')
+                interpolated_path.append(interp_func(interpolated_t))
+            
+            interpolated_paths.append(np.array(interpolated_path).T)  # Shape: (common_length, 3)
+
+        # Convert to a single 2D array for PCA
+        pca_input = np.array(interpolated_paths).reshape(len(paths), common_length * 3)
+
+        # Perform PCA
+        pca = PCA(n_components=2)
+        pca_result = pca.fit_transform(pca_input)
+        df = pd.DataFrame(pca_result, columns=["PC1", "PC2"], index=[i.split("/")[2] for i in pdb_files])
+        df['PhenotypeList'] = data['PhenotypeList']
+        df['ClinicalSignificance'] = data['ClinicalSignificance']
+        df['PhenotypeList']['canonical']="canonical"
+        df['ClinicalSignificance']['canonical']="canonical"
+        df['rmsd'] = data['rmsd']
+        df['rmsd']['canonical']=0
+        df.index.name="mutation"
+        df.to_csv(output[0])
+
+
 rule get_gene_info:
     #Get gene info from NCBI
     output:
@@ -1071,6 +1142,7 @@ rule all:
         expand("output/{gene}/gene_info.json",gene=GENES),
         expand("output/{gene}/tmalign_network.csv",gene=GENES),
         expand("output/{gene}/isoform_plot.html",gene=GENES),
+        expand("output/{gene}/PCA.csv",gene=GENES),
         lambda wc: [f"output/{gene}/{allele}/plddt.html" for gene,allele in gene_mutants()],
         lambda wc: [f"output/{gene}/{allele}/plddt.csv" for gene,allele in gene_mutants()],
         "completed.json"

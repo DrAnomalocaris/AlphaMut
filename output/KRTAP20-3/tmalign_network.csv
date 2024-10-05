@@ -1,0 +1,676 @@
+Protein1,Protein2,TMalign_Output
+canonical,canonical,"
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: output/KRTAP20-3/canonical/isoform_relaxed_average
+Name of Chain_2: output/KRTAP20-3/canonical/isoform_relaxed_average
+Length of Chain_1:   44 residues
+Length of Chain_2:   44 residues
+
+Aligned length=   44, RMSD=   0.00, Seq_ID=n_identical/n_aligned= 1.000
+TM-score= 1.00000 (if normalized by length of Chain_1)
+TM-score= 1.00000 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
+MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI
+::::::::::::::::::::::::::::::::::::::::::::
+MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI
+
+"
+canonical,NM_001128077.1_KRTAP20-3_c.101G-A_p.Gly34Asp,"
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: output/KRTAP20-3/canonical/isoform_relaxed_average
+Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.101G-A
+Length of Chain_1:   44 residues
+Length of Chain_2:   44 residues
+
+Aligned length=   43, RMSD=   1.68, Seq_ID=n_identical/n_aligned= 0.791
+TM-score= 0.62946 (if normalized by length of Chain_1)
+TM-score= 0.62946 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
+MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI-
+:::::::::::::::::::::::::::::::::: ::::::::: 
+MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCD-YRCGCGGVWI
+
+"
+canonical,NM_001128077.1_KRTAP20-3_c.25G-A_p.Gly9Arg,"
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: output/KRTAP20-3/canonical/isoform_relaxed_average
+Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.25G-A_
+Length of Chain_1:   44 residues
+Length of Chain_2:   44 residues
+
+Aligned length=   31, RMSD=   3.88, Seq_ID=n_identical/n_aligned= 0.774
+TM-score= 0.32655 (if normalized by length of Chain_1)
+TM-score= 0.32655 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
+MSYYGNYYGGLGYGYDCKYSYTSGFGAFR--------ILDCGYRC-----GCGGVWI
+:::::::::::::::::.                   ..:...       ..:::::
+MSYYGNYYRGLGYGYDCK-----------YSYTSGFGAFRILD--CGYRCGCGGVWI
+
+"
+canonical,NM_001128077.1_KRTAP20-3_c.34G-A_p.Gly12Ser,"
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: output/KRTAP20-3/canonical/isoform_relaxed_average
+Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.34G-A_
+Length of Chain_1:   44 residues
+Length of Chain_2:   44 residues
+
+Aligned length=   33, RMSD=   2.22, Seq_ID=n_identical/n_aligned= 0.970
+TM-score= 0.40898 (if normalized by length of Chain_1)
+TM-score= 0.40898 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
+MSYYGNYYGGL-----------GYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI
+                      .::::::::::::::::::::::::::::::::
+-----------MSYYGNYYGGLSYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI
+
+"
+canonical,NM_001128077.1_KRTAP20-3_c.47A-C_p.Asp16Ala,"
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: output/KRTAP20-3/canonical/isoform_relaxed_average
+Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.47A-C_
+Length of Chain_1:   44 residues
+Length of Chain_2:   44 residues
+
+Aligned length=   27, RMSD=   3.58, Seq_ID=n_identical/n_aligned= 0.556
+TM-score= 0.31749 (if normalized by length of Chain_1)
+TM-score= 0.31749 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
+MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI-----------------
+:::::::::::::: :::..           .:: :   :::.                  
+MSYYGNYYGGLGYG-YACKY-----------SYT-S---GFGA-FRILDCGYRCGCGGVWI
+
+"
+NM_001128077.1_KRTAP20-3_c.101G-A_p.Gly34Asp,canonical,"
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.101G-A
+Name of Chain_2: output/KRTAP20-3/canonical/isoform_relaxed_average
+Length of Chain_1:   44 residues
+Length of Chain_2:   44 residues
+
+Aligned length=   43, RMSD=   1.68, Seq_ID=n_identical/n_aligned= 0.791
+TM-score= 0.62946 (if normalized by length of Chain_1)
+TM-score= 0.62946 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
+MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCD-YRCGCGGVWI
+:::::::::::::::::::::::::::::::::: ::::::::: 
+MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI-
+
+"
+NM_001128077.1_KRTAP20-3_c.101G-A_p.Gly34Asp,NM_001128077.1_KRTAP20-3_c.101G-A_p.Gly34Asp,"
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.101G-A
+Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.101G-A
+Length of Chain_1:   44 residues
+Length of Chain_2:   44 residues
+
+Aligned length=   44, RMSD=   0.00, Seq_ID=n_identical/n_aligned= 1.000
+TM-score= 1.00000 (if normalized by length of Chain_1)
+TM-score= 1.00000 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
+MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCDYRCGCGGVWI
+::::::::::::::::::::::::::::::::::::::::::::
+MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCDYRCGCGGVWI
+
+"
+NM_001128077.1_KRTAP20-3_c.101G-A_p.Gly34Asp,NM_001128077.1_KRTAP20-3_c.25G-A_p.Gly9Arg,"
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.101G-A
+Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.25G-A_
+Length of Chain_1:   44 residues
+Length of Chain_2:   44 residues
+
+Aligned length=   32, RMSD=   3.58, Seq_ID=n_identical/n_aligned= 0.594
+TM-score= 0.36255 (if normalized by length of Chain_1)
+TM-score= 0.36255 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
+MSYYGNYYGGLGYGYDCKYSYTSGFGAFR-------ILDCDYR---C--GCGGVWI
+:::::::::::::::::..                 ..:::.    .  .::::: 
+MSYYGNYYRGLGYGYDCKY----------SYTSGFGAFRILD-CGYRCGCGGVWI-
+
+"
+NM_001128077.1_KRTAP20-3_c.101G-A_p.Gly34Asp,NM_001128077.1_KRTAP20-3_c.34G-A_p.Gly12Ser,"
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.101G-A
+Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.34G-A_
+Length of Chain_1:   44 residues
+Length of Chain_2:   44 residues
+
+Aligned length=   33, RMSD=   2.13, Seq_ID=n_identical/n_aligned= 0.697
+TM-score= 0.46273 (if normalized by length of Chain_1)
+TM-score= 0.46273 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
+MSYYGNYYG---------GLGYGYDCKYSYTSGFGAFRIL-DC-DYRCGCGGVWI
+                  .::::::::::::::::::::: :: ::: ::::: :
+---------MSYYGNYYGGLSYGYDCKYSYTSGFGAFRILDCGYRCG-CGGVW-I
+
+"
+NM_001128077.1_KRTAP20-3_c.101G-A_p.Gly34Asp,NM_001128077.1_KRTAP20-3_c.47A-C_p.Asp16Ala,"
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.101G-A
+Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.47A-C_
+Length of Chain_1:   44 residues
+Length of Chain_2:   44 residues
+
+Aligned length=   28, RMSD=   3.01, Seq_ID=n_identical/n_aligned= 0.679
+TM-score= 0.29369 (if normalized by length of Chain_1)
+TM-score= 0.29369 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
+MSYYGNYYGGL-----------GYGYDCKYSYTSGFGAFRILDCDYRCGCGGVWI-----
+                      .::.::::::::::::::  ::::  :::::.      
+-----------MSYYGNYYGGLGYGYACKYSYTSGFGAFR--ILDC--GYRCGC-GGVWI
+
+"
+NM_001128077.1_KRTAP20-3_c.25G-A_p.Gly9Arg,canonical,"
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.25G-A_
+Name of Chain_2: output/KRTAP20-3/canonical/isoform_relaxed_average
+Length of Chain_1:   44 residues
+Length of Chain_2:   44 residues
+
+Aligned length=   31, RMSD=   3.88, Seq_ID=n_identical/n_aligned= 0.774
+TM-score= 0.32655 (if normalized by length of Chain_1)
+TM-score= 0.32655 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
+MSYYGNYYRGLGYGYDCKYSYTSGFG-----------AFRILDCGYRC--GCGGVWI
+:::::::::::::::::.                   ..:...       ..:::::
+MSYYGNYYGGLGYGYDCK--------YSYTSGFGAFRILDCGY-----RCGCGGVWI
+
+"
+NM_001128077.1_KRTAP20-3_c.25G-A_p.Gly9Arg,NM_001128077.1_KRTAP20-3_c.101G-A_p.Gly34Asp,"
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.25G-A_
+Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.101G-A
+Length of Chain_1:   44 residues
+Length of Chain_2:   44 residues
+
+Aligned length=   32, RMSD=   3.58, Seq_ID=n_identical/n_aligned= 0.594
+TM-score= 0.36255 (if normalized by length of Chain_1)
+TM-score= 0.36255 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
+MSYYGNYYRGLGYGYDCKYSYTSGFG----------AFRILDCGY-RCGCGGVWI-
+:::::::::::::::::..                 ..:::.    .  .::::: 
+MSYYGNYYGGLGYGYDCKY-------SYTSGFGAFRILDCDY---RC--GCGGVWI
+
+"
+NM_001128077.1_KRTAP20-3_c.25G-A_p.Gly9Arg,NM_001128077.1_KRTAP20-3_c.25G-A_p.Gly9Arg,"
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.25G-A_
+Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.25G-A_
+Length of Chain_1:   44 residues
+Length of Chain_2:   44 residues
+
+Aligned length=   44, RMSD=   0.00, Seq_ID=n_identical/n_aligned= 1.000
+TM-score= 1.00000 (if normalized by length of Chain_1)
+TM-score= 1.00000 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
+MSYYGNYYRGLGYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI
+::::::::::::::::::::::::::::::::::::::::::::
+MSYYGNYYRGLGYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI
+
+"
+NM_001128077.1_KRTAP20-3_c.25G-A_p.Gly9Arg,NM_001128077.1_KRTAP20-3_c.34G-A_p.Gly12Ser,"
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.25G-A_
+Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.34G-A_
+Length of Chain_1:   44 residues
+Length of Chain_2:   44 residues
+
+Aligned length=   36, RMSD=   2.69, Seq_ID=n_identical/n_aligned= 0.778
+TM-score= 0.44459 (if normalized by length of Chain_1)
+TM-score= 0.44459 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
+-MSYYGN-YYRGLGYGYDCKYSYTSGFGAFRI--LDCGYRCGCGGVWI----
+ .: ::: : ::::::::::::::::::::::  :: :: ::..        
+MSY-YGNYY-GGLSYGYDCKYSYTSGFGAFRILDCG-YR-CGCG----GVWI
+
+"
+NM_001128077.1_KRTAP20-3_c.25G-A_p.Gly9Arg,NM_001128077.1_KRTAP20-3_c.47A-C_p.Asp16Ala,"
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.25G-A_
+Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.47A-C_
+Length of Chain_1:   44 residues
+Length of Chain_2:   44 residues
+
+Aligned length=   24, RMSD=   3.05, Seq_ID=n_identical/n_aligned= 0.917
+TM-score= 0.30157 (if normalized by length of Chain_1)
+TM-score= 0.30157 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
+M-SYYGNYYRGLGYGYDCKYSYTSGFGA-------FRILDCGYRCGCGGVW------------I
+  .::::::::::::::::::              .::.                        .
+-MSYYGNYYGGLGYGYACKYS-------YTSGFGAFRIL------------DCGYRCGCGGVWI
+
+"
+NM_001128077.1_KRTAP20-3_c.34G-A_p.Gly12Ser,canonical,"
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.34G-A_
+Name of Chain_2: output/KRTAP20-3/canonical/isoform_relaxed_average
+Length of Chain_1:   44 residues
+Length of Chain_2:   44 residues
+
+Aligned length=   33, RMSD=   2.22, Seq_ID=n_identical/n_aligned= 0.970
+TM-score= 0.40898 (if normalized by length of Chain_1)
+TM-score= 0.40898 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
+MSYYGNYYGGL-----------SYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI
+                      .::::::::::::::::::::::::::::::::
+-----------MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI
+
+"
+NM_001128077.1_KRTAP20-3_c.34G-A_p.Gly12Ser,NM_001128077.1_KRTAP20-3_c.101G-A_p.Gly34Asp,"
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.34G-A_
+Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.101G-A
+Length of Chain_1:   44 residues
+Length of Chain_2:   44 residues
+
+Aligned length=   33, RMSD=   2.13, Seq_ID=n_identical/n_aligned= 0.697
+TM-score= 0.46273 (if normalized by length of Chain_1)
+TM-score= 0.46273 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
+MSYYGNYYG---------GLSYGYDCKYSYTSGFGAFRILDCGYRCG-CGGVW-I
+                  .::::::::::::::::::::: :: ::: ::::: :
+---------MSYYGNYYGGLGYGYDCKYSYTSGFGAFRIL-DC-DYRCGCGGVWI
+
+"
+NM_001128077.1_KRTAP20-3_c.34G-A_p.Gly12Ser,NM_001128077.1_KRTAP20-3_c.25G-A_p.Gly9Arg,"
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.34G-A_
+Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.25G-A_
+Length of Chain_1:   44 residues
+Length of Chain_2:   44 residues
+
+Aligned length=   36, RMSD=   2.69, Seq_ID=n_identical/n_aligned= 0.778
+TM-score= 0.44459 (if normalized by length of Chain_1)
+TM-score= 0.44459 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
+MSY-YGNYY-GGLSYGYDCKYSYTSGFGAFRILDCG-YR-CGCGGVWI----
+ .: ::: : ::::::::::::::::::::::  :: :: ::..        
+-MSYYGN-YYRGLGYGYDCKYSYTSGFGAFRI--LDCGYRCGCG----GVWI
+
+"
+NM_001128077.1_KRTAP20-3_c.34G-A_p.Gly12Ser,NM_001128077.1_KRTAP20-3_c.34G-A_p.Gly12Ser,"
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.34G-A_
+Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.34G-A_
+Length of Chain_1:   44 residues
+Length of Chain_2:   44 residues
+
+Aligned length=   44, RMSD=   0.00, Seq_ID=n_identical/n_aligned= 1.000
+TM-score= 1.00000 (if normalized by length of Chain_1)
+TM-score= 1.00000 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
+MSYYGNYYGGLSYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI
+::::::::::::::::::::::::::::::::::::::::::::
+MSYYGNYYGGLSYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI
+
+"
+NM_001128077.1_KRTAP20-3_c.34G-A_p.Gly12Ser,NM_001128077.1_KRTAP20-3_c.47A-C_p.Asp16Ala,"
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.34G-A_
+Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.47A-C_
+Length of Chain_1:   44 residues
+Length of Chain_2:   44 residues
+
+Aligned length=   26, RMSD=   3.45, Seq_ID=n_identical/n_aligned= 0.692
+TM-score= 0.25805 (if normalized by length of Chain_1)
+TM-score= 0.25805 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
+MSYYGNYYGGLSYGYDCKYSYTSGFGAFR-ILDCGYRCGCGGVWI-----------------
+:::::::::::...::::::          . .::::                         
+MSYYGNYYGGLGYGYACKYS---------YT-SGFGA--------FRILDCGYRCGCGGVWI
+
+"
+NM_001128077.1_KRTAP20-3_c.47A-C_p.Asp16Ala,canonical,"
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.47A-C_
+Name of Chain_2: output/KRTAP20-3/canonical/isoform_relaxed_average
+Length of Chain_1:   44 residues
+Length of Chain_2:   44 residues
+
+Aligned length=   27, RMSD=   3.58, Seq_ID=n_identical/n_aligned= 0.556
+TM-score= 0.31749 (if normalized by length of Chain_1)
+TM-score= 0.31749 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
+MSYYGNYYGGLGYG-YACKY-----------SYT-S---GFGAFRILDCGYRCGCGGVWI-
+:::::::::::::: :::..           .:: :   :::.                  
+MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCGYRCGCGGVW-----------------I
+
+"
+NM_001128077.1_KRTAP20-3_c.47A-C_p.Asp16Ala,NM_001128077.1_KRTAP20-3_c.101G-A_p.Gly34Asp,"
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.47A-C_
+Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.101G-A
+Length of Chain_1:   44 residues
+Length of Chain_2:   44 residues
+
+Aligned length=   28, RMSD=   3.01, Seq_ID=n_identical/n_aligned= 0.679
+TM-score= 0.29369 (if normalized by length of Chain_1)
+TM-score= 0.29369 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
+MSYYGNYYGGL-----------GYGYACKYSYTSGFGAFR--ILDC--GYRCGCGGVWI-
+                      .::.::::::::::::::  ::::  :::::.      
+-----------MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCDYRCGCGGVW-----I
+
+"
+NM_001128077.1_KRTAP20-3_c.47A-C_p.Asp16Ala,NM_001128077.1_KRTAP20-3_c.25G-A_p.Gly9Arg,"
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.47A-C_
+Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.25G-A_
+Length of Chain_1:   44 residues
+Length of Chain_2:   44 residues
+
+Aligned length=   24, RMSD=   3.05, Seq_ID=n_identical/n_aligned= 0.917
+TM-score= 0.30157 (if normalized by length of Chain_1)
+TM-score= 0.30157 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
+M-SYYGNYYGGLGYGYACKYSYTSGFGA-------FRILDCGYRCGCGGVW------------I
+  .::::::::::::::::::              .::.                        .
+-MSYYGNYYRGLGYGYDCKYS-------YTSGFGAFRIL------------DCGYRCGCGGVWI
+
+"
+NM_001128077.1_KRTAP20-3_c.47A-C_p.Asp16Ala,NM_001128077.1_KRTAP20-3_c.34G-A_p.Gly12Ser,"
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.47A-C_
+Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.34G-A_
+Length of Chain_1:   44 residues
+Length of Chain_2:   44 residues
+
+Aligned length=   26, RMSD=   3.45, Seq_ID=n_identical/n_aligned= 0.692
+TM-score= 0.25805 (if normalized by length of Chain_1)
+TM-score= 0.25805 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
+MSYYGNYYGGLGYGYACKYSY---------T-SGFGAFRILDCGYRCGCGGVWI--------
+:::::::::::...::::::          . .::::                         
+MSYYGNYYGGLSYGYDCKYS-YTSGFGAFRILDCGYR-----------------CGCGGVWI
+
+"
+NM_001128077.1_KRTAP20-3_c.47A-C_p.Asp16Ala,NM_001128077.1_KRTAP20-3_c.47A-C_p.Asp16Ala,"
+ **************************************************************************
+ *                        TM-align (Version 20170708)                     *
+ * An algorithm for protein structure alignment and comparison            *
+ * Based on statistics:                                                   *
+ *       0.0 < TM-score < 0.30, random structural similarity              *
+ *       0.5 < TM-score < 1.00, in about the same fold                    *
+ * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)    *
+ * Please email your comments and suggestions to: zhng@umich.edu          *
+ **************************************************************************
+
+Name of Chain_1: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.47A-C_
+Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.47A-C_
+Length of Chain_1:   44 residues
+Length of Chain_2:   44 residues
+
+Aligned length=   44, RMSD=   0.00, Seq_ID=n_identical/n_aligned= 1.000
+TM-score= 1.00000 (if normalized by length of Chain_1)
+TM-score= 1.00000 (if normalized by length of Chain_2)
+(You should use TM-score normalized by length of the reference protein)
+
+("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
+MSYYGNYYGGLGYGYACKYSYTSGFGAFRILDCGYRCGCGGVWI
+::::::::::::::::::::::::::::::::::::::::::::
+MSYYGNYYGGLGYGYACKYSYTSGFGAFRILDCGYRCGCGGVWI
+
+"

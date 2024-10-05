@@ -1,0 +1,5 @@
+data,ClinicalSignificance,PhenotypeIDS,PhenotypeList,Type,HGNC_ID,WTpSeq,WTcSeq,Mutation,MUTpSeq,aligned_length,chain1,chain1_length,chain2,chain2_length,comparison,identical/aligned,rmsd
+NM_021182.3(HMHB1):c.88T>A (p.Tyr30Asn),Uncertain significance,MedGen:CN169374,not specified,single nucleotide variant,HGNC:29677,MEEQPECREEKRGSLHVWKSELVEVEDDVYLRHSSSLTYRL,ccacatcccaggaggccgaggcggcttgccccgcatctcagaagccgggcaggccctgagccttctgacctcacatcctctgccacaccacagtggagaaaccagaactggaggagcagccagaatgcagagaagaaaaaagaggttctctgcatgtttggaagtcggaattggttgaagttgaagatgatgtgtatctgaggcacagctcttccctgacttataggctttgacactgctgttgaggtttgactcgaagcccagagttttggtgtggatgagcagggacaaattgctgagcatgaagaagagtaaaattaagcaagtggaacatatgccctttgcctctgctctgcacagtgaaatgaaaagtcaaccttt,Y30N,MEEQPECREEKRGSLHVWKSELVEVEDDVNLRHSSSLTYRL,41.0,output/HMHB1/canonical/isoform_relaxed_averaged_rotated.pdb,41,output/HMHB1/NM_021182.3_HMHB1_c.88T-A_p.Tyr30Asn/isoform_relaxed_averaged_rotated.pdb,41,"("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
+MEEQPECREEKRGSLHVWKSELVEVEDDVYLRHSSSLTYRL
+:::::::::::::::::::::::::::::::::::::::::
+MEEQPECREEKRGSLHVWKSELVEVEDDVNLRHSSSLTYRL",0.976,1.31

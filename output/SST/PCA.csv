@@ -1,0 +1,7 @@
+mutation,PC1,PC2,PhenotypeList,ClinicalSignificance,rmsd
+canonical,-12.157823081956657,12.698981856001087,canonical,canonical,0.0
+NM_001048.4_SST_c.182A-C_p.Asn61Thr,-34.80145482904601,31.602564286780087,not provided,Benign,2.59
+NM_001048.4_SST_c.127G-T_p.Ala43Ser,356.6339219074119,-54.103576658099385,not specified,Uncertain significance,3.93
+NM_001048.4_SST_c.79T-C_p.Ser27Pro,-118.77671422941914,-26.428920132537126,not specified,Uncertain significance,2.67
+NM_001048.4_SST_c.221C-T_p.Ser74Phe,-166.41752601493897,-128.91050371831244,not specified,Uncertain significance,3.57
+NM_001048.4_SST_c.178C-T_p.Pro60Ser,-24.48040375205114,165.14145436616778,not specified,Uncertain significance,3.77

@@ -1,0 +1,17 @@
+mutation,PC1,PC2,PhenotypeList,ClinicalSignificance,rmsd
+canonical,-83.1500317032683,37.23223725126093,canonical,canonical,0.0
+NM_001124.3_ADM_c.254C-G_p.Pro85Arg,160.87553708244184,-29.545847080266984,not provided,Benign,3.2
+NM_001124.3_ADM_c.150C-G_p.Ser50Arg,-26.38231478784136,-92.46044651549794,not provided,Benign,2.51
+NM_001124.3_ADM_c.529C-G_p.Pro177Ala,-32.044336006901226,31.67175048990023,not specified,Uncertain significance,2.28
+NM_001124.3_ADM_c.64G-T_p.Ala22Ser,-104.01337368946682,-26.082381406508016,not specified,Uncertain significance,2.44
+NM_001124.3_ADM_c.10G-C_p.Val4Leu,223.84722909265412,67.01158034131223,not specified,Uncertain significance,2.87
+NM_001124.3_ADM_c.11T-A_p.Val4Asp,402.2593328330303,-6.546073710235763,not specified,Uncertain significance,2.6
+NM_001124.3_ADM_c.112G-T_p.Ala38Ser,-119.38387216374122,-15.509780922656791,not specified,Uncertain significance,2.99
+NM_001124.3_ADM_c.113C-T_p.Ala38Val,62.799418681699315,71.32346575785675,not specified,Uncertain significance,3.13
+NM_001124.3_ADM_c.260C-T_p.Ala87Val,41.60512017549917,-54.24023381682041,not specified,Uncertain significance,3.34
+NM_001124.3_ADM_c.430C-G_p.Gln144Glu,-108.92180091826509,86.64069884675457,not specified,Uncertain significance,2.75
+NM_001124.3_ADM_c.236G-A_p.Ser79Asn,-72.64994042709031,-90.64058860919921,not specified,Uncertain significance,2.87
+NM_001124.3_ADM_c.416G-A_p.Ser139Asn,-60.56489499691445,8.747852056611004,not specified,Likely benign,2.48
+NM_001124.3_ADM_c.520C-T_p.Pro174Ser,-23.428276316932692,168.95235293672587,not specified,Uncertain significance,3.28
+NM_001124.3_ADM_c.105T-A_p.Asn35Lys,-300.98851236045664,-2.6233134571042673,not specified,Uncertain significance,2.29
+NM_001124.3_ADM_c.218T-G_p.Met73Arg,40.140715505553665,-153.93127216213222,not specified,Uncertain significance,3.13

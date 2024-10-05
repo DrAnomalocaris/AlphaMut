@@ -1,0 +1,10 @@
+{
+    "comparison": "(\":\" denotes aligned residue pairs of d < 5.0 A, \".\" denotes other aligned residues)\nMCYYHNYYGSLDYGCSYGSE--YGNS--GYACNFPCSYGRFLLAPRKKF----------------\n                      ::::  :::::::::::::::::::..                \n--------------------MRYYHNYYGSLDYGCSYGSEYGNSGYACNFPCSYGRFLLAPRKKF",
+    "chain1": "output/KRTAP22-2/canonical/isoform_relaxed_averaged_rotated.pdb",
+    "chain2": "output/KRTAP22-2/NM_001164434.1_KRTAP22-2_c.4T-C_p.Cys2Arg/isoform_relaxed_averaged_rotated.pdb",
+    "chain1_length": 45,
+    "chain2_length": 45,
+    "aligned_length": 25.0,
+    "rmsd": 2.71,
+    "identical/aligned": 0.08
+}

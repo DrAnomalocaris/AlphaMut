@@ -1,0 +1,7 @@
+2024-10-03 22:32:27,108 Running colabfold 1.5.5 (4e198f5cecc6a808daa6baf7441899e5e76f7b9e)
+2024-10-03 22:32:27,540 WARNING: no GPU detected, will be using CPU
+2024-10-03 22:32:29,815 Found 6 citations for tools or databases
+2024-10-03 22:32:29,816 Query 1/1: isoform (length 260)
+2024-10-03 22:32:34,421 Setting max_seq=512, max_extra_seq=5120
+2024-10-03 22:37:36,572 alphafold2_ptm_model_1_seed_002 recycle=0 pLDDT=95.3 pTM=0.92
+2024-10-03 22:43:18,456 alphafold2_ptm_model_1_seed_002 recycle=1 pLDDT=96.2 pTM=0.927 tol=0.292

@@ -1,0 +1,5 @@
+mutation,PC1,PC2,PhenotypeList,ClinicalSignificance,rmsd
+canonical,-102.518261030024,-49.82719739185263,canonical,canonical,0.0
+NM_181620.2_KRTAP22-1_c.23A-G_p.His8Arg,-104.31795395599543,87.72671974525404,not specified,Uncertain significance,3.39
+NM_181620.2_KRTAP22-1_c.55G-A_p.Gly19Ser,305.9638730822867,0.7069597031328907,not specified,Uncertain significance,2.51
+NM_181620.2_KRTAP22-1_c.113G-T_p.Cys38Phe,-99.12765809626713,-38.60648205653432,not specified,Uncertain significance,3.37

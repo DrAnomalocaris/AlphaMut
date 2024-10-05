@@ -438,3 +438,29 @@ table.dataframe th.sorted-desc::after {
 .results li {
     margin: 5px 0; /* Space between items */
 }
+
+/* Styles for tooltip */
+.tooltip {
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #d3d3d3;
+    padding: 8px;
+    border-radius: 4px;
+    pointer-events: none;
+}
+
+.info-circle {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #959596;
+    color: #ffffff;
+    font-size: 12px;
+    cursor: pointer;
+}
+.info-circle:hover {
+    background-color: #5a5a5a;
+}

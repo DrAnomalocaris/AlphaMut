@@ -1,0 +1,10 @@
+{
+    "comparison": "(\":\" denotes aligned residue pairs of d < 5.0 A, \".\" denotes other aligned residues)\nMEEQPECREEKRGSLHVWKSELVEVEDDVYLRHSSSLTYRL\n:::::::::::::::::::::::::::::::::::::::::\nMEEQPECREEKRGSLHVWKSELVEVEDDVNLRHSSSLTYRL",
+    "chain1": "output/HMHB1/canonical/isoform_relaxed_averaged_rotated.pdb",
+    "chain2": "output/HMHB1/NM_021182.3_HMHB1_c.88T-A_p.Tyr30Asn/isoform_relaxed_averaged_rotated.pdb",
+    "chain1_length": 41,
+    "chain2_length": 41,
+    "aligned_length": 41.0,
+    "rmsd": 1.31,
+    "identical/aligned": 0.976
+}

@@ -1,0 +1,10 @@
+{
+    "comparison": "(\":\" denotes aligned residue pairs of d < 5.0 A, \".\" denotes other aligned residues)\nMADKPDMGEIASFDKAKLKKTETQEKNTLPTKETIEQEKRSEIS\n:::::::::::::::::::::::::::.::::::::::::::::\nMADKPDMGEIASFDKAKLKKTETQEKNTLPTKKTIEQEKRSEIS",
+    "chain1": "output/TMSB10/canonical/isoform_relaxed_averaged_rotated.pdb",
+    "chain2": "output/TMSB10/NM_021103.4_TMSB10_c.97G-A_p.Glu33Lys/isoform_relaxed_averaged_rotated.pdb",
+    "chain1_length": 44,
+    "chain2_length": 44,
+    "aligned_length": 44.0,
+    "rmsd": 1.97,
+    "identical/aligned": 0.977
+}

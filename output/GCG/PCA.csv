@@ -1,0 +1,4 @@
+mutation,PC1,PC2,PhenotypeList,ClinicalSignificance,rmsd
+canonical,-161.79635781674986,-28.19007113524626,canonical,canonical,0.0
+NM_002054.5_GCG_c.472A-G_p.Ile158Val,-130.7619908102242,30.256735389353253,not provided,Benign,1.79
+NM_002054.5_GCG_c.62G-T_p.Arg21Leu,292.5583486269741,-2.0666642541070006,not specified,Uncertain significance,3.53

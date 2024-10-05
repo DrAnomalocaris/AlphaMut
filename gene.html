@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gene Information</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
 </head>
 <body>
     <header>
@@ -41,6 +43,10 @@
                 <p id="loading">Loading plot...</p>
             </div>
         <div class="card">
+            <b>PCA<sup><span class="info-circle" title="PCA was made by comparing the 3d shape of the principal chain, to account with different lengths of proteins, the chain path was interpolated so they all have the same number of points to compare.">i</span></sup></b>
+            <div id="PCA"></div>
+        </div>
+        <div class="card">
             <div id="mutatnt-table">
                 <p id="loading">Loading mutants...</p>
             </div>
@@ -48,7 +54,8 @@
         
     </main>
     <script src="https://cdn.plot.ly/plotly-2.18.2.min.js"></script>
-    <script src="genepage.js"></script>
-    <script src="script.js"></script>
+    <script src="src/genepage.js"></script>
+    <script src="src/script.js"></script>
+    <script src="src/PCA.js"></script>
 </body>
 </html>

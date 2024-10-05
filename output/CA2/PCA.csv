@@ -1,0 +1,64 @@
+mutation,PC1,PC2,PhenotypeList,ClinicalSignificance,rmsd
+canonical,-92.23543644022115,-0.5442426251290483,canonical,canonical,0.0
+NM_000067.3_CA2_c.754A-G_p.Asn252Asp,499.68144310842604,227.81546793041696,CARBONIC ANHYDRASE II VARIANT|Osteopetrosis with renal tubular acidosis|not provided,Benign/Likely benign,0.06
+NM_000067.3_CA2_c.52A-G_p.Lys18Glu,-92.40995977832107,5.73423050834128,CARBONIC ANHYDRASE II VARIANT,Pathogenic,0.06
+NM_000067.3_CA2_c.707C-A_p.Pro236His,-91.59214824409048,4.405106292016951,CARBONIC ANHYDRASE II VARIANT,Pathogenic,0.05
+NM_000067.3_CA2_c.319C-T_p.His107Tyr,-92.11490321980845,-1.2502516318933248,Osteopetrosis with renal tubular acidosis,Pathogenic,0.09
+NM_000067.3_CA2_c.120T-G_p.Tyr40Ter,294.52930826907897,-26.613518030637483,Osteopetrosis with renal tubular acidosis,Pathogenic,3.02
+NM_000067.3_CA2_c.621del_p.Trp208fs,441.82255183876384,-310.4629074382911,Osteopetrosis with renal tubular acidosis,Pathogenic,1.86
+NM_000067.3_CA2_c.677G-A_p.Arg226His,-92.03701603143976,16.37822454766627,not provided|Osteopetrosis with renal tubular acidosis|Inborn genetic diseases,Uncertain significance,0.1
+NM_000067.3_CA2_c.539C-T_p.Pro180Leu,-88.17381421354462,-6.93628831488971,Osteopetrosis with renal tubular acidosis,Uncertain significance,0.15
+NM_000067.3_CA2_c.40G-A_p.Glu14Lys,-91.91456838255714,8.201949145769385,Osteopetrosis with renal tubular acidosis|Inborn genetic diseases,Uncertain significance,0.06
+NM_000067.3_CA2_c.21C-A_p.Tyr7Ter,288.02394812033793,166.14963284452682,Osteopetrosis with renal tubular acidosis,Pathogenic,1.49
+NM_000067.3_CA2_c.575C-T_p.Thr192Ile,-91.87654817260574,6.047330185224478,not provided|Osteopetrosis with renal tubular acidosis,Uncertain significance,0.16
+NM_000067.3_CA2_c.143_146del_p.Ser48fs,518.4155313934068,403.70989719877525,Osteopetrosis with renal tubular acidosis|not provided,Conflicting classifications of pathogenicity,3.65
+NM_000067.3_CA2_c.681del_p.Lys227fs,394.48208353821445,-337.9991612557999,Osteopetrosis with renal tubular acidosis|not provided,Pathogenic/Likely pathogenic,0.9
+NM_000067.3_CA2_c.579C-G_p.Tyr193Ter,400.900018348105,-109.47874002116505,Osteopetrosis with renal tubular acidosis|Neurodevelopmental delay,Likely pathogenic,1.47
+NM_000067.3_CA2_c.649G-A_p.Val217Ile,-91.38495494389873,13.052802391001938,not provided|Osteopetrosis with renal tubular acidosis,Uncertain significance,0.09
+NM_000067.3_CA2_c.74G-A_p.Gly25Glu,-90.57982040416015,3.150670836325943,Osteopetrosis with renal tubular acidosis,Uncertain significance,0.09
+NM_000067.3_CA2_c.472A-G_p.Lys158Glu,-83.18901812908032,-1.3078787636351035,not provided|Osteopetrosis with renal tubular acidosis,Uncertain significance,0.07
+NM_000067.3_CA2_c.275A-C_p.Gln92Pro,-86.07023625730153,-12.013493439496582,Osteopetrosis with renal tubular acidosis,Likely pathogenic,0.1
+NM_000067.3_CA2_c.311G-T_p.Gly104Val,-91.88882020971033,3.167091035589087,Osteopetrosis with renal tubular acidosis,Uncertain significance,0.25
+NM_000067.3_CA2_c.427C-G_p.Leu143Val,-92.11680168823574,7.9247351521992595,not provided,Uncertain significance,0.06
+NM_000067.3_CA2_c.733C-T_p.Arg245Cys,-80.53348202432758,-11.579891354377676,not provided|CA2-related disorder,Uncertain significance,0.06
+NM_000067.3_CA2_c.503C-G_p.Thr168Arg,-91.08364220555227,1.9656244149133995,not provided,Uncertain significance,0.09
+NM_000067.3_CA2_c.281A-G_p.His94Arg,-90.27253156331537,10.063803505646609,not provided|Osteopetrosis with renal tubular acidosis,Uncertain significance,0.1
+NM_000067.3_CA2_c.433A-G_p.Ile145Val,-92.00319486361994,1.7548292237862144,not provided|Inborn genetic diseases,Conflicting classifications of pathogenicity,0.07
+NM_000067.3_CA2_c.566A-G_p.Asp189Gly,-92.57119612412734,2.783688106526922,not provided,Uncertain significance,0.04
+NM_000067.3_CA2_c.541C-T_p.Arg181Cys,-84.15952193897266,29.563387873250097,not provided|Osteopetrosis with renal tubular acidosis,Uncertain significance,0.06
+NM_000067.3_CA2_c.163A-T_p.Thr55Ser,-91.56894243594988,7.169604904996532,not provided,Uncertain significance,0.07
+NM_000067.3_CA2_c.424G-A_p.Val142Ile,-91.89839757175295,3.818318340796289,not provided,Uncertain significance,0.05
+NM_000067.3_CA2_c.701G-A_p.Gly234Asp,-88.02311684376004,14.208232791396247,not provided,Uncertain significance,0.11
+NM_000067.3_CA2_c.445G-A_p.Val149Ile,-90.53531340440796,0.17089040194372337,not provided,Uncertain significance,0.1
+NM_000067.3_CA2_c.709G-A_p.Glu237Lys,-86.62990138517911,25.278281644124252,not provided|Osteopetrosis with renal tubular acidosis,Uncertain significance,0.08
+NM_000067.3_CA2_c.607C-A_p.Leu203Met,-91.4904067213875,5.547646228917434,not provided|Osteopetrosis with renal tubular acidosis,Likely benign,0.05
+NM_000067.3_CA2_c.2T-G_p.Met1Arg,-87.43598184393173,-10.057590246544484,Neurodevelopmental delay,Likely pathogenic,0.09
+NM_000067.3_CA2_c.630_641delinsCACA_p.Leu211fs,313.1602747582363,-287.1604170958513,not provided|Osteopetrosis with renal tubular acidosis,Pathogenic/Likely pathogenic,1.52
+NM_000067.3_CA2_c.537T-G_p.Asp179Glu,-91.27396312495652,3.6815373871824097,Inborn genetic diseases|not provided,Uncertain significance,0.08
+NM_000067.3_CA2_c.779A-G_p.Lys260Arg,-84.33645234888245,24.623093762442736,Inborn genetic diseases|not provided,Uncertain significance,0.06
+NM_000067.3_CA2_c.484G-A_p.Val162Met,-91.97191537724382,2.611595503135717,not provided,Uncertain significance,0.06
+NM_000067.3_CA2_c.125C-T_p.Pro42Leu,-77.94895219732288,36.430211166543096,not provided,Uncertain significance,0.08
+NM_000067.3_CA2_c.124C-A_p.Pro42Thr,-91.91476694705115,-2.0255425543343883,not provided|Inborn genetic diseases,Uncertain significance,0.05
+NM_000067.3_CA2_c.749T-G_p.Leu250Arg,-81.78812315017387,11.681541617730552,not provided,Uncertain significance,0.07
+NM_000067.3_CA2_c.619A-G_p.Thr207Ala,-80.10635827202036,29.480190563573974,not provided,Uncertain significance,0.25
+NM_000067.3_CA2_c.434T-C_p.Ile145Thr,-88.51758414132034,-2.8358072718271856,not provided,Uncertain significance,0.13
+NM_000067.3_CA2_c.655A-G_p.Ser219Gly,-87.81227279720356,-3.604067416095746,not provided,Uncertain significance,0.05
+NM_000067.3_CA2_c.115A-C_p.Lys39Gln,-81.30069098095991,32.532090443435585,not provided,Uncertain significance,0.06
+NM_000067.3_CA2_c.734G-A_p.Arg245His,-90.06774993026089,4.305546797395306,not provided,Uncertain significance,0.07
+NM_000067.3_CA2_c.52A-C_p.Lys18Gln,-90.58453530108011,-4.506173013717132,not provided,Benign,0.05
+NM_000067.3_CA2_c.654C-G_p.Ser218Arg,-82.21713743786232,-16.36953512413428,not provided|Inborn genetic diseases,Uncertain significance,0.08
+NM_000067.3_CA2_c.441G-T_p.Leu147Phe,-89.50432241886188,20.67613483693391,not provided,Uncertain significance,0.09
+NM_000067.3_CA2_c.16G-C_p.Gly6Arg,-85.82173560231122,-7.554684104882515,not provided,Uncertain significance,0.11
+NM_000067.3_CA2_c.430G-A_p.Gly144Ser,-90.10551980652176,17.2318429474509,not provided,Uncertain significance,0.07
+NM_000067.3_CA2_c.364C-T_p.His122Tyr,-89.74689316330227,-3.853291899851735,Inborn genetic diseases,Uncertain significance,0.14
+NM_000067.3_CA2_c.514A-G_p.Ser172Gly,-85.89024729108928,-0.5290648844349188,Inborn genetic diseases,Uncertain significance,0.08
+NM_000067.3_CA2_c.710A-C_p.Glu237Ala,-88.56340568960456,20.268274872618004,Inborn genetic diseases,Uncertain significance,0.05
+NM_000067.3_CA2_c.409C-A_p.Pro137Thr,-92.05006695123708,2.3056607199977797,Inborn genetic diseases,Uncertain significance,0.05
+NM_000067.3_CA2_c.58T-C_p.Phe20Leu,-92.13102092566923,2.6830060238215636,Inborn genetic diseases,Uncertain significance,0.18
+NM_000067.3_CA2_c.542G-A_p.Arg181His,-84.67963339241808,-3.8865281195004453,Inborn genetic diseases,Uncertain significance,0.07
+NM_000067.3_CA2_c.453C-A_p.Ser151Arg,-88.93763523290848,-10.945326430259747,Inborn genetic diseases,Uncertain significance,0.04
+NM_000067.3_CA2_c.610G-T_p.Glu204Ter,359.2836531350085,-111.23053206963918,Osteopetrosis with renal tubular acidosis,Pathogenic,0.95
+NM_000067.3_CA2_c.188_193del_p.Gly63_His64del,132.15627466820158,-137.30197492125552,not provided,Uncertain significance,0.31
+NM_000067.3_CA2_c.157C-G_p.Gln53Glu,-90.7438931611704,-9.563697019833981,not provided|Inborn genetic diseases,Uncertain significance,0.04
+NM_000067.3_CA2_c.153T-A_p.Tyr51Ter,385.92096366145825,25.643020218974197,CA2-related disorder,Likely pathogenic,3.26
+NM_000067.3_CA2_c.755A-G_p.Asn252Ser,495.42849984345526,227.39541268209032,Inborn genetic diseases,Uncertain significance,0.07

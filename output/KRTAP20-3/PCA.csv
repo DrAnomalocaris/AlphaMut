@@ -1,0 +1,6 @@
+mutation,PC1,PC2,PhenotypeList,ClinicalSignificance,rmsd
+canonical,-72.69735641110117,-21.791745594661084,canonical,canonical,0.0
+NM_001128077.1_KRTAP20-3_c.101G-A_p.Gly34Asp,131.9683058170012,-41.44984154926266,not specified,Uncertain significance,1.68
+NM_001128077.1_KRTAP20-3_c.25G-A_p.Gly9Arg,-31.263792287685607,41.182286919148495,not specified,Likely benign,3.88
+NM_001128077.1_KRTAP20-3_c.34G-A_p.Gly12Ser,-82.59372793424748,-28.934446241803407,not specified,Uncertain significance,2.22
+NM_001128077.1_KRTAP20-3_c.47A-C_p.Asp16Ala,54.58657081603299,50.9937464665787,not specified,Uncertain significance,3.58

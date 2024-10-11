@@ -6,5 +6,5 @@ server case-by-case when usage exceeds fair use. If you require more MSAs: You c
 precompute all MSAs with `colabfold_search` or host your own API and pass it to `--host-url`
 
 WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
-I0000 00:00:1727701772.195648   25715 cuda_executor.cc:1001] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+I0000 00:00:1728118667.408912    7223 cuda_executor.cc:1001] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
 Your kernel may have been built without NUMA support.

@@ -1,17 +1,17 @@
 data,ClinicalSignificance,PhenotypeIDS,PhenotypeList,Type,HGNC_ID,WTpSeq,WTcSeq,Mutation,MUTpSeq,comparison,chain1,chain2,chain1_length,chain2_length,aligned_length,rmsd,identical/aligned
 NM_001128077.1(KRTAP20-3):c.101G>A (p.Gly34Asp),Uncertain significance,MedGen:CN169374,not specified,single nucleotide variant,HGNC:34001,MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI,ggctagagacttaaatcctgacacaatgagctactatggcaactactacggaggactgggctatggctatgactgtaaatatagttatacctctggctttggtgcctttagaatcctggactgtggctacagatgtggctgtggtggggtatggatttgactgctgccaccaatatgattatgctacatgcttattatcaggcactgactgaataatatctacaattgggtccattttcttatgagacaggggtgctgttctactacactttt,G34D,MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCDYRCGCGGVWI,"("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI-
-:::::::::::::::::::::::::::::::::: ::::::::: 
-MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCD-YRCGCGGVWI",output/KRTAP20-3/canonical/isoform_relaxed_averaged_rotated.pdb,output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.101G-A_p.Gly34Asp/isoform_relaxed_averaged_rotated.pdb,44,44,43.0,1.68,0.791
+MSY-YGNYYGGLGYGYDCKYSYTSGFGAF-RILDCGYRCGCGGVWI--
+ .: ::::::::::::::::::::::::: :..:.:::   ...:.  
+-MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCDYRC---GCGGVWI",output/KRTAP20-3/canonical/isoform_relaxed_averaged_rotated.pdb,output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.101G-A_p.Gly34Asp/isoform_relaxed_averaged_rotated.pdb,44,44,40.0,2.93,0.65
 NM_001128077.1(KRTAP20-3):c.25G>A (p.Gly9Arg),Likely benign,MedGen:CN169374,not specified,single nucleotide variant,HGNC:34001,MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI,ggctagagacttaaatcctgacacaatgagctactatggcaactactacggaggactgggctatggctatgactgtaaatatagttatacctctggctttggtgcctttagaatcctggactgtggctacagatgtggctgtggtggggtatggatttgactgctgccaccaatatgattatgctacatgcttattatcaggcactgactgaataatatctacaattgggtccattttcttatgagacaggggtgctgttctactacactttt,G9R,MSYYGNYYRGLGYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI,"("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MSYYGNYYGGLGYGYDCKYSYTSGFGAFR--------ILDCGYRC-----GCGGVWI
-:::::::::::::::::.                   ..:...       ..:::::
-MSYYGNYYRGLGYGYDCK-----------YSYTSGFGAFRILD--CGYRCGCGGVWI",output/KRTAP20-3/canonical/isoform_relaxed_averaged_rotated.pdb,output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.25G-A_p.Gly9Arg/isoform_relaxed_averaged_rotated.pdb,44,44,31.0,3.88,0.774
+MSYYGNYYGG----------LGYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI-----
+                    .::::::::::::::::::::::::.::.          
+----------MSYYGNYYRGLGYGYDCKYSYTSGFGAFRILDCGYRCGC-----GGVWI",output/KRTAP20-3/canonical/isoform_relaxed_averaged_rotated.pdb,output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.25G-A_p.Gly9Arg/isoform_relaxed_averaged_rotated.pdb,44,44,29.0,2.72,1.0
 NM_001128077.1(KRTAP20-3):c.34G>A (p.Gly12Ser),Uncertain significance,MedGen:CN169374,not specified,single nucleotide variant,HGNC:34001,MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI,ggctagagacttaaatcctgacacaatgagctactatggcaactactacggaggactgggctatggctatgactgtaaatatagttatacctctggctttggtgcctttagaatcctggactgtggctacagatgtggctgtggtggggtatggatttgactgctgccaccaatatgattatgctacatgcttattatcaggcactgactgaataatatctacaattgggtccattttcttatgagacaggggtgctgttctactacactttt,G12S,MSYYGNYYGGLSYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI,"("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MSYYGNYYGGL-----------GYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI
-                      .::::::::::::::::::::::::::::::::
------------MSYYGNYYGGLSYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI",output/KRTAP20-3/canonical/isoform_relaxed_averaged_rotated.pdb,output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.34G-A_p.Gly12Ser/isoform_relaxed_averaged_rotated.pdb,44,44,33.0,2.22,0.97
+MSYYGNYYGGL------------GYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI
+                       :.::: :::::::::::::::::::::...:::
+-----------MSYYGNYYGGLSYGYDC-KYSYTSGFGAFRILDCGYRCGCGGVWI",output/KRTAP20-3/canonical/isoform_relaxed_averaged_rotated.pdb,output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.34G-A_p.Gly12Ser/isoform_relaxed_averaged_rotated.pdb,44,44,32.0,3.18,0.844
 NM_001128077.1(KRTAP20-3):c.47A>C (p.Asp16Ala),Uncertain significance,MedGen:CN169374,not specified,single nucleotide variant,HGNC:34001,MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI,ggctagagacttaaatcctgacacaatgagctactatggcaactactacggaggactgggctatggctatgactgtaaatatagttatacctctggctttggtgcctttagaatcctggactgtggctacagatgtggctgtggtggggtatggatttgactgctgccaccaatatgattatgctacatgcttattatcaggcactgactgaataatatctacaattgggtccattttcttatgagacaggggtgctgttctactacactttt,D16A,MSYYGNYYGGLGYGYACKYSYTSGFGAFRILDCGYRCGCGGVWI,"("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI-----------------
-:::::::::::::: :::..           .:: :   :::.                  
-MSYYGNYYGGLGYG-YACKY-----------SYT-S---GFGA-FRILDCGYRCGCGGVWI",output/KRTAP20-3/canonical/isoform_relaxed_averaged_rotated.pdb,output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.47A-C_p.Asp16Ala/isoform_relaxed_averaged_rotated.pdb,44,44,27.0,3.58,0.556
+MS-YYGN-YYGG-LGYGYD-CKYSYTSGFGAFRI--------LD--CGYRCGC-GGVWI-
+   ..:: :::: :::::: :..                   .:  :::.    .:::: 
+--MSYYGNYYGGLGYGYACKYSY-----------TSGFGAFRILDCGYRC---GCGGVWI",output/KRTAP20-3/canonical/isoform_relaxed_averaged_rotated.pdb,output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.47A-C_p.Asp16Ala/isoform_relaxed_averaged_rotated.pdb,44,44,28.0,3.82,0.25

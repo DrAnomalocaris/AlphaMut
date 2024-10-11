@@ -5,7 +5,7 @@ submit jobs only from a single IP address. We reserve the right to limit access 
 server case-by-case when usage exceeds fair use. If you require more MSAs: You can 
 precompute all MSAs with `colabfold_search` or host your own API and pass it to `--host-url`
 
-  0%|          | 0/150 [elapsed: 00:00 remaining: ?]SUBMIT:   0%|          | 0/150 [elapsed: 00:00 remaining: ?]COMPLETE:   0%|          | 0/150 [elapsed: 00:00 remaining: ?]COMPLETE: 100%|██████████| 150/150 [elapsed: 00:00 remaining: 00:00]COMPLETE: 100%|██████████| 150/150 [elapsed: 00:02 remaining: 00:00]
+  0%|          | 0/150 [elapsed: 00:00 remaining: ?]SUBMIT:   0%|          | 0/150 [elapsed: 00:00 remaining: ?]COMPLETE:   0%|          | 0/150 [elapsed: 00:00 remaining: ?]COMPLETE: 100%|██████████| 150/150 [elapsed: 00:00 remaining: 00:00]COMPLETE: 100%|██████████| 150/150 [elapsed: 00:01 remaining: 00:00]
 WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
-I0000 00:00:1727669007.423621    5449 cuda_executor.cc:1001] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+I0000 00:00:1728131653.731238   12325 cuda_executor.cc:1001] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
 Your kernel may have been built without NUMA support.

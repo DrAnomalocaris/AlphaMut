@@ -1,10 +1,10 @@
 {
-    "comparison": "(\":\" denotes aligned residue pairs of d < 5.0 A, \".\" denotes other aligned residues)\nMLSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERK-AGCKNFFWKTFTSC-\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::........:::::::::::::::::::::::::::: ::::::: . :::: \nMLSCRLQCALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPTQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFW-K-TFTSC",
+    "comparison": "(\":\" denotes aligned residue pairs of d < 5.0 A, \".\" denotes other aligned residues)\nML-SCRL--QCA-LA-ALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPNQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKTFTSC\n   ..    ..  .: .....::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n--MLS--CRLQ-CALAALSIVLALGCVTGAPSDPRLRQFLQKSLAAAAGKQELAKYFLAELLSEPTQTENDALEPEDLSQAAEQDEMRLELQRSANSNPAMAPRERKAGCKNFFWKTFTSC",
     "chain1": "output/SST/canonical/isoform_relaxed_averaged_rotated.pdb",
     "chain2": "output/SST/NM_001048.4_SST_c.182A-C_p.Asn61Thr/isoform_relaxed_averaged_rotated.pdb",
     "chain1_length": 116,
     "chain2_length": 116,
-    "aligned_length": 114.0,
+    "aligned_length": 111.0,
     "rmsd": 2.59,
-    "identical/aligned": 0.904
+    "identical/aligned": 0.937
 }

@@ -1,15 +1,15 @@
-2024-09-30 07:15:36,078 Running colabfold 1.5.5 (4e198f5cecc6a808daa6baf7441899e5e76f7b9e)
-2024-09-30 07:15:36,280 WARNING: no GPU detected, will be using CPU
-2024-09-30 07:15:38,565 Found 6 citations for tools or databases
-2024-09-30 07:15:38,566 Query 1/1: isoform (length 185)
-2024-09-30 07:15:41,810 Setting max_seq=512, max_extra_seq=609
-2024-09-30 07:19:42,043 alphafold2_ptm_model_1_seed_001 recycle=0 pLDDT=58 pTM=0.175
-2024-09-30 07:23:26,078 alphafold2_ptm_model_1_seed_001 recycle=1 pLDDT=57.4 pTM=0.17 tol=9.19
-2024-09-30 07:27:06,429 alphafold2_ptm_model_1_seed_001 recycle=2 pLDDT=57.7 pTM=0.175 tol=5.84
-2024-09-30 07:30:16,247 alphafold2_ptm_model_1_seed_001 recycle=3 pLDDT=57.2 pTM=0.174 tol=6.11
-2024-09-30 07:30:16,248 alphafold2_ptm_model_1_seed_001 took 852.2s (3 recycles)
-2024-09-30 07:30:16,341 reranking models by 'plddt' metric
-2024-09-30 07:30:20,853 Warning: importing 'simtk.openmm' is deprecated.  Import 'openmm' instead.
-2024-09-30 07:30:42,708 Relaxation took 26.4s
-2024-09-30 07:30:42,708 rank_001_alphafold2_ptm_model_1_seed_001 pLDDT=57.2 pTM=0.174
-2024-09-30 07:30:43,693 Done
+2024-10-09 16:35:15,521 Running colabfold 1.5.5 (4e198f5cecc6a808daa6baf7441899e5e76f7b9e)
+2024-10-09 16:35:15,899 WARNING: no GPU detected, will be using CPU
+2024-10-09 16:35:18,155 Found 6 citations for tools or databases
+2024-10-09 16:35:18,155 Query 1/1: isoform (length 185)
+2024-10-09 16:35:21,057 Setting max_seq=512, max_extra_seq=609
+2024-10-09 16:38:37,902 alphafold2_ptm_model_1_seed_001 recycle=0 pLDDT=58 pTM=0.175
+2024-10-09 16:41:21,101 alphafold2_ptm_model_1_seed_001 recycle=1 pLDDT=57.4 pTM=0.17 tol=9.19
+2024-10-09 16:44:03,167 alphafold2_ptm_model_1_seed_001 recycle=2 pLDDT=57.7 pTM=0.175 tol=5.84
+2024-10-09 16:46:51,096 alphafold2_ptm_model_1_seed_001 recycle=3 pLDDT=57.2 pTM=0.174 tol=6.11
+2024-10-09 16:46:51,097 alphafold2_ptm_model_1_seed_001 took 670.5s (3 recycles)
+2024-10-09 16:46:51,163 reranking models by 'plddt' metric
+2024-10-09 16:46:54,606 Warning: importing 'simtk.openmm' is deprecated.  Import 'openmm' instead.
+2024-10-09 16:47:07,681 Relaxation took 16.5s
+2024-10-09 16:47:07,681 rank_001_alphafold2_ptm_model_1_seed_001 pLDDT=57.2 pTM=0.174
+2024-10-09 16:47:08,490 Done

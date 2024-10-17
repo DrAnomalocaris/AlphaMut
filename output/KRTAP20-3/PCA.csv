@@ -1,6 +1,6 @@
 mutation,PC1,PC2,PhenotypeList,ClinicalSignificance,rmsd
-canonical,-73.60953582636888,11.429713215841243,canonical,canonical,0.0
-NM_001128077.1_KRTAP20-3_c.101G-A_p.Gly34Asp,127.34802789118228,-3.8580678572741998,not specified,Uncertain significance,2.93
-NM_001128077.1_KRTAP20-3_c.25G-A_p.Gly9Arg,-41.967616738746976,52.72680295582483,not specified,Likely benign,2.72
-NM_001128077.1_KRTAP20-3_c.34G-A_p.Gly12Ser,-79.43895815062506,-51.838116109393916,not specified,Uncertain significance,3.18
-NM_001128077.1_KRTAP20-3_c.47A-C_p.Asp16Ala,67.66808282455857,-8.460332204997954,not specified,Uncertain significance,3.82
+canonical,-70.57249291829515,-3.1632362864561387,canonical,canonical,0.0
+NM_001128077.1_KRTAP20-3_c.101G-A_p.Gly34Asp,125.61962142109569,-3.657191342148887,not specified,Uncertain significance,1.92
+NM_001128077.1_KRTAP20-3_c.25G-A_p.Gly9Arg,-45.62105077368031,59.173239798606,not specified,Likely benign,3.4
+NM_001128077.1_KRTAP20-3_c.34G-A_p.Gly12Ser,-84.39365498014419,-43.04990801932884,not specified,Uncertain significance,2.66
+NM_001128077.1_KRTAP20-3_c.47A-C_p.Asp16Ala,74.96757725102398,-9.302904150672122,not specified,Uncertain significance,3.24

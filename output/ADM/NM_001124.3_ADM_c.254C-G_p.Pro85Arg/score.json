@@ -1,10 +1,10 @@
 {
-    "comparison": "(\":\" denotes aligned residue pairs of d < 5.0 A, \".\" denotes other aligned residues)\nMKLVSVALMYLGSLAFLGADTARLDVASEFRKKWNKWALSRGKRELRMSSSYPTGLADVKAGPAQTLIRPQDMKGA-SR-SPED-SSPDAARIRVKRYRQSMNNFQGLRSFGCRF-GTCTVQKLAHQIYQFTDKDKDNVAPRSKISPQGYGRRRRRSLPEAGPGRTLVSSKPQAHGAPAPPSGSAPHFL----------------\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::. ...  .  .... .::::::::::::::::::::: ::::::: :::::::::::::::::::::::::::::::::::::::::::::::::::::....                                \nMKLVSVALMYLGSLAFLGADTARLDVASEFRKKWNKWALSRGKRELRMSSSYPTGLADVKAGPAQTLIRPQ-DMK-GA-SRSPEDSSRDAARIRVKRYRQSMNNFQG-LRSFGCRFGTCTVQKLAHQIYQFTDKDKDNVAPRSKISPQGYGRRRRRSLPEAGPGRTLVSSKPQ----------------AHGAPAPPSGSAPHFL",
+    "comparison": "(\":\" denotes aligned residue pairs of d < 5.0 A, \".\" denotes other aligned residues)\nMKLVSVALMYLGSLAFLGADTARLDVASEFRKKWNKWALSRGKRELRMSSSYPTGLADVKAGPAQTLIRPQDMKGA-SR-SPED-SSPDAARIRVKRYRQSMNNFQGLRSFGCRF-GTCTVQKLAHQIYQFTDKDKDNVAPRSKISPQGYGRRRRRSLPEAGPGRTLVSSKP-QAHGAPAPPSGS------------APH-FL\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::. ...  .  .... .::::::::::::::::::::: ::::::: ::::::::::::::::::::::::::::::.:::::::::::::::::::::...  .                       ..  . \nMKLVSVALMYLGSLAFLGADTARLDVASEFRKKWNKWALSRGKRELRMSSSYPTGLADVKAGPAQTLIRPQ-DMK-GA-SRSPEDSSRDAARIRVKRYRQSMNNFQG-LRSFGCRFGTCTVQKLAHQIYQFTDKDKDNVAPRSKISPQGYGRRRRRSLPEAGPGRTLVSSK-PQ-----------AHGAPAPPSGSAPH-FL-",
     "chain1": "output/ADM/canonical/isoform_relaxed_averaged_rotated.pdb",
     "chain2": "output/ADM/NM_001124.3_ADM_c.254C-G_p.Pro85Arg/isoform_relaxed_averaged_rotated.pdb",
     "chain1_length": 185,
     "chain2_length": 185,
-    "aligned_length": 165.0,
-    "rmsd": 3.24,
-    "identical/aligned": 0.903
+    "aligned_length": 167.0,
+    "rmsd": 3.42,
+    "identical/aligned": 0.886
 }

@@ -10,5 +10,5 @@ genes:
   - KRTAP20-3
   - TMSB10
   - TMSB15A
-num_foldings: 3
+num_foldings: 4
 colabfold_exec: "/mnt/c/Users/lahat/colabfold/localcolabfold/colabfold-conda/bin/colabfold_batch"

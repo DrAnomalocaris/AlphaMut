@@ -345,9 +345,9 @@ rule run_colabfold:
     input:
         fasta = "output/{gene}/{mutation}/seq.fa"
     output:
-        relaxed   = "output/{gene}/{mutation}/isoform_relaxed_rank_001_alphafold2_ptm_model_1_seed_{seed}.pdb",
-        unrelaxed = "output/{gene}/{mutation}/isoform_unrelaxed_rank_001_alphafold2_ptm_model_1_seed_{seed}.pdb",
-        scores    = "output/{gene}/{mutation}/isoform_scores_rank_001_alphafold2_ptm_model_1_seed_{seed}.json",
+        relaxed   = protected("output/{gene}/{mutation}/isoform_relaxed_rank_001_alphafold2_ptm_model_1_seed_{seed}.pdb"),
+        unrelaxed = protected("output/{gene}/{mutation}/isoform_unrelaxed_rank_001_alphafold2_ptm_model_1_seed_{seed}.pdb"),
+        scores    = protected("output/{gene}/{mutation}/isoform_scores_rank_001_alphafold2_ptm_model_1_seed_{seed}.json"),
     log:
         stdout = "output/{gene}/{mutation}/isoform_scores_rank_001_alphafold2_ptm_model_1_seed_{seed}.log",
         stderr = "output/{gene}/{mutation}/isoform_scores_rank_001_alphafold2_ptm_model_1_seed_{seed}.err",

@@ -14,9 +14,9 @@ Name of Chain_2: output/TMSB15A/NM_021992.3_TMSB15A_c.108G-T_p.Gln3
 Length of Chain_1:   45 residues
 Length of Chain_2:   45 residues
 
-Aligned length=   45, RMSD=   1.10, Seq_ID=n_identical/n_aligned= 0.978
-TM-score= 0.81438 (if normalized by length of Chain_1)
-TM-score= 0.81438 (if normalized by length of Chain_2)
+Aligned length=   45, RMSD=   0.75, Seq_ID=n_identical/n_aligned= 0.978
+TM-score= 0.89367 (if normalized by length of Chain_1)
+TM-score= 0.89367 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 (":" denotes aligned residue pairs of d < 5.0 A, "." denotes other aligned residues)

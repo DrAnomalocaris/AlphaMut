@@ -14,13 +14,13 @@ Name of Chain_2: output/ADM/NM_001124.3_ADM_c.260C-T_p.Ala87Val/iso
 Length of Chain_1:  185 residues
 Length of Chain_2:  185 residues
 
-Aligned length=  181, RMSD=   3.51, Seq_ID=n_identical/n_aligned= 0.812
-TM-score= 0.74308 (if normalized by length of Chain_1)
-TM-score= 0.74308 (if normalized by length of Chain_2)
+Aligned length=  176, RMSD=   3.58, Seq_ID=n_identical/n_aligned= 0.864
+TM-score= 0.72060 (if normalized by length of Chain_1)
+TM-score= 0.72060 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 (":" denotes aligned residue pairs of d < 5.0 A, "." denotes other aligned residues)
-MKLVSVALMYLGSLAFLGADTARLDVASEFRKKWNKWALSRGKRELRMSSSYPTGLADVK-AGPAQTLIRPQDMKG-ASRSPEDSSPDAARIRVKRYRQSMNNFQGLRSFGCRFGT-CTVQKLAHQIYQFTDKDKDNVAPRSKISPQGYGRRRRRSLPEAGPGRTLVS-SKPQAHGAPAPPSGSAPHFL
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: :::::.: :::.... .:::::::: ::::::::::::::::: ::::::::::: ::::::::::::::::::::::::::::::::::::::::::::::::::: :..:... ............
-MKLVSVALMYLGSLAFLGADTARLDVASEFRKKWNKWALSRGKRELRMSSSYPTGLADVKAGPAQTLI-RPQDMKGASRSPEDSSP-DVARIRVKRYRQSMNNF-QGLRSFGCRFGTCTVQKLAHQIYQFTDKDKDNVAPRSKISPQGYGRRRRRSLPEAGPGRTLVSSKPQAHGA-PAPPSGSAPHFL
+MKLVSVALMYLGSLAFLGADTARLDVASEFRKKWNKWALSRGKRELRMSSSYPTGLADVKAGPAQTLIRPQDMKGASRSPEDSSPDAARIRVKRYRQSMNNFQGLRSFGCRFGT--CTVQKLAHQIYQFTDKDKDNVAPRSKISPQGYGRRRRRSLPEAGPGRTLVS-SKPQA-HGA--PAPP---SGSAPHFL
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::....::::::::::::::::::::::: : :::::::::  ::.:::::::::::::::::::::::::::::::::::::.:::::..... ....  .    .      ....... 
+MKLVSVALMYLGSLAFLGADTARLDVASEFRKKWNKWALSRGKRELRMSSSYPTGLADVKAGPAQTLIRPQDMKGASRSPEDSSPDVARIRVKRYRQSMNNF-Q-GLRSFGCRFGTCTVQKLAHQIYQFTDKDKDNVAPRSKISPQGYGRRRRRSLPEAGPGRTLVSSKPQA-HG--APA---PPSGSAPHFL-
 

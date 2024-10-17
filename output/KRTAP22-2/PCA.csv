@@ -1,4 +1,4 @@
 mutation,PC1,PC2,PhenotypeList,ClinicalSignificance,rmsd
-canonical,-86.98720132001006,-78.22908933881955,canonical,canonical,0.0
-NM_001164434.1_KRTAP22-2_c.119C-A_p.Ala40Asp,-62.10220559567702,87.44692962407352,not specified,Uncertain significance,2.64
-NM_001164434.1_KRTAP22-2_c.4T-C_p.Cys2Arg,149.08940691568705,-9.217840285253896,not specified,Uncertain significance,3.94
+canonical,-85.21727350653302,-76.2982828095696,canonical,canonical,0.0
+NM_001164434.1_KRTAP22-2_c.119C-A_p.Ala40Asp,-65.07547636511316,83.43389682953016,not specified,Uncertain significance,2.14
+NM_001164434.1_KRTAP22-2_c.4T-C_p.Cys2Arg,150.29274987164624,-7.135614019960436,not specified,Uncertain significance,2.5

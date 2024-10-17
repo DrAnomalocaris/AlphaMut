@@ -1,70 +1,70 @@
 mutation,PC1,PC2,PhenotypeList,ClinicalSignificance,rmsd
-canonical,-56.729268921067465,-10.599038962523418,canonical,canonical,0.0
-NM_000207.3_INS_c.147C-G_p.Phe49Leu,45.314238931795735,-39.51352271401876,Hyperproinsulinemia,Pathogenic,3.78
-NM_000207.3_INS_c.143T-C_p.Phe48Ser,-42.72916065833477,62.33197957220107,Hyperproinsulinemia,Pathogenic,4.89
-NM_000207.3_INS_c.100C-G_p.His34Asp,128.78568700257068,-45.63758632718696,Hyperproinsulinemia,Uncertain significance,3.72
-NM_000207.3_INS_c.266G-A_p.Arg89His,64.15379402671047,-46.67536922706324,Hyperproinsulinemia|not provided|INS-related disorder,Conflicting classifications of pathogenicity,3.74
-NM_000207.3_INS_c.274G-T_p.Val92Leu,81.72923957874487,-55.59339241385959,"Hyperproinsulinemia|Diabetes mellitus, permanent neonatal 4",Uncertain significance,3.65
-NM_000207.3_INS_c.266G-T_p.Arg89Leu,-114.16116176261737,37.74121263265464,Hyperproinsulinemia,Pathogenic,3.08
-NM_000207.3_INS_c.266G-C_p.Arg89Pro,-116.75742008120386,16.0978019554093,Hyperproinsulinemia,Pathogenic,2.75
-NM_000207.3_INS_c.287G-A_p.Cys96Tyr,-16.14498187788057,-36.844272143732034,"Permanent neonatal diabetes mellitus|not provided|Diabetes mellitus, permanent neonatal 4|Neonatal diabetes mellitus",Conflicting classifications of pathogenicity,4.05
-NM_000207.3_INS_c.71C-A_p.Ala24Asp,-26.819326196177123,-39.51923821244306,"Permanent neonatal diabetes mellitus|Diabetes mellitus, permanent neonatal 4|not provided",Pathogenic/Likely risk allele,2.6
-NM_000207.3_INS_c.143T-G_p.Phe48Cys,-74.26874227477016,30.563906356275133,"Permanent neonatal diabetes mellitus|Diabetes mellitus, permanent neonatal 4|Neonatal diabetes mellitus",Likely pathogenic/Likely risk allele,4.41
-NM_000207.3_INS_c.16C-T_p.Arg6Cys,-130.42828039901866,37.02233654400564,Maturity-onset diabetes of the young type 10,Likely risk allele,2.7
-NM_000207.3_INS_c.137G-A_p.Arg46Gln,-39.267672705480976,-11.560288172155511,"Maturity-onset diabetes of the young type 10|not provided|Diabetes mellitus, permanent neonatal 4",Conflicting classifications of pathogenicity,3.63
-NM_000207.3_INS_c.163C-T_p.Arg55Cys,-46.241770653001204,25.156118515106908,Type 1 diabetes mellitus 2|not provided|Diabetes mellitus type 1|Monogenic diabetes,Pathogenic/Likely pathogenic/Likely risk allele,5.55
-NM_000207.3_INS_c.127T-G_p.Cys43Gly,-68.06931495816279,-47.37235464651196,"Permanent neonatal diabetes mellitus|Neonatal diabetes mellitus|Diabetes mellitus, permanent neonatal 4|Type 2 diabetes mellitus",Likely risk allele,5.35
-NM_000207.3_INS_c.140G-T_p.Gly47Val,104.11474170775944,-39.32509599005701,"Permanent neonatal diabetes mellitus|Diabetes mellitus, permanent neonatal 4",Uncertain significance,3.46
-NM_000207.3_INS_c.265C-T_p.Arg89Cys,-112.10755052577645,22.776960304161555,"Permanent neonatal diabetes mellitus|Diabetes mellitus, permanent neonatal 4|Neonatal diabetes mellitus|not provided",Conflicting classifications of pathogenicity,2.94
-NM_000207.3_INS_c.268G-T_p.Gly90Cys,135.10868113326484,-23.626366013067518,"Permanent neonatal diabetes mellitus|Diabetes mellitus, permanent neonatal 4",Uncertain significance,3.43
-NM_000207.3_INS_c.323A-G_p.Tyr108Cys,-96.79441677211547,3.9615800821448794,"Permanent neonatal diabetes mellitus|Diabetes mellitus, permanent neonatal 4",Likely risk allele,4.06
-NM_000207.3_INS_c.94G-C_p.Gly32Arg,-101.73138409239974,15.133095532910609,Permanent neonatal diabetes mellitus,not provided,3.63
-NM_000207.3_INS_c.71C-T_p.Ala24Val,-62.111408388521596,-24.139528334376003,Neonatal diabetes mellitus|not provided,Likely pathogenic,2.96
-NM_000207.3_INS_c.3G-A_p.Met1Ile,104.45403964095591,-60.30554676252434,"Permanent neonatal diabetes mellitus|Diabetes mellitus, permanent neonatal 4",Uncertain significance,3.95
-NM_000207.3_INS_c.3G-T_p.Met1Ile,104.46569020063305,-60.25428844627397,Permanent neonatal diabetes mellitus,not provided,3.95
-NM_000207.3_INS_c.104T-C_p.Leu35Pro,24.8085057319985,-27.321332280266052,Permanent neonatal diabetes mellitus,not provided,3.89
-NM_000207.3_INS_c.17G-A_p.Arg6His,48.462629002825295,-49.314827929020176,Maturity-onset diabetes of the young type 10|INS-related disorder|not provided,Uncertain significance/Uncertain risk allele,3.87
-NM_000207.3_INS_c.202C-A_p.Leu68Met,-61.0978656778836,-12.739534594202066,not provided|Type 2 diabetes mellitus|INS-related disorder,Uncertain significance,4.11
-NM_000207.3_INS_c.250G-A_p.Gly84Arg,-64.42543928068898,21.51643424028806,"Permanent neonatal diabetes mellitus|Diabetes mellitus, permanent neonatal 4",Uncertain significance,3.55
-NM_000207.3_INS_c.287G-C_p.Cys96Ser,-124.97378937853335,25.8989817746009,Permanent neonatal diabetes mellitus,not provided,3.34
-NM_000207.3_INS_c.302C-G_p.Ser101Cys,110.94118887203231,-37.736956406778624,"Permanent neonatal diabetes mellitus|Diabetes mellitus, permanent neonatal 4",Likely risk allele,3.4
-NM_000207.3_INS_c.308A-G_p.Tyr103Cys,-46.53054313577705,-32.91427887251174,"Permanent neonatal diabetes mellitus|not provided|Diabetes mellitus, permanent neonatal 4",Conflicting classifications of pathogenicity,3.68
-NM_000207.3_INS_c.85C-G_p.His29Asp,125.63051628276683,-38.422156555529554,"Permanent neonatal diabetes mellitus|Diabetes mellitus, permanent neonatal 4",Uncertain significance,4.27
-NM_000207.3_INS_c.125T-C_p.Val42Ala,77.43993617685,-44.44953568154409,Maturity-onset diabetes of the young type 10,Conflicting classifications of pathogenicity,4.32
-NM_000207.3_INS_c.130G-A_p.Gly44Arg,-132.5105371655487,35.73246714949064,"Transient Neonatal Diabetes, Dominant/Recessive|Maturity-onset diabetes of the young type 10|not provided",Conflicting classifications of pathogenicity,3.86
-NM_000207.3_INS_c.25C-T_p.Pro9Ser,82.55034169332268,-64.35683385474127,"Maturity-onset diabetes of the young type 10|Transient Neonatal Diabetes, Dominant/Recessive|Neonatal insulin-dependent diabetes mellitus|Type 1 diabetes mellitus 2;Diabetes mellitus, permanent neonatal 4;Hyperproinsulinemia;Maturity-onset diabetes of the young type 10|INS-related disorder",Uncertain significance,4.24
-NM_000207.3_INS_c.278A-G_p.Glu93Gly,75.5679378106818,-64.16077986718771,Monogenic diabetes|Maturity-onset diabetes of the young type 10,Conflicting classifications of pathogenicity,3.16
-NM_000207.3_INS_c.320ACT[1]_p.Tyr108del,-12.881693666716739,-42.729877906713575,not specified|Neonatal insulin-dependent diabetes mellitus,Conflicting classifications of pathogenicity,4.35
-NM_000207.3_INS_c.292A-T_p.Ser98Cys,-102.8436399135465,51.07946539431683,not specified|Neonatal insulin-dependent diabetes mellitus,Uncertain significance/Uncertain risk allele,4.53
-NM_000207.3_INS_c.130_144del_p.Gly44_Phe48del,214.5213954580382,377.2837589789679,not specified|Neonatal insulin-dependent diabetes mellitus,Conflicting classifications of pathogenicity,3.11
-NM_000207.3_INS_c.290C-G_p.Thr97Ser,87.78561453434,-46.4029949588682,Maturity-onset diabetes of the young type 10|Neonatal insulin-dependent diabetes mellitus,Conflicting classifications of pathogenicity,2.98
-NM_000207.3_INS_c.26C-G_p.Pro9Arg,-87.13093170696125,23.04709924221082,Permanent neonatal diabetes mellitus|Neonatal insulin-dependent diabetes mellitus,Likely risk allele,3.02
-NM_000207.3_INS_c.286T-C_p.Cys96Arg,-124.37326959028819,15.998313179406706,Diabetes mellitus|Type 1 diabetes mellitus 2,Likely risk allele,4.59
-NM_000207.3_INS_c.227G-A_p.Ser76Asn,-125.94428661988,32.68318716182876,not provided|Hyperproinsulinemia;Maturity-onset diabetes of the young type 10;Type 1 diabetes mellitus 2|not specified,Conflicting classifications of pathogenicity,3.23
-NM_000207.3_INS_c.115C-T_p.Leu39Phe,114.145191656403,-27.944902820677875,Maturity-onset diabetes of the young type 10,Likely pathogenic,2.82
-NM_000207.3_INS_c.289A-C_p.Thr97Pro,-97.24656475188816,-5.06502404043982,not provided,Likely pathogenic,3.25
-NM_000207.3_INS_c.95G-T_p.Gly32Val,1.6945105769959958,-5.304835460071362,not provided,Likely pathogenic,4.73
-NM_000207.3_INS_c.103C-G_p.Leu35Val,5.083703573468142,-48.09960154962528,not provided,Likely pathogenic,4.58
-NM_000207.3_INS_c.91T-G_p.Cys31Gly,61.82836083292581,13.38687649399737,not provided,Uncertain significance,5.22
-NM_000207.3_INS_c.1A-G_p.Met1Val,-99.19796978565587,73.13591782368744,"not provided|Type 1 diabetes mellitus 2;Maturity-onset diabetes of the young type 10;Diabetes mellitus, permanent neonatal 4;Hyperproinsulinemia",Pathogenic/Likely pathogenic,4.21
-NM_000207.3_INS_c.293G-T_p.Ser98Ile,112.6456324528656,-48.543181992909574,Neonatal diabetes mellitus,Likely pathogenic,3.0
-NM_000207.3_INS_c.322T-G_p.Tyr108Asp,-69.27207132132521,9.837903052860383,Neonatal diabetes mellitus,Likely pathogenic,4.62
-NM_000207.3_INS_c.326G-T_p.Cys109Phe,34.69211007950672,19.804393366314464,Neonatal diabetes mellitus,Likely pathogenic,3.75
-NM_000207.3_INS_c.101A-C_p.His34Pro,2.6779178855630774,-4.4916796640409435,Neonatal diabetes mellitus,Likely pathogenic,5.13
-NM_000207.3_INS_c.103C-A_p.Leu35Met,22.58821556033483,-58.06026303630612,Neonatal diabetes mellitus,Likely pathogenic,4.31
-NM_000207.3_INS_c.155C-A_p.Pro52His,116.68520842413001,-52.219046340350694,Maturity-onset diabetes of the young type 10,Uncertain significance,2.81
-NM_000207.3_INS_c.212G-C_p.Gly71Ala,-72.94815300335199,-2.6372589997390277,not provided,Uncertain significance,3.36
-NM_000207.3_INS_c.29T-A_p.Leu10Gln,-122.39413828615274,54.5228301349228,not provided,Uncertain significance,2.58
-NM_000207.3_INS_c.155C-G_p.Pro52Arg,3.020599837323419,-52.32946513419419,Neonatal insulin-dependent diabetes mellitus,Likely pathogenic,3.1
-NM_000207.3_INS_c.277G-A_p.Glu93Lys,-128.78165012489575,37.28641733620396,not provided,Uncertain significance,2.78
-NM_000207.3_INS_c.194A-G_p.Gln65Arg,-1.2802452412699155,-44.9362540563502,not provided,Uncertain significance,2.71
-NM_000207.3_INS_c.299G-A_p.Cys100Tyr,24.11435165284958,-66.9962761545315,not provided,Uncertain significance,3.86
-NM_000207.3_INS_c.206G-A_p.Gly69Asp,-112.93509308893887,39.387394535633945,INS-related disorder,Uncertain significance,3.13
-NM_000207.3_INS_c.136C-T_p.Arg46Ter,88.35982602128001,250.42076351632608,INS-related disorder,Likely pathogenic,2.25
-NM_000207.3_INS_c.284G-A_p.Cys95Tyr,60.97633778681405,-68.91795071909675,INS-related disorder,Likely pathogenic,3.76
-NM_000207.3_INS_c.104T-A_p.Leu35Gln,33.25242015128408,-52.85397142749248,"Diabetes mellitus, permanent neonatal 4",Likely risk allele,4.3
-NM_000207.3_INS_c.316_318del_p.Glu106del,196.55951225179993,314.718738795829,not provided,Uncertain significance,1.96
-NM_000207.3_INS_c.272T-C_p.Ile91Thr,74.08292296091263,-62.49001513221919,not provided,Uncertain significance,3.48
-NM_000207.3_INS_c.317A-T_p.Glu106Val,135.3705821169868,-40.542908892962416,not provided,Uncertain significance,3.94
-NM_000207.3_INS_c.15G-A_p.Met5Ile,111.98013238048681,-45.346321713246226,not provided,Uncertain significance,3.98
-NM_000207.3_INS_c.224G-A_p.Gly75Asp,-124.46197198138994,41.76802073565441,INS-related disorder,Likely benign,2.6
+canonical,-52.70130995154915,-13.145779768959866,canonical,canonical,0.0
+NM_000207.3_INS_c.147C-G_p.Phe49Leu,55.86595643270625,-33.817607169737165,Hyperproinsulinemia,Pathogenic,4.52
+NM_000207.3_INS_c.143T-C_p.Phe48Ser,-46.245443325648125,64.02492419347405,Hyperproinsulinemia,Pathogenic,5.45
+NM_000207.3_INS_c.100C-G_p.His34Asp,127.11192181951736,-47.26666404181159,Hyperproinsulinemia,Uncertain significance,3.27
+NM_000207.3_INS_c.266G-A_p.Arg89His,75.6083858843575,-49.25689634065526,Hyperproinsulinemia|not provided|INS-related disorder,Conflicting classifications of pathogenicity,2.6
+NM_000207.3_INS_c.274G-T_p.Val92Leu,81.63730132044222,-56.76784128634892,"Hyperproinsulinemia|Diabetes mellitus, permanent neonatal 4",Uncertain significance,3.51
+NM_000207.3_INS_c.266G-T_p.Arg89Leu,-119.32832282780565,40.67455609212348,Hyperproinsulinemia,Pathogenic,3.2
+NM_000207.3_INS_c.266G-C_p.Arg89Pro,-94.29835529147118,3.215137736439781,Hyperproinsulinemia,Pathogenic,3.69
+NM_000207.3_INS_c.287G-A_p.Cys96Tyr,-22.362922891271158,-33.49488234359564,"Permanent neonatal diabetes mellitus|not provided|Diabetes mellitus, permanent neonatal 4|Neonatal diabetes mellitus",Conflicting classifications of pathogenicity,4.4
+NM_000207.3_INS_c.71C-A_p.Ala24Asp,-21.54639868694057,-42.31605650446865,"Permanent neonatal diabetes mellitus|Diabetes mellitus, permanent neonatal 4|not provided",Pathogenic/Likely risk allele,2.76
+NM_000207.3_INS_c.143T-G_p.Phe48Cys,-76.50728491986374,35.26220924405476,"Permanent neonatal diabetes mellitus|Diabetes mellitus, permanent neonatal 4|Neonatal diabetes mellitus",Likely pathogenic/Likely risk allele,4.35
+NM_000207.3_INS_c.16C-T_p.Arg6Cys,-122.72953769530531,33.6158402999593,Maturity-onset diabetes of the young type 10,Likely risk allele,3.17
+NM_000207.3_INS_c.137G-A_p.Arg46Gln,-45.99568792958324,-7.641548939838565,"Maturity-onset diabetes of the young type 10|not provided|Diabetes mellitus, permanent neonatal 4",Conflicting classifications of pathogenicity,3.4
+NM_000207.3_INS_c.163C-T_p.Arg55Cys,-55.90389103687082,36.46903828434208,Type 1 diabetes mellitus 2|not provided|Diabetes mellitus type 1|Monogenic diabetes,Pathogenic/Likely pathogenic/Likely risk allele,5.49
+NM_000207.3_INS_c.127T-G_p.Cys43Gly,-62.961352851494624,-45.55740303845887,"Permanent neonatal diabetes mellitus|Neonatal diabetes mellitus|Diabetes mellitus, permanent neonatal 4|Type 2 diabetes mellitus",Likely risk allele,4.78
+NM_000207.3_INS_c.140G-T_p.Gly47Val,97.21916447597512,-36.61299574247645,"Permanent neonatal diabetes mellitus|Diabetes mellitus, permanent neonatal 4",Uncertain significance,3.96
+NM_000207.3_INS_c.265C-T_p.Arg89Cys,-117.96769469917788,27.62816910950273,"Permanent neonatal diabetes mellitus|Diabetes mellitus, permanent neonatal 4|Neonatal diabetes mellitus|not provided",Conflicting classifications of pathogenicity,2.82
+NM_000207.3_INS_c.268G-T_p.Gly90Cys,125.07884120340239,-25.940103878042013,"Permanent neonatal diabetes mellitus|Diabetes mellitus, permanent neonatal 4",Uncertain significance,3.25
+NM_000207.3_INS_c.323A-G_p.Tyr108Cys,-86.8411362438965,-2.2076636582412417,"Permanent neonatal diabetes mellitus|Diabetes mellitus, permanent neonatal 4",Likely risk allele,4.07
+NM_000207.3_INS_c.94G-C_p.Gly32Arg,-101.55825112383685,18.31789882061298,Permanent neonatal diabetes mellitus,not provided,3.87
+NM_000207.3_INS_c.71C-T_p.Ala24Val,-53.110015456614846,-28.807337115287805,Neonatal diabetes mellitus|not provided,Likely pathogenic,3.0
+NM_000207.3_INS_c.3G-A_p.Met1Ile,95.73977577273246,-60.52341353074113,"Permanent neonatal diabetes mellitus|Diabetes mellitus, permanent neonatal 4",Uncertain significance,3.0
+NM_000207.3_INS_c.3G-T_p.Met1Ile,95.75159478724034,-60.490713487089735,Permanent neonatal diabetes mellitus,not provided,3.01
+NM_000207.3_INS_c.104T-C_p.Leu35Pro,35.40410815743531,-30.7481990328338,Permanent neonatal diabetes mellitus,not provided,3.45
+NM_000207.3_INS_c.17G-A_p.Arg6His,45.16224927118897,-46.106101358589584,Maturity-onset diabetes of the young type 10|INS-related disorder|not provided,Uncertain significance/Uncertain risk allele,3.53
+NM_000207.3_INS_c.202C-A_p.Leu68Met,-71.16821210349536,-4.720535653715829,not provided|Type 2 diabetes mellitus|INS-related disorder,Uncertain significance,3.66
+NM_000207.3_INS_c.250G-A_p.Gly84Arg,-72.83938454351686,22.468768722897508,"Permanent neonatal diabetes mellitus|Diabetes mellitus, permanent neonatal 4",Uncertain significance,2.41
+NM_000207.3_INS_c.287G-C_p.Cys96Ser,-124.02132780240616,28.141401176733584,Permanent neonatal diabetes mellitus,not provided,3.2
+NM_000207.3_INS_c.302C-G_p.Ser101Cys,108.98015102967818,-37.24751444302265,"Permanent neonatal diabetes mellitus|Diabetes mellitus, permanent neonatal 4",Likely risk allele,3.82
+NM_000207.3_INS_c.308A-G_p.Tyr103Cys,-39.5348113746149,-37.47684986573543,"Permanent neonatal diabetes mellitus|not provided|Diabetes mellitus, permanent neonatal 4",Conflicting classifications of pathogenicity,3.31
+NM_000207.3_INS_c.85C-G_p.His29Asp,117.9762219988136,-39.4146132105289,"Permanent neonatal diabetes mellitus|Diabetes mellitus, permanent neonatal 4",Uncertain significance,3.85
+NM_000207.3_INS_c.125T-C_p.Val42Ala,80.72980359069693,-47.532036582974,Maturity-onset diabetes of the young type 10,Conflicting classifications of pathogenicity,3.72
+NM_000207.3_INS_c.130G-A_p.Gly44Arg,-133.28612577649798,37.870417781135,"Transient Neonatal Diabetes, Dominant/Recessive|Maturity-onset diabetes of the young type 10|not provided",Conflicting classifications of pathogenicity,3.15
+NM_000207.3_INS_c.25C-T_p.Pro9Ser,85.41794078316505,-64.86305390480936,"Maturity-onset diabetes of the young type 10|Transient Neonatal Diabetes, Dominant/Recessive|Neonatal insulin-dependent diabetes mellitus|Type 1 diabetes mellitus 2;Diabetes mellitus, permanent neonatal 4;Hyperproinsulinemia;Maturity-onset diabetes of the young type 10|INS-related disorder",Uncertain significance,3.52
+NM_000207.3_INS_c.278A-G_p.Glu93Gly,76.90343522518415,-66.09926212021927,Monogenic diabetes|Maturity-onset diabetes of the young type 10,Conflicting classifications of pathogenicity,2.68
+NM_000207.3_INS_c.320ACT[1]_p.Tyr108del,-20.874459430078723,-39.71196318606451,not specified|Neonatal insulin-dependent diabetes mellitus,Conflicting classifications of pathogenicity,4.28
+NM_000207.3_INS_c.292A-T_p.Ser98Cys,-95.84945755228414,44.12343206452668,not specified|Neonatal insulin-dependent diabetes mellitus,Uncertain significance/Uncertain risk allele,4.61
+NM_000207.3_INS_c.130_144del_p.Gly44_Phe48del,218.28157623179098,368.9574312946473,not specified|Neonatal insulin-dependent diabetes mellitus,Conflicting classifications of pathogenicity,2.78
+NM_000207.3_INS_c.290C-G_p.Thr97Ser,81.19027622694608,-46.52702533523173,Maturity-onset diabetes of the young type 10|Neonatal insulin-dependent diabetes mellitus,Conflicting classifications of pathogenicity,2.91
+NM_000207.3_INS_c.26C-G_p.Pro9Arg,-76.10031379721445,18.55328364114025,Permanent neonatal diabetes mellitus|Neonatal insulin-dependent diabetes mellitus,Likely risk allele,3.8
+NM_000207.3_INS_c.286T-C_p.Cys96Arg,-122.18158609178522,16.083065885693046,Diabetes mellitus|Type 1 diabetes mellitus 2,Likely risk allele,4.58
+NM_000207.3_INS_c.227G-A_p.Ser76Asn,-117.35132985739209,28.146523247308675,not provided|Hyperproinsulinemia;Maturity-onset diabetes of the young type 10;Type 1 diabetes mellitus 2|not specified,Conflicting classifications of pathogenicity,3.7
+NM_000207.3_INS_c.115C-T_p.Leu39Phe,114.95211517613427,-29.28850119024874,Maturity-onset diabetes of the young type 10,Likely pathogenic,2.71
+NM_000207.3_INS_c.289A-C_p.Thr97Pro,-100.42346362643443,-3.6626788854258967,not provided,Likely pathogenic,3.1
+NM_000207.3_INS_c.95G-T_p.Gly32Val,24.563976342524715,-12.36076892294636,not provided,Likely pathogenic,5.03
+NM_000207.3_INS_c.103C-G_p.Leu35Val,1.5674176834671665,-40.10830146576071,not provided,Likely pathogenic,4.01
+NM_000207.3_INS_c.91T-G_p.Cys31Gly,47.681496222504734,19.10621711243182,not provided,Uncertain significance,5.85
+NM_000207.3_INS_c.1A-G_p.Met1Val,-97.20930758629105,66.57239152873737,"not provided|Type 1 diabetes mellitus 2;Maturity-onset diabetes of the young type 10;Diabetes mellitus, permanent neonatal 4;Hyperproinsulinemia",Pathogenic/Likely pathogenic,4.04
+NM_000207.3_INS_c.293G-T_p.Ser98Ile,106.95952152361468,-49.47291342889381,Neonatal diabetes mellitus,Likely pathogenic,2.55
+NM_000207.3_INS_c.322T-G_p.Tyr108Asp,-74.37763761457313,10.940246765393239,Neonatal diabetes mellitus,Likely pathogenic,4.9
+NM_000207.3_INS_c.326G-T_p.Cys109Phe,21.588112784606167,26.512013671844496,Neonatal diabetes mellitus,Likely pathogenic,3.94
+NM_000207.3_INS_c.101A-C_p.His34Pro,-4.723898042806203,8.387414635097322,Neonatal diabetes mellitus,Likely pathogenic,5.19
+NM_000207.3_INS_c.103C-A_p.Leu35Met,21.73682555006215,-57.4532432177181,Neonatal diabetes mellitus,Likely pathogenic,3.45
+NM_000207.3_INS_c.155C-A_p.Pro52His,113.06900573785973,-52.77054781206605,Maturity-onset diabetes of the young type 10,Uncertain significance,2.27
+NM_000207.3_INS_c.212G-C_p.Gly71Ala,-76.68333105533577,-0.15998264234991125,not provided,Uncertain significance,3.06
+NM_000207.3_INS_c.29T-A_p.Leu10Gln,-122.45876985095627,50.23578803274838,not provided,Uncertain significance,3.94
+NM_000207.3_INS_c.155C-G_p.Pro52Arg,4.4400233047986335,-54.655844198405894,Neonatal insulin-dependent diabetes mellitus,Likely pathogenic,2.43
+NM_000207.3_INS_c.277G-A_p.Glu93Lys,-133.4128583009273,41.018222343840584,not provided,Uncertain significance,2.64
+NM_000207.3_INS_c.194A-G_p.Gln65Arg,1.9855880794007568,-45.06959860603963,not provided,Uncertain significance,2.9
+NM_000207.3_INS_c.299G-A_p.Cys100Tyr,27.041611067483988,-68.99887331254583,not provided,Uncertain significance,3.67
+NM_000207.3_INS_c.206G-A_p.Gly69Asp,-120.13680850101964,41.65567650309457,INS-related disorder,Uncertain significance,2.09
+NM_000207.3_INS_c.136C-T_p.Arg46Ter,89.00589344928835,253.7700855593604,INS-related disorder,Likely pathogenic,2.83
+NM_000207.3_INS_c.284G-A_p.Cys95Tyr,54.885059989384025,-71.13374072999864,INS-related disorder,Likely pathogenic,4.17
+NM_000207.3_INS_c.104T-A_p.Leu35Gln,41.67711869862936,-51.99606156524662,"Diabetes mellitus, permanent neonatal 4",Likely risk allele,4.21
+NM_000207.3_INS_c.316_318del_p.Glu106del,197.57130023569738,312.632231930521,not provided,Uncertain significance,1.86
+NM_000207.3_INS_c.272T-C_p.Ile91Thr,80.92682012834855,-64.10822599066067,not provided,Uncertain significance,3.55
+NM_000207.3_INS_c.317A-T_p.Glu106Val,135.66554247134044,-38.9468474662777,not provided,Uncertain significance,3.27
+NM_000207.3_INS_c.15G-A_p.Met5Ile,113.37357884098486,-47.129920089303056,not provided,Uncertain significance,3.47
+NM_000207.3_INS_c.224G-A_p.Gly75Asp,-120.05902365844346,37.22772538570521,INS-related disorder,Likely benign,2.62

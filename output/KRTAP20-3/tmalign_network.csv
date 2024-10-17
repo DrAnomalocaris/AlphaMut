@@ -42,15 +42,15 @@ Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.101G-A
 Length of Chain_1:   44 residues
 Length of Chain_2:   44 residues
 
-Aligned length=   40, RMSD=   2.93, Seq_ID=n_identical/n_aligned= 0.650
-TM-score= 0.45694 (if normalized by length of Chain_1)
-TM-score= 0.45694 (if normalized by length of Chain_2)
+Aligned length=   42, RMSD=   1.92, Seq_ID=n_identical/n_aligned= 0.857
+TM-score= 0.57236 (if normalized by length of Chain_1)
+TM-score= 0.57236 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MSY-YGNYYGGLGYGYDCKYSYTSGFGAF-RILDCGYRCGCGGVWI--
- .: ::::::::::::::::::::::::: :..:.:::   ...:.  
--MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCDYRC---GCGGVWI
+MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI--
+:::::::::::::::::::::::::::::::::::: : :::::  
+MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCDYR-C-GCGGVWI
 
 "
 canonical,NM_001128077.1_KRTAP20-3_c.25G-A_p.Gly9Arg,"
@@ -69,15 +69,15 @@ Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.25G-A_
 Length of Chain_1:   44 residues
 Length of Chain_2:   44 residues
 
-Aligned length=   29, RMSD=   2.72, Seq_ID=n_identical/n_aligned= 1.000
-TM-score= 0.40077 (if normalized by length of Chain_1)
-TM-score= 0.40077 (if normalized by length of Chain_2)
+Aligned length=   41, RMSD=   3.40, Seq_ID=n_identical/n_aligned= 0.780
+TM-score= 0.45154 (if normalized by length of Chain_1)
+TM-score= 0.45154 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MSYYGNYYGG----------LGYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI-----
-                    .::::::::::::::::::::::::.::.          
-----------MSYYGNYYRGLGYGYDCKYSYTSGFGAFRILDCGYRCGC-----GGVWI
+MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCGY---RCGCGGVWI
+.::::::::::::::::::::. . : :::::...   .::::::::
+MSYYGNYYRGLGYGYDCKYSYT-S-G-FGAFRILDCGYRCGCGGVWI
 
 "
 canonical,NM_001128077.1_KRTAP20-3_c.34G-A_p.Gly12Ser,"
@@ -96,15 +96,15 @@ Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.34G-A_
 Length of Chain_1:   44 residues
 Length of Chain_2:   44 residues
 
-Aligned length=   32, RMSD=   3.18, Seq_ID=n_identical/n_aligned= 0.844
-TM-score= 0.33401 (if normalized by length of Chain_1)
-TM-score= 0.33401 (if normalized by length of Chain_2)
+Aligned length=   34, RMSD=   2.66, Seq_ID=n_identical/n_aligned= 0.853
+TM-score= 0.43785 (if normalized by length of Chain_1)
+TM-score= 0.43785 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MSYYGNYYGGL------------GYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI
-                       :.::: :::::::::::::::::::::...:::
------------MSYYGNYYGGLSYGYDC-KYSYTSGFGAFRILDCGYRCGCGGVWI
+MSYYGNYYG---------GLGYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI-
+                  ..::::::::::::::::::::::::::: :.::: 
+---------MSYYGNYYGGLSYGYDCKYSYTSGFGAFRILDCGYRCG-CGGVWI
 
 "
 canonical,NM_001128077.1_KRTAP20-3_c.47A-C_p.Asp16Ala,"
@@ -123,15 +123,15 @@ Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.47A-C_
 Length of Chain_1:   44 residues
 Length of Chain_2:   44 residues
 
-Aligned length=   28, RMSD=   3.82, Seq_ID=n_identical/n_aligned= 0.250
-TM-score= 0.26467 (if normalized by length of Chain_1)
-TM-score= 0.26467 (if normalized by length of Chain_2)
+Aligned length=   32, RMSD=   3.24, Seq_ID=n_identical/n_aligned= 0.562
+TM-score= 0.33817 (if normalized by length of Chain_1)
+TM-score= 0.33817 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MS-YYGN-YYGG-LGYGYD-CKYSYTSGFGAFRI--------LD--CGYRCGC-GGVWI-
-   ..:: :::: :::::: :..                   .:  :::.    .:::: 
---MSYYGNYYGGLGYGYACKYSY-----------TSGFGAFRILDCGYRC---GCGGVWI
+MSYYGN-YYGGLGYGYDCKYSYTSGFGAFR---------ILD-CGYRCGCGGVWI-
+ ..::: ::::::::::::..                  ..: ::::  .::::: 
+-MSYYGNYYGGLGYGYACKYS---------YTSGFGAFRILDCGYRC--GCGGVWI
 
 "
 NM_001128077.1_KRTAP20-3_c.101G-A_p.Gly34Asp,canonical,"
@@ -150,15 +150,15 @@ Name of Chain_2: output/KRTAP20-3/canonical/isoform_relaxed_average
 Length of Chain_1:   44 residues
 Length of Chain_2:   44 residues
 
-Aligned length=   40, RMSD=   2.93, Seq_ID=n_identical/n_aligned= 0.650
-TM-score= 0.45694 (if normalized by length of Chain_1)
-TM-score= 0.45694 (if normalized by length of Chain_2)
+Aligned length=   42, RMSD=   1.92, Seq_ID=n_identical/n_aligned= 0.857
+TM-score= 0.57236 (if normalized by length of Chain_1)
+TM-score= 0.57236 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
--MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCDYRC---GCGGVWI
- .: ::::::::::::::::::::::::: :..:.:::   ...:.  
-MSY-YGNYYGGLGYGYDCKYSYTSGFGAF-RILDCGYRCGCGGVWI--
+MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCDYR-C-GCGGVWI
+:::::::::::::::::::::::::::::::::::: : :::::  
+MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI--
 
 "
 NM_001128077.1_KRTAP20-3_c.101G-A_p.Gly34Asp,NM_001128077.1_KRTAP20-3_c.101G-A_p.Gly34Asp,"
@@ -204,15 +204,15 @@ Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.25G-A_
 Length of Chain_1:   44 residues
 Length of Chain_2:   44 residues
 
-Aligned length=   34, RMSD=   3.43, Seq_ID=n_identical/n_aligned= 0.647
-TM-score= 0.36939 (if normalized by length of Chain_1)
-TM-score= 0.36939 (if normalized by length of Chain_2)
+Aligned length=   40, RMSD=   2.63, Seq_ID=n_identical/n_aligned= 0.575
+TM-score= 0.51887 (if normalized by length of Chain_1)
+TM-score= 0.51887 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MSYYGNYYGGLGYGYDCKYSYTSGF-GA-FRILDCDYR--------CGCGGVWI
-:::::::::::::::::::: .    .  .::::.           .:::::  
-MSYYGNYYRGLGYGYDCKYS-Y---TS-GFGAFRI---LDCGYRCGCGGVWI--
+MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDC-D---YRCGCGGVWI
+:::::::::::::::::::::: :::  ::::. .   ..::::::: 
+MSYYGNYYRGLGYGYDCKYSYT-SGF--GAFRILDCGYRCGCGGVWI-
 
 "
 NM_001128077.1_KRTAP20-3_c.101G-A_p.Gly34Asp,NM_001128077.1_KRTAP20-3_c.34G-A_p.Gly12Ser,"
@@ -231,15 +231,15 @@ Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.34G-A_
 Length of Chain_1:   44 residues
 Length of Chain_2:   44 residues
 
-Aligned length=   34, RMSD=   2.61, Seq_ID=n_identical/n_aligned= 0.941
-TM-score= 0.40917 (if normalized by length of Chain_1)
-TM-score= 0.40917 (if normalized by length of Chain_2)
+Aligned length=   34, RMSD=   2.38, Seq_ID=n_identical/n_aligned= 0.912
+TM-score= 0.40441 (if normalized by length of Chain_1)
+TM-score= 0.40441 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MSYYGNYYGG----------LGYGYDCKYSYTSGFGAFRILDCDYRCGCGGVWI
-                    .:::::::::::::::::::::::...:::::::
-----------MSYYGNYYGGLSYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI
+MSYYGNYYG---------GLGYGYDCKYSYTSGFGAFRILD-CDYRCGCGGVWI
+                  .:::::::::::::::::::: : ::::::::::::
+---------MSYYGNYYGGLSYGYDCKYSYTSGFGAFRI-LDCGYRCGCGGVWI
 
 "
 NM_001128077.1_KRTAP20-3_c.101G-A_p.Gly34Asp,NM_001128077.1_KRTAP20-3_c.47A-C_p.Asp16Ala,"
@@ -258,15 +258,15 @@ Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.47A-C_
 Length of Chain_1:   44 residues
 Length of Chain_2:   44 residues
 
-Aligned length=   28, RMSD=   3.23, Seq_ID=n_identical/n_aligned= 0.214
-TM-score= 0.30251 (if normalized by length of Chain_1)
-TM-score= 0.30251 (if normalized by length of Chain_2)
+Aligned length=   34, RMSD=   3.69, Seq_ID=n_identical/n_aligned= 0.706
+TM-score= 0.31506 (if normalized by length of Chain_1)
+TM-score= 0.31506 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MSYYGNYYG-------GLGYGYDC----KYSYTSGFGAFRILD----CDYRCGCG-GVWI
-                .::..       .:::::: :::::::    :::  ::: ::: 
----------MSYYGNYYGGLG---YGYACKYSYTS-GFGAFRILDCGYRC--GCGGVWI-
+MSYYG-----NYYGGLGYGY-DCKYSYTSGFGAFRILD-C--DYRCGCGG-VWI
+          ..:::::..  ..:::::::  : :::: :  :::::::: :. 
+-----MSYYGNYYGGLGYG-YACKYSYTSG--F-GAFRILDCGYRCGCGGVWI-
 
 "
 NM_001128077.1_KRTAP20-3_c.25G-A_p.Gly9Arg,canonical,"
@@ -285,15 +285,15 @@ Name of Chain_2: output/KRTAP20-3/canonical/isoform_relaxed_average
 Length of Chain_1:   44 residues
 Length of Chain_2:   44 residues
 
-Aligned length=   29, RMSD=   2.72, Seq_ID=n_identical/n_aligned= 1.000
-TM-score= 0.40077 (if normalized by length of Chain_1)
-TM-score= 0.40077 (if normalized by length of Chain_2)
+Aligned length=   41, RMSD=   3.40, Seq_ID=n_identical/n_aligned= 0.780
+TM-score= 0.45154 (if normalized by length of Chain_1)
+TM-score= 0.45154 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MSYYGNYYRG----------LGYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI-----
-                    .::::::::::::::::::::::::.::.          
-----------MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCGYRCGC-----GGVWI
+MSYYGNYYRGLGYGYDCKYSYT-S-G-FGAFRILDCGYRCGCGGVWI
+.::::::::::::::::::::. . : :::::...   .::::::::
+MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCGY---RCGCGGVWI
 
 "
 NM_001128077.1_KRTAP20-3_c.25G-A_p.Gly9Arg,NM_001128077.1_KRTAP20-3_c.101G-A_p.Gly34Asp,"
@@ -312,15 +312,15 @@ Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.101G-A
 Length of Chain_1:   44 residues
 Length of Chain_2:   44 residues
 
-Aligned length=   34, RMSD=   3.43, Seq_ID=n_identical/n_aligned= 0.647
-TM-score= 0.36939 (if normalized by length of Chain_1)
-TM-score= 0.36939 (if normalized by length of Chain_2)
+Aligned length=   40, RMSD=   2.63, Seq_ID=n_identical/n_aligned= 0.575
+TM-score= 0.51887 (if normalized by length of Chain_1)
+TM-score= 0.51887 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MSYYGNYYRGLGYGYDCKYS-YT---SG-FGAFRILDCGYRCG---CGGVWI--
-:::::::::::::::::::: .    .  .::::.           .:::::  
-MSYYGNYYGGLGYGYDCKYSYT-SGFG-AFRILDC--------DYRCGCGGVWI
+MSYYGNYYRGLGYGYDCKYSYT-SGF--GAFRILDCGYRCGCGGVWI-
+:::::::::::::::::::::: :::  ::::. .   ..::::::: 
+MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDC-D---YRCGCGGVWI
 
 "
 NM_001128077.1_KRTAP20-3_c.25G-A_p.Gly9Arg,NM_001128077.1_KRTAP20-3_c.25G-A_p.Gly9Arg,"
@@ -366,15 +366,15 @@ Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.34G-A_
 Length of Chain_1:   44 residues
 Length of Chain_2:   44 residues
 
-Aligned length=   33, RMSD=   2.28, Seq_ID=n_identical/n_aligned= 0.818
-TM-score= 0.46866 (if normalized by length of Chain_1)
-TM-score= 0.46866 (if normalized by length of Chain_2)
+Aligned length=   35, RMSD=   2.08, Seq_ID=n_identical/n_aligned= 0.943
+TM-score= 0.50988 (if normalized by length of Chain_1)
+TM-score= 0.50988 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-M--SYYGNYYRGLGYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI---------
-   ...::: ::::::::::::::::::::::::::.                  
--MSYYGNYY-GGLSYGYDCKYSYTSGFGAFRILDCGY---------RCGCGGVWI
+MSYYGNYYRGLGYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI---------
+::::::::::::::::::::::::::::::::::.                  
+MSYYGNYYGGLSYGYDCKYSYTSGFGAFRILDCGY---------RCGCGGVWI
 
 "
 NM_001128077.1_KRTAP20-3_c.25G-A_p.Gly9Arg,NM_001128077.1_KRTAP20-3_c.47A-C_p.Asp16Ala,"
@@ -393,15 +393,15 @@ Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.47A-C_
 Length of Chain_1:   44 residues
 Length of Chain_2:   44 residues
 
-Aligned length=   28, RMSD=   4.04, Seq_ID=n_identical/n_aligned= 0.643
-TM-score= 0.29494 (if normalized by length of Chain_1)
-TM-score= 0.29494 (if normalized by length of Chain_2)
+Aligned length=   29, RMSD=   3.44, Seq_ID=n_identical/n_aligned= 0.552
+TM-score= 0.30334 (if normalized by length of Chain_1)
+TM-score= 0.30334 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MSY--YGN-YYRGLGYGYDCKYSYTSGFGAFRIL---DCGY-RCGC------G--GV-WI
-     .:: ::::::::::::..              .::: :.        .  .: ::
----MSYYGNYYGGLGYGYACKYS-----------YTSGFGAFRI--LDCGYRCGCGGVWI
+MSY--YGN-YYRGLGYGYDCKYSYTSGFGAF-------RILDCGY-RCG--CG-GVWI-
+     .:: :::::::::::::.               .:::.   .    .: :::: 
+---MSYYGNYYGGLGYGYACKYS--------YTSGFGAFRILD--CG--YRCGCGGVWI
 
 "
 NM_001128077.1_KRTAP20-3_c.34G-A_p.Gly12Ser,canonical,"
@@ -420,15 +420,15 @@ Name of Chain_2: output/KRTAP20-3/canonical/isoform_relaxed_average
 Length of Chain_1:   44 residues
 Length of Chain_2:   44 residues
 
-Aligned length=   32, RMSD=   3.18, Seq_ID=n_identical/n_aligned= 0.844
-TM-score= 0.33401 (if normalized by length of Chain_1)
-TM-score= 0.33401 (if normalized by length of Chain_2)
+Aligned length=   34, RMSD=   2.66, Seq_ID=n_identical/n_aligned= 0.853
+TM-score= 0.43785 (if normalized by length of Chain_1)
+TM-score= 0.43785 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MSYYGNYYGGLS-----------YGYDC-KYSYTSGFGAFRILDCGYRCGCGGVWI
-                       :.::: :::::::::::::::::::::...:::
-------------MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI
+MSYYGNYYG---------GLSYGYDCKYSYTSGFGAFRILDCGYRCG-CGGVWI
+                  ..::::::::::::::::::::::::::: :.::: 
+---------MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI-
 
 "
 NM_001128077.1_KRTAP20-3_c.34G-A_p.Gly12Ser,NM_001128077.1_KRTAP20-3_c.101G-A_p.Gly34Asp,"
@@ -447,15 +447,15 @@ Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.101G-A
 Length of Chain_1:   44 residues
 Length of Chain_2:   44 residues
 
-Aligned length=   34, RMSD=   2.61, Seq_ID=n_identical/n_aligned= 0.941
-TM-score= 0.40917 (if normalized by length of Chain_1)
-TM-score= 0.40917 (if normalized by length of Chain_2)
+Aligned length=   34, RMSD=   2.38, Seq_ID=n_identical/n_aligned= 0.912
+TM-score= 0.40441 (if normalized by length of Chain_1)
+TM-score= 0.40441 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MSYYGNYYGG----------LSYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI
-                    .:::::::::::::::::::::::...:::::::
-----------MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCDYRCGCGGVWI
+MSYYGNYYG---------GLSYGYDCKYSYTSGFGAFRI-LDCGYRCGCGGVWI
+                  .:::::::::::::::::::: : ::::::::::::
+---------MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILD-CDYRCGCGGVWI
 
 "
 NM_001128077.1_KRTAP20-3_c.34G-A_p.Gly12Ser,NM_001128077.1_KRTAP20-3_c.25G-A_p.Gly9Arg,"
@@ -474,15 +474,15 @@ Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.25G-A_
 Length of Chain_1:   44 residues
 Length of Chain_2:   44 residues
 
-Aligned length=   33, RMSD=   2.28, Seq_ID=n_identical/n_aligned= 0.818
-TM-score= 0.46866 (if normalized by length of Chain_1)
-TM-score= 0.46866 (if normalized by length of Chain_2)
+Aligned length=   35, RMSD=   2.08, Seq_ID=n_identical/n_aligned= 0.943
+TM-score= 0.50988 (if normalized by length of Chain_1)
+TM-score= 0.50988 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MS-YYGNYY-GGLSYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI---------
-   ...::: ::::::::::::::::::::::::::.                  
---MSYYGNYYRGLGYGYDCKYSYTSGFGAFRILDCGY---------RCGCGGVWI
+MSYYGNYYGGLSYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI---------
+::::::::::::::::::::::::::::::::::.                  
+MSYYGNYYRGLGYGYDCKYSYTSGFGAFRILDCGY---------RCGCGGVWI
 
 "
 NM_001128077.1_KRTAP20-3_c.34G-A_p.Gly12Ser,NM_001128077.1_KRTAP20-3_c.34G-A_p.Gly12Ser,"
@@ -528,15 +528,15 @@ Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.47A-C_
 Length of Chain_1:   44 residues
 Length of Chain_2:   44 residues
 
-Aligned length=   28, RMSD=   3.39, Seq_ID=n_identical/n_aligned= 0.250
-TM-score= 0.26417 (if normalized by length of Chain_1)
-TM-score= 0.26417 (if normalized by length of Chain_2)
+Aligned length=   33, RMSD=   3.65, Seq_ID=n_identical/n_aligned= 0.606
+TM-score= 0.28649 (if normalized by length of Chain_1)
+TM-score= 0.28649 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MSYYGNYYGG-------LSYGYD-----CKYSYTSGFGAFRILD---C-GYRCGCGGVWI
-                 .:.        .:::::.: :::::::   : :::  ::::::
-----------MSYYGNYYGG---LGYGYACKYSYTS-GFGAFRILDCGYRCG--CGGVWI
+MSYYGNYYG---------GLSYGYDCKYSYTSGFGAFRILD--CGYRCGCGGVWI
+                  .:::....::::::: :::::::  :::: :::::::
+---------MSYYGNYYGGLGYGYACKYSYTSG-FGAFRILDCGYRC-GCGGVWI
 
 "
 NM_001128077.1_KRTAP20-3_c.47A-C_p.Asp16Ala,canonical,"
@@ -555,15 +555,15 @@ Name of Chain_2: output/KRTAP20-3/canonical/isoform_relaxed_average
 Length of Chain_1:   44 residues
 Length of Chain_2:   44 residues
 
-Aligned length=   28, RMSD=   3.82, Seq_ID=n_identical/n_aligned= 0.250
-TM-score= 0.26467 (if normalized by length of Chain_1)
-TM-score= 0.26467 (if normalized by length of Chain_2)
+Aligned length=   32, RMSD=   3.24, Seq_ID=n_identical/n_aligned= 0.562
+TM-score= 0.33817 (if normalized by length of Chain_1)
+TM-score= 0.33817 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-M--SYYGNYYGGLGYGYACKYSYTSGFGAFR-----------ILDCGYRCG---CGGVWI
-   ..:: :::: :::::: :..                   .:  :::.    .:::: 
--MSYYGN-YYGG-LGYGYD-CKY--------SYTSGFGAFRILD--CGYR-CGCGGVWI-
+-MSYYGNYYGGLGYGYACKYSYTSGFGAFR---------ILDCGYRC--GCGGVWI
+ ..::: ::::::::::::..                  ..: ::::  .::::: 
+MSYYGN-YYGGLGYGYDCKYS---------YTSGFGAFRILD-CGYRCGCGGVWI-
 
 "
 NM_001128077.1_KRTAP20-3_c.47A-C_p.Asp16Ala,NM_001128077.1_KRTAP20-3_c.101G-A_p.Gly34Asp,"
@@ -582,15 +582,15 @@ Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.101G-A
 Length of Chain_1:   44 residues
 Length of Chain_2:   44 residues
 
-Aligned length=   28, RMSD=   3.23, Seq_ID=n_identical/n_aligned= 0.214
-TM-score= 0.30251 (if normalized by length of Chain_1)
-TM-score= 0.30251 (if normalized by length of Chain_2)
+Aligned length=   34, RMSD=   3.69, Seq_ID=n_identical/n_aligned= 0.706
+TM-score= 0.31506 (if normalized by length of Chain_1)
+TM-score= 0.31506 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MSYYGNY---------YGGLGYGYA---CKYSYTS-GFGAFRILDCGYRC--GCGGVWI-
-                .::..       .:::::: :::::::    :::  ::: ::: 
--------MSYYGNYYGGLGYG----YDCKYSYTSGFGAFRILD----CDYRCGCG-GVWI
+MSYYG-----NYYGGLGYGY-ACKYSYTSG--F-GAFRILDCGYRCGCGGVWI-
+          ..:::::..  ..:::::::  : :::: :  :::::::: :. 
+-----MSYYGNYYGGLGYG-YDCKYSYTSGFGAFRILD-C--DYRCGCGG-VWI
 
 "
 NM_001128077.1_KRTAP20-3_c.47A-C_p.Asp16Ala,NM_001128077.1_KRTAP20-3_c.25G-A_p.Gly9Arg,"
@@ -609,15 +609,15 @@ Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.25G-A_
 Length of Chain_1:   44 residues
 Length of Chain_2:   44 residues
 
-Aligned length=   28, RMSD=   4.04, Seq_ID=n_identical/n_aligned= 0.643
-TM-score= 0.29494 (if normalized by length of Chain_1)
-TM-score= 0.29494 (if normalized by length of Chain_2)
+Aligned length=   29, RMSD=   3.44, Seq_ID=n_identical/n_aligned= 0.552
+TM-score= 0.30334 (if normalized by length of Chain_1)
+TM-score= 0.30334 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MS---YYGNYYGGLGYGYACKYSYTS-----------GFGAFRILDCGYR--CGCGGVWI
-     .:: ::::::::::::..              .::: :.        .  .: ::
---MSYYGN-YYRGLGYGYDCKYS---YTSGFGAFRILDCGY-RC------GCG--GV-WI
+MS---YYGNYYGGLGYGYACKYSYTSGFGA--------FRILDC--GYR--CGCGGVWI
+     .:: :::::::::::::.               .:::.   .    .: :::: 
+--MSYYGN-YYRGLGYGYDCKYS-------YTSGFGAFRILDC-GYR--CGCG-GVWI-
 
 "
 NM_001128077.1_KRTAP20-3_c.47A-C_p.Asp16Ala,NM_001128077.1_KRTAP20-3_c.34G-A_p.Gly12Ser,"
@@ -636,15 +636,15 @@ Name of Chain_2: output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.34G-A_
 Length of Chain_1:   44 residues
 Length of Chain_2:   44 residues
 
-Aligned length=   28, RMSD=   3.39, Seq_ID=n_identical/n_aligned= 0.250
-TM-score= 0.26417 (if normalized by length of Chain_1)
-TM-score= 0.26417 (if normalized by length of Chain_2)
+Aligned length=   33, RMSD=   3.65, Seq_ID=n_identical/n_aligned= 0.606
+TM-score= 0.28649 (if normalized by length of Chain_1)
+TM-score= 0.28649 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 ("":"" denotes aligned residue pairs of d < 5.0 A, ""."" denotes other aligned residues)
-MSYYGNY----------YGGLGYGY---ACKYSYTS-GFGAFRILDCGYRCG--CGGVWI
-                 .:.        .:::::.: :::::::   : :::  ::::::
--------MSYYGNYYGGLSY-----GYDCKYSYTSGFGAFRILD---C-GYRCGCGGVWI
+MSYYGNYYG---------GLGYGYACKYSYTSG-FGAFRILDCGYRC-GCGGVWI
+                  .:::....::::::: :::::::  :::: :::::::
+---------MSYYGNYYGGLSYGYDCKYSYTSGFGAFRILD--CGYRCGCGGVWI
 
 "
 NM_001128077.1_KRTAP20-3_c.47A-C_p.Asp16Ala,NM_001128077.1_KRTAP20-3_c.47A-C_p.Asp16Ala,"

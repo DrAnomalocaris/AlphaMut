@@ -1,10 +1,10 @@
 {
-    "comparison": "(\":\" denotes aligned residue pairs of d < 5.0 A, \".\" denotes other aligned residues)\nMSY-YGNYYGGLGYGYDCKYSYTSGFGAF-RILDCGYRCGCGGVWI--\n .: ::::::::::::::::::::::::: :..:.:::   ...:.  \n-MSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCDYRC---GCGGVWI",
+    "comparison": "(\":\" denotes aligned residue pairs of d < 5.0 A, \".\" denotes other aligned residues)\nMSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCGYRCGCGGVWI--\n:::::::::::::::::::::::::::::::::::: : :::::  \nMSYYGNYYGGLGYGYDCKYSYTSGFGAFRILDCDYR-C-GCGGVWI",
     "chain1": "output/KRTAP20-3/canonical/isoform_relaxed_averaged_rotated.pdb",
     "chain2": "output/KRTAP20-3/NM_001128077.1_KRTAP20-3_c.101G-A_p.Gly34Asp/isoform_relaxed_averaged_rotated.pdb",
     "chain1_length": 44,
     "chain2_length": 44,
-    "aligned_length": 40.0,
-    "rmsd": 2.93,
-    "identical/aligned": 0.65
+    "aligned_length": 42.0,
+    "rmsd": 1.92,
+    "identical/aligned": 0.857
 }

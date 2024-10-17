@@ -1,7 +1,7 @@
 mutation,PC1,PC2,PhenotypeList,ClinicalSignificance,rmsd
-canonical,-17.710241904152284,11.336315184364238,canonical,canonical,0.0
-NM_001048.4_SST_c.182A-C_p.Asn61Thr,-28.67256596958981,24.61666906987613,not provided,Benign,2.59
-NM_001048.4_SST_c.127G-T_p.Ala43Ser,351.5855388857159,-54.26055072055322,not specified,Uncertain significance,4.1
-NM_001048.4_SST_c.79T-C_p.Ser27Pro,-120.48282124612525,-30.13461705304632,not specified,Uncertain significance,2.33
-NM_001048.4_SST_c.221C-T_p.Ser74Phe,-164.1289145061565,-120.87806553122252,not specified,Uncertain significance,2.79
-NM_001048.4_SST_c.178C-T_p.Pro60Ser,-20.590995259692015,169.32024905058168,not specified,Uncertain significance,3.79
+canonical,-14.927979806734175,2.2279811379867716,canonical,canonical,0.0
+NM_001048.4_SST_c.182A-C_p.Asn61Thr,-29.61781711369986,20.758426303248797,not provided,Benign,2.72
+NM_001048.4_SST_c.127G-T_p.Ala43Ser,347.7237008368396,-56.983319350417695,not specified,Uncertain significance,3.81
+NM_001048.4_SST_c.79T-C_p.Ser27Pro,-117.8332100734265,-23.445331343710478,not specified,Uncertain significance,2.36
+NM_001048.4_SST_c.221C-T_p.Ser74Phe,-170.13570222139248,-119.88590665054349,not specified,Uncertain significance,3.45
+NM_001048.4_SST_c.178C-T_p.Pro60Ser,-15.208991621586627,177.32814990343599,not specified,Uncertain significance,4.04

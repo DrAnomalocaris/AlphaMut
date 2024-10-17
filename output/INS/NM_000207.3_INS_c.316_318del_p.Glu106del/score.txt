@@ -14,13 +14,13 @@ Name of Chain_2: output/INS/NM_000207.3_INS_c.316_318del_p.Glu106de
 Length of Chain_1:  110 residues
 Length of Chain_2:   45 residues
 
-Aligned length=   27, RMSD=   1.96, Seq_ID=n_identical/n_aligned= 0.074
-TM-score= 0.20707 (if normalized by length of Chain_1)
-TM-score= 0.41897 (if normalized by length of Chain_2)
+Aligned length=   27, RMSD=   1.86, Seq_ID=n_identical/n_aligned= 0.074
+TM-score= 0.20873 (if normalized by length of Chain_1)
+TM-score= 0.41565 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 (":" denotes aligned residue pairs of d < 5.0 A, "." denotes other aligned residues)
 -MALWMRLLPLLALLALWGPDPAAAF--VNQHLCGSHLVEALYLVCGERGFFYTPKTRREAEDLQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN---------------
- ::::::::::::::::::::: :.:  :::                                                                                                 
+ ::::::::::::::::::::: :::  :::                                                                                                 
 SPPGQAASEEAIKQITVLLPWP-CGCASCPC----------------------------------------------------------------------------------WRCWPSGDLTQPQPL
 

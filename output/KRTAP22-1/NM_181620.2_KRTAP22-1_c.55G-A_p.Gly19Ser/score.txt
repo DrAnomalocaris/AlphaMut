@@ -14,13 +14,13 @@ Name of Chain_2: output/KRTAP22-1/NM_181620.2_KRTAP22-1_c.55G-A_p.G
 Length of Chain_1:   48 residues
 Length of Chain_2:   48 residues
 
-Aligned length=   33, RMSD=   3.46, Seq_ID=n_identical/n_aligned= 0.182
-TM-score= 0.32598 (if normalized by length of Chain_1)
-TM-score= 0.32598 (if normalized by length of Chain_2)
+Aligned length=   37, RMSD=   3.54, Seq_ID=n_identical/n_aligned= 0.703
+TM-score= 0.32501 (if normalized by length of Chain_1)
+TM-score= 0.32501 (if normalized by length of Chain_2)
 (You should use TM-score normalized by length of the reference protein)
 
 (":" denotes aligned residue pairs of d < 5.0 A, "." denotes other aligned residues)
-MSFDNNYHGGQGYAKGGLGCSY----GCGLSGYGYACY-----CPW--CYERSWFSGCF----
- :::: :::::::::::::::.    .:               .    :.: :::...:    
--MSFD-NNYHGGQGYAKGGLSCSYGCGL----------SGYGYA--CYCPW-CYERSWFSGCF
+MSFDNNYHGG---------QGYAK-GGLGCSYGCGLSGYGYACYCPWCYERSWFSGCF-
+                   ..::: :::::::::::::::::..:::::::: ::... 
+----------MSFDNNYHGGQGYAKGGLSCSYGCGLSGYGYACYCPWCYERS-WFSGCF
 
